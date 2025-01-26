@@ -92,7 +92,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright @ 2016-{0} Steven M Cohn.
+        ///   Looks up a localized string similar to Copyright @ 2016-{0} Steven M Cohn. All rights reserved..
         /// </summary>
         internal static string AboutDialog_copyLabel_Text {
             get {
@@ -101,43 +101,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You have the latest version.
+        ///   Looks up a localized string similar to See the project on GitHub.
         /// </summary>
-        internal static string AboutDialog_LatestMessage {
+        internal static string AboutDialog_githubLink_Text {
             get {
-                return ResourceManager.GetString("AboutDialog_LatestMessage", resourceCulture);
+                return ResourceManager.GetString("AboutDialog_githubLink.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You&apos;re good to go!.
+        ///   Looks up a localized string similar to Please support future development of OneMore.
         /// </summary>
-        internal static string AboutDialog_LatestTitle {
+        internal static string AboutDialog_pleaseLabel_Text {
             get {
-                return ResourceManager.GetString("AboutDialog_LatestTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to A new version is available:
-        ///
-        ///    {0} - &quot;{1}&quot;
-        ///
-        ///Do you want to update now?
-        ///OneNote will close automatically.
-        /// </summary>
-        internal static string AboutDialog_NewVersionMessage {
-            get {
-                return ResourceManager.GetString("AboutDialog_NewVersionMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Update OneMore.
-        /// </summary>
-        internal static string AboutDialog_NewVersionTitle {
-            get {
-                return ResourceManager.GetString("AboutDialog_NewVersionTitle", resourceCulture);
+                return ResourceManager.GetString("AboutDialog_pleaseLabel.Text", resourceCulture);
             }
         }
         
@@ -151,7 +128,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OneMore Add-in for OneNote 2016.
+        ///   Looks up a localized string similar to OneMore Add-in for OneNote.
         /// </summary>
         internal static string AboutDialog_titleLabel_Text {
             get {
@@ -169,11 +146,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Version {0}.
+        ///   Looks up a localized string similar to Version {0} with OneNote {1}.
         /// </summary>
         internal static string AboutDialog_versionLabel_Text {
             get {
                 return ResourceManager.GetString("AboutDialog_versionLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot add a caption to a background image on the page. Images must be in an outline container to be captioned..
+        /// </summary>
+        internal static string AddCaptionCommand_cannotCaptionBg {
+            get {
+                return ResourceManager.GetString("AddCaptionCommand_cannotCaptionBg", resourceCulture);
             }
         }
         
@@ -183,24 +169,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string AddCaptionCommand_Captioned {
             get {
                 return ResourceManager.GetString("AddCaptionCommand_Captioned", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Refresh.
-        /// </summary>
-        internal static string AddFootnoteCommand_Refresh {
-            get {
-                return ResourceManager.GetString("AddFootnoteCommand_Refresh", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Select one or more cells from the same row or the same column.
-        /// </summary>
-        internal static string AddFormula_linearMessage {
-            get {
-                return ResourceManager.GetString("AddFormula_linearMessage", resourceCulture);
             }
         }
         
@@ -223,20 +191,208 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select on or more icons to add to page title.
+        ///   Looks up a localized string similar to Absolute.
         /// </summary>
-        internal static string AddTitleIconDialog_introLabel_Text {
+        internal static string AdjustImagesDialog_absRadio_Text {
             get {
-                return ResourceManager.GetString("AddTitleIconDialog_introLabel.Text", resourceCulture);
+                return ResourceManager.GetString("AdjustImagesDialog_absRadio.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TItle Icons.
+        ///   Looks up a localized string similar to {0} background images.
         /// </summary>
-        internal static string AddTitleIconDialog_Text {
+        internal static string AdjustImagesDialog_allLabelBackground {
             get {
-                return ResourceManager.GetString("AddTitleIconDialog.Text", resourceCulture);
+                return ResourceManager.GetString("AdjustImagesDialog_allLabelBackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} foreground images.
+        /// </summary>
+        internal static string AdjustImagesDialog_allLabelForeground {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_allLabelForeground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applies to.
+        /// </summary>
+        internal static string AdjustImagesDialog_appliesTo {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_appliesTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto-size.
+        /// </summary>
+        internal static string AdjustImagesDialog_autoSizeRadio_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_autoSizeRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Height.
+        /// </summary>
+        internal static string AdjustImagesDialog_heightLabel_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_heightLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image size.
+        /// </summary>
+        internal static string AdjustImagesDialog_imageSizeLabel_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_imageSizeLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resize all images
+        ///Do not shrink larger images
+        ///Do no enlarge smaller images.
+        /// </summary>
+        internal static string AdjustImagesDialog_limitsBox_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_limitsBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No images were found on this page.
+        ///
+        ///Images must be in an outline container. Background images cannot be adjusted..
+        /// </summary>
+        internal static string AdjustImagesDialog_noImages {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_noImages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Percentage.
+        /// </summary>
+        internal static string AdjustImagesDialog_pctRadio_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_pctRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preserve storage size.
+        /// </summary>
+        internal static string AdjustImagesDialog_preserveBox_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_preserveBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preset.
+        /// </summary>
+        internal static string AdjustImagesDialog_presetRadio_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_presetRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preview {0}.
+        /// </summary>
+        internal static string AdjustImagesDialog_previewGroup_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_previewGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reposition background images.
+        /// </summary>
+        internal static string AdjustImagesDialog_repositionBox_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_repositionBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset values.
+        /// </summary>
+        internal static string AdjustImagesDialog_resetLinkLabel_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_resetLinkLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} x {1}.
+        /// </summary>
+        internal static string AdjustImagesDialog_sizeLink_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_sizeLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Original
+        ///Gray scale
+        ///Sepia
+        ///Polaroid
+        ///Invert.
+        /// </summary>
+        internal static string AdjustImagesDialog_styleBox_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_styleBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resize and Adjust Image.
+        /// </summary>
+        internal static string AdjustImagesDialog_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View size.
+        /// </summary>
+        internal static string AdjustImagesDialog_viewSizeLabel_Text {
+            get {
+                return ResourceManager.GetString("AdjustImagesDialog_viewSizeLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Define command aliases for use in the Command Palette..
+        /// </summary>
+        internal static string AliasSheet_introBox_Text {
+            get {
+                return ResourceManager.GetString("AliasSheet_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Define command aliases for use in the Command Palette.
+        /// </summary>
+        internal static string AliasSheet_Text {
+            get {
+                return ResourceManager.GetString("AliasSheet.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Command Aliases.
+        /// </summary>
+        internal static string AliasSheet_Title {
+            get {
+                return ResourceManager.GetString("AliasSheet_Title", resourceCulture);
             }
         }
         
@@ -246,6 +402,15 @@ namespace River.OneMoreAddIn.Properties {
         internal static string AnalyzeCommand_CacheSummary {
             get {
                 return ResourceManager.GetString("AnalyzeCommand_CacheSummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} est.
+        /// </summary>
+        internal static string AnalyzeCommand_est {
+            get {
+                return ResourceManager.GetString("AnalyzeCommand_est", resourceCulture);
             }
         }
         
@@ -340,6 +505,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} total.
+        /// </summary>
+        internal static string AnalyzeCommand_total {
+            get {
+                return ResourceManager.GetString("AnalyzeCommand_total", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} total images.
+        /// </summary>
+        internal static string AnalyzeCommand_totalImages {
+            get {
+                return ResourceManager.GetString("AnalyzeCommand_totalImages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Include page details for all sections in this notebook.
         /// </summary>
         internal static string AnalyzeDialog_allDetailsBox_Text {
@@ -394,17 +577,25 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Report may take minutes.
         /// </summary>
-        internal static System.Drawing.Bitmap Architecture {
+        internal static string AnalyzeDialog_warningLabel_Text {
             get {
-                object obj = ResourceManager.GetObject("Architecture", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("AnalyzeDialog_warningLabel.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} pages archive to {1}.
+        ///   Looks up a localized string similar to Move the text cursor into a table cell.
+        /// </summary>
+        internal static string ApplyTableTheme_SelectTable {
+            get {
+                return ResourceManager.GetString("ApplyTableTheme_SelectTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} of {1} pages archived to {2}.
         /// </summary>
         internal static string ArchiveCommand_archived {
             get {
@@ -445,6 +636,15 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ArchiveCommand_OpenFileTitle {
             get {
                 return ResourceManager.GetString("ArchiveCommand_OpenFileTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No containers found on this page.
+        /// </summary>
+        internal static string ArrangeContainersCommand_noContainers {
+            get {
+                return ResourceManager.GetString("ArrangeContainersCommand_noContainers", resourceCulture);
             }
         }
         
@@ -494,12 +694,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to other commands.
         /// </summary>
-        internal static System.Drawing.Bitmap Automobile {
+        internal static string AutoComplete_otherCommands {
             get {
-                object obj = ResourceManager.GetObject("Automobile", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("AutoComplete_otherCommands", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to recently used.
+        /// </summary>
+        internal static string AutoComplete_recentlyUsed {
+            get {
+                return ResourceManager.GetString("AutoComplete_recentlyUsed", resourceCulture);
             }
         }
         
@@ -567,25 +775,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Bold {
-            get {
-                object obj = ResourceManager.GetObject("Bold", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Spacing.
-        /// </summary>
-        internal static string BreakingDialog_groupBox_Text {
-            get {
-                return ResourceManager.GetString("BreakingDialog_groupBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to One space between sentences.
         /// </summary>
         internal static string BreakingDialog_oneButton_Text {
@@ -613,213 +802,137 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to The countif function requires two parameters.
         /// </summary>
-        internal static System.Drawing.Bitmap Bullet {
+        internal static string Calculator_ErrInvalidCountifParams {
             get {
-                object obj = ResourceManager.GetObject("Bullet", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("Calculator_ErrInvalidCountifParams", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Closing parenthesis expected.
+        ///   Looks up a localized string similar to The {0} function must have two parameters.
         /// </summary>
-        internal static string Calculator_ErrClosingParenExpected {
+        internal static string Calculator_ErrInvalidFnParamCount {
             get {
-                return ResourceManager.GetString("Calculator_ErrClosingParenExpected", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrInvalidFnParamCount", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cell range must be within one column or within one row.
+        ///   Looks up a localized string similar to Parameter {0} is not of type {1}.
         /// </summary>
-        internal static string Calculator_ErrInvalidCellRange {
+        internal static string Calculator_ErrInvalidFnParamType {
             get {
-                return ResourceManager.GetString("Calculator_ErrInvalidCellRange", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrInvalidFnParamType", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid operand.
+        ///   Looks up a localized string similar to Expected {0} parameters, only given {1}.
         /// </summary>
-        internal static string Calculator_ErrInvalidOperand {
+        internal static string Calculator_ErrInvalidParamCount {
             get {
-                return ResourceManager.GetString("Calculator_ErrInvalidOperand", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrInvalidParamCount", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Operand contains multiple decimal points.
+        ///   Looks up a localized string similar to Invalid parameter at cell {0}.
         /// </summary>
-        internal static string Calculator_ErrMultipleDecimalPoints {
+        internal static string Calculator_ErrInvalidParameter {
             get {
-                return ResourceManager.GetString("Calculator_ErrMultipleDecimalPoints", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrInvalidParameter", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Operand expected.
+        ///   Looks up a localized string similar to Invalid cell range &quot;{0}&quot;.
         /// </summary>
-        internal static string Calculator_ErrOperandExpected {
+        internal static string Calculator_ErrInvalidRange {
             get {
-                return ResourceManager.GetString("Calculator_ErrOperandExpected", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrInvalidRange", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Operator expected.
+        ///   Looks up a localized string similar to The {0} function requires the col and row variables.
         /// </summary>
-        internal static string Calculator_ErrOperatorExpected {
+        internal static string Calculator_ErrMissingRowColVars {
             get {
-                return ResourceManager.GetString("Calculator_ErrOperatorExpected", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrMissingRowColVars", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Undefined function &quot;{0}&quot;.
+        ///   Looks up a localized string similar to No closing parenthesis found to match token at {0}.
         /// </summary>
-        internal static string Calculator_ErrUndefinedFunction {
+        internal static string Calculator_ErrNoClosingParenthesis {
             get {
-                return ResourceManager.GetString("Calculator_ErrUndefinedFunction", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrNoClosingParenthesis", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Undefined symbol &quot;{0}&quot;.
+        ///   Looks up a localized string similar to Undefined cell reference &quot;{0}&quot;.
         /// </summary>
-        internal static string Calculator_ErrUndefinedSymbol {
+        internal static string Calculator_ErrUndefinedCellRef {
             get {
-                return ResourceManager.GetString("Calculator_ErrUndefinedSymbol", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrUndefinedCellRef", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unexpected character encountered &apos;{0}&apos;.
+        ///   Looks up a localized string similar to Undefined operator &quot;{0}&quot;.
         /// </summary>
-        internal static string Calculator_ErrUnexpectedCharacter {
+        internal static string Calculator_ErrUndefinedOperator {
             get {
-                return ResourceManager.GetString("Calculator_ErrUnexpectedCharacter", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrUndefinedOperator", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Closing parenthesis without matching open parenthesis.
+        ///   Looks up a localized string similar to Undefined variable &quot;{0}&quot;.
         /// </summary>
-        internal static string Calculator_ErrUnmatchedClosingParen {
+        internal static string Calculator_ErrUndefinedVariable {
             get {
-                return ResourceManager.GetString("Calculator_ErrUnmatchedClosingParen", resourceCulture);
+                return ResourceManager.GetString("Calculator_ErrUndefinedVariable", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wrong number of function parameters.
+        ///   Looks up a localized string similar to Checking {0} URLs.
         /// </summary>
-        internal static string Calculator_ErrWrongParamCount {
+        internal static string CheckUrlsCommand_checkingMsg {
             get {
-                return ResourceManager.GetString("Calculator_ErrWrongParamCount", resourceCulture);
+                return ResourceManager.GetString("CheckUrlsCommand_checkingMsg", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Found {0} invalid URLs on this page.
         /// </summary>
-        internal static System.Drawing.Bitmap Calendar {
+        internal static string CheckUrlsCommand_invaldiMsg {
             get {
-                object obj = ResourceManager.GetObject("Calendar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("CheckUrlsCommand_invaldiMsg", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Mapping {0} page references.
         /// </summary>
-        internal static System.Drawing.Bitmap Camera {
+        internal static string CheckUrlsCommand_mappingMsg {
             get {
-                object obj = ResourceManager.GetObject("Camera", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("CheckUrlsCommand_mappingMsg", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apply style theme to this page.
+        ///   Looks up a localized string similar to Cleaned up {0} orphaned reminders.
         /// </summary>
-        internal static string ChangePageColorDialog_applyBox {
+        internal static string CleanRemindersCommand_count {
             get {
-                return ResourceManager.GetString("ChangePageColorDialog_applyBox", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Choose a custom color.
-        /// </summary>
-        internal static string ChangePageColorDialog_colorLink_Text {
-            get {
-                return ResourceManager.GetString("ChangePageColorDialog_colorLink.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Color and theme may not have enough contrast.
-        /// </summary>
-        internal static string ChangePageColorDialog_Contrast {
-            get {
-                return ResourceManager.GetString("ChangePageColorDialog_Contrast", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Current Theme:.
-        /// </summary>
-        internal static string ChangePageColorDialog_currentLabel {
-            get {
-                return ResourceManager.GetString("ChangePageColorDialog_currentLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to After choosing a page color, load one of the predefined styles or customize your own styles so all content has enough contrast to be visible..
-        /// </summary>
-        internal static string ChangePageColorDialog_introLabel_Text {
-            get {
-                return ResourceManager.GetString("ChangePageColorDialog_introLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Load a style theme.
-        /// </summary>
-        internal static string ChangePageColorDialog_loadLink {
-            get {
-                return ResourceManager.GetString("ChangePageColorDialog_loadLink", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Change Page Theme.
-        /// </summary>
-        internal static string ChangePageColorDialog_Text {
-            get {
-                return ResourceManager.GetString("ChangePageColorDialog.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Optionally, load one of the predefined style themes or customize your own theme so all content has enough contrast to be visible..
-        /// </summary>
-        internal static string ChangePageColorDialog_themeIntroLabel {
-            get {
-                return ResourceManager.GetString("ChangePageColorDialog_themeIntroLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Circle {
-            get {
-                object obj = ResourceManager.GetObject("Circle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("CleanRemindersCommand_count", resourceCulture);
             }
         }
         
@@ -842,20 +955,155 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It&apos;s all good.
-        /// </summary>
-        internal static string ClearLog_NoneTitle {
-            get {
-                return ResourceManager.GetString("ClearLog_NoneTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Confirm.
         /// </summary>
         internal static string ClearLog_Title {
             get {
                 return ResourceManager.GetString("ClearLog_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot copy at this time. The clipboard is locked..
+        /// </summary>
+        internal static string Clipboard_locked {
+            get {
+                return ResourceManager.GetString("Clipboard_locked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unable to restore clipboard state.
+        /// </summary>
+        internal static string Clipboard_norestore {
+            get {
+                return ResourceManager.GetString("Clipboard_norestore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Language.
+        /// </summary>
+        internal static string ColorizeDialog_Title {
+            get {
+                return ResourceManager.GetString("ColorizeDialog_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Always apply the following fonts when colorizing code.
+        /// </summary>
+        internal static string ColorizerSheet_applyBox_Text {
+            get {
+                return ResourceManager.GetString("ColorizerSheet_applyBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled Languages.
+        /// </summary>
+        internal static string ColorizerSheet_enabledLabel_Text {
+            get {
+                return ResourceManager.GetString("ColorizerSheet_enabledLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show only fixed-width fonts.
+        /// </summary>
+        internal static string ColorizerSheet_fixedBox_Text {
+            get {
+                return ResourceManager.GetString("ColorizerSheet_fixedBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Secondary.
+        /// </summary>
+        internal static string ColorizerSheet_font2Label_Text {
+            get {
+                return ResourceManager.GetString("ColorizerSheet_font2Label.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Primary.
+        /// </summary>
+        internal static string ColorizerSheet_fontLabel_Text {
+            get {
+                return ResourceManager.GetString("ColorizerSheet_fontLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customize the behavior of the Colorize command. Secondary font applies when collapsing PlantUML.
+        /// </summary>
+        internal static string ColorizerSheet_introBox_Text {
+            get {
+                return ResourceManager.GetString("ColorizerSheet_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colorizer.
+        /// </summary>
+        internal static string ColorizerSheet_Title {
+            get {
+                return ResourceManager.GetString("ColorizerSheet_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (click to change).
+        /// </summary>
+        internal static string ColorsSheet_clickLabel_Text {
+            get {
+                return ResourceManager.GetString("ColorsSheet_clickLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customize the default style for horizontal line snippets and task marked by the Strike-Through Completed To Do Tags command.
+        /// </summary>
+        internal static string ColorsSheet_introBox_Text {
+            get {
+                return ResourceManager.GetString("ColorsSheet_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Horizontal Lines.
+        /// </summary>
+        internal static string ColorsSheet_linesGroupBox_Text {
+            get {
+                return ResourceManager.GetString("ColorsSheet_linesGroupBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply this color when using the Strikethrough Completed To Do Tags command.
+        /// </summary>
+        internal static string ColorsSheet_strikeBox_Text {
+            get {
+                return ResourceManager.GetString("ColorsSheet_strikeBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Strikethrough To Do Tags.
+        /// </summary>
+        internal static string ColorsSheet_strikeGroupBox_Text {
+            get {
+                return ResourceManager.GetString("ColorsSheet_strikeGroupBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colors.
+        /// </summary>
+        internal static string ColorsSheet_Title {
+            get {
+                return ResourceManager.GetString("ColorsSheet_Title", resourceCulture);
             }
         }
         
@@ -878,7 +1126,52 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose commands to display in the Page context menu. Menu items include all commands in that menu. Restart OneNote to see changes..
+        ///   Looks up a localized string similar to Clear recent command history?.
+        /// </summary>
+        internal static string CommandPalette_clear {
+            get {
+                return ResourceManager.GetString("CommandPalette_clear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OneMore Command Palette.
+        /// </summary>
+        internal static string CommandPalette_Title {
+            get {
+                return ResourceManager.GetString("CommandPalette_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unrecognized command.
+        /// </summary>
+        internal static string CommandPalette_unrecognized {
+            get {
+                return ResourceManager.GetString("CommandPalette_unrecognized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear recent commands.
+        /// </summary>
+        internal static string CommandPaletteDialog_clearLink_Text {
+            get {
+                return ResourceManager.GetString("CommandPaletteDialog_clearLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type a command and press Enter or click and item from the list.
+        /// </summary>
+        internal static string CommandPaletteDialog_introLabel_Text {
+            get {
+                return ResourceManager.GetString("CommandPaletteDialog_introLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose commands to display in the Page context menu. Menu items include all commands in that menu. Restart OneNote to see changes. If you choose one of the &quot;menu&quot; options such as &quot;Edit Menu&quot; then that will be added as a fly-out menu and include all Edit Menu items. But if you choose one of the sub-items, such as &quot;To lowercase&quot; then that item will be added as a top-level context menu item. If you happen to select both then both will be shown, possibly duplicating items..
         /// </summary>
         internal static string ContextMenuSheet_introBox_Text {
             get {
@@ -887,430 +1180,16 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ... Blue Status.
+        ///   Looks up a localized string similar to {0} Menu.
         /// </summary>
-        internal static string ContextMenuSheet_ribBlueStatusButton {
+        internal static string ContextMenuSheet_menu {
             get {
-                return ResourceManager.GetString("ContextMenuSheet_ribBlueStatusButton", resourceCulture);
+                return ResourceManager.GetString("ContextMenuSheet_menu", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ... Text Box.
-        /// </summary>
-        internal static string ContextMenuSheet_ribBoxButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribBoxButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Change Sentence Spacing.
-        /// </summary>
-        internal static string ContextMenuSheet_ribBreakingButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribBreakingButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Calendar.
-        /// </summary>
-        internal static string ContextMenuSheet_ribCalendarButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribCalendarButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Clean Menu.
-        /// </summary>
-        internal static string ContextMenuSheet_ribCleanMenu {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribCleanMenu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Code Block.
-        /// </summary>
-        internal static string ContextMenuSheet_ribCodeBlockButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribCodeBlockButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Collapse Outlining.
-        /// </summary>
-        internal static string ContextMenuSheet_ribCollapseContentButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribCollapseContentButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Colorize.
-        /// </summary>
-        internal static string ContextMenuSheet_ribColorizeMenu {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribColorizeMenu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Complete Reminder.
-        /// </summary>
-        internal static string ContextMenuSheet_ribCompleteReminderButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribCompleteReminderButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Decrease Text Size.
-        /// </summary>
-        internal static string ContextMenuSheet_ribDecreaseFontSizeButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribDecreaseFontSizeButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Delete Reminder.
-        /// </summary>
-        internal static string ContextMenuSheet_ribDeleteReminderButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribDeleteReminderButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Edit Menu.
-        /// </summary>
-        internal static string ContextMenuSheet_ribEditMenu {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribEditMenu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Expand/Collapse.
-        /// </summary>
-        internal static string ContextMenuSheet_ribExpandButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribExpandButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Expand Outlining.
-        /// </summary>
-        internal static string ContextMenuSheet_ribExpandContentButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribExpandContentButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Add Footnote.
-        /// </summary>
-        internal static string ContextMenuSheet_ribFootnoteButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribFootnoteButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Gray Status.
-        /// </summary>
-        internal static string ContextMenuSheet_ribGrayStatusButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribGrayStatusButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Green Status.
-        /// </summary>
-        internal static string ContextMenuSheet_ribGreenStatusButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribGreenStatusButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Rotating Highlighter.
-        /// </summary>
-        internal static string ContextMenuSheet_ribHighlightButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribHighlightButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Increase Text Size.
-        /// </summary>
-        internal static string ContextMenuSheet_ribIncreaseFontSizeButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribIncreaseFontSizeButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Info Block.
-        /// </summary>
-        internal static string ContextMenuSheet_ribInfoBlockButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribInfoBlockButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Sortable Date.
-        /// </summary>
-        internal static string ContextMenuSheet_ribInsertDateButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribInsertDateButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Double Horizontal Line.
-        /// </summary>
-        internal static string ContextMenuSheet_ribInsertDoubleLineButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribInsertDoubleLineButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Horizontal Line.
-        /// </summary>
-        internal static string ContextMenuSheet_ribInsertSingleLineButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribInsertSingleLineButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Join Paragraph.
-        /// </summary>
-        internal static string ContextMenuSheet_ribJoinParagraphButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribJoinParagraphButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... To lowercase.
-        /// </summary>
-        internal static string ContextMenuSheet_ribLowercaseButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribLowercaseButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Disable Spell Check.
-        /// </summary>
-        internal static string ContextMenuSheet_ribNoSpellCheckButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribNoSpellCheckButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Paste Rich Text.
-        /// </summary>
-        internal static string ContextMenuSheet_ribPasteRtfButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribPasteRtfButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Proofing Language.
-        /// </summary>
-        internal static string ContextMenuSheet_ribProofingMenu {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribProofingMenu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Red Status.
-        /// </summary>
-        internal static string ContextMenuSheet_ribRedStatusButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribRedStatusButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Add or Update Reminders.
-        /// </summary>
-        internal static string ContextMenuSheet_ribRemindButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribRemindButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Reminders.
-        /// </summary>
-        internal static string ContextMenuSheet_ribRemindersMenu {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribRemindersMenu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Remove Author Information.
-        /// </summary>
-        internal static string ContextMenuSheet_ribRemoveAuthorsButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribRemoveAuthorsButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Remove Pasted Citations.
-        /// </summary>
-        internal static string ContextMenuSheet_ribRemoveCitationsButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribRemoveCitationsButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Remove Empty Paragraphs and Headings.
-        /// </summary>
-        internal static string ContextMenuSheet_ribRemoveEmptyButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribRemoveEmptyButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Remove Paragraph Spacing.
-        /// </summary>
-        internal static string ContextMenuSheet_ribRemoveSpacingButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribRemoveSpacingButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search and Replace.
-        /// </summary>
-        internal static string ContextMenuSheet_ribReplaceButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribReplaceButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Restore Collapsed Outline.
-        /// </summary>
-        internal static string ContextMenuSheet_ribRestoreCollapsedButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribRestoreCollapsedButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Save Collapsed Outline.
-        /// </summary>
-        internal static string ContextMenuSheet_ribSaveCollapsedButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribSaveCollapsedButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Snippets Menu.
-        /// </summary>
-        internal static string ContextMenuSheet_ribSnippetsMenu {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribSnippetsMenu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Enable Spell Check.
-        /// </summary>
-        internal static string ContextMenuSheet_ribSpellCheckButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribSpellCheckButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... To Title Case.
-        /// </summary>
-        internal static string ContextMenuSheet_ribTitlecaseButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribTitlecaseButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Table of Contents.
-        /// </summary>
-        internal static string ContextMenuSheet_ribTocButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribTocButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Trim Whitespace.
-        /// </summary>
-        internal static string ContextMenuSheet_ribTrimButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribTrimButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... To UPPERCASE.
-        /// </summary>
-        internal static string ContextMenuSheet_ribUppercaseButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribUppercaseButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Warning Block.
-        /// </summary>
-        internal static string ContextMenuSheet_ribWarnBlockButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribWarnBlockButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Word Count.
-        /// </summary>
-        internal static string ContextMenuSheet_ribWordCountButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribWordCountButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ... Yellow Status.
-        /// </summary>
-        internal static string ContextMenuSheet_ribYellowStatusButton {
-            get {
-                return ResourceManager.GetString("ContextMenuSheet_ribYellowStatusButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Context Menu Options.
+        ///   Looks up a localized string similar to Context Menu.
         /// </summary>
         internal static string ContextMenuSheet_Title {
             get {
@@ -1319,12 +1198,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Compress {0} images, saving {1} bytes.
         /// </summary>
-        internal static System.Drawing.Bitmap Copy {
+        internal static string ConvertImagesCommand_Converted {
             get {
-                object obj = ResourceManager.GetObject("Copy", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("ConvertImagesCommand_Converted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Found no images to compress.
+        /// </summary>
+        internal static string ConvertImagesCommand_NoImages {
+            get {
+                return ResourceManager.GetString("ConvertImagesCommand_NoImages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copied markdown.
+        /// </summary>
+        internal static string CopyAsMarkdownCommand_copied {
+            get {
+                return ResourceManager.GetString("CopyAsMarkdownCommand_copied", resourceCulture);
             }
         }
         
@@ -1334,6 +1230,87 @@ namespace River.OneMoreAddIn.Properties {
         internal static string CopyFolderCommand_InvalidTarget {
             get {
                 return ResourceManager.GetString("CopyFolderCommand_InvalidTarget", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No hyperlinks found in range.
+        /// </summary>
+        internal static string CrawlWebCommand_NoHyperlinks {
+            get {
+                return ResourceManager.GetString("CrawlWebCommand_NoHyperlinks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select links to import as sub-pages. These will be relinked to from this page..
+        /// </summary>
+        internal static string CrawlWebPageDialog_introBox_Text {
+            get {
+                return ResourceManager.GetString("CrawlWebPageDialog_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rewire parent links to sub-pages.
+        /// </summary>
+        internal static string CrawlWebPageDialog_rewireBox_Text {
+            get {
+                return ResourceManager.GetString("CrawlWebPageDialog_rewireBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select all.
+        /// </summary>
+        internal static string CrawlWebPageDialog_selectLabel_Text {
+            get {
+                return ResourceManager.GetString("CrawlWebPageDialog_selectLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import Web Sub-pages.
+        /// </summary>
+        internal static string CrawlWebPageDialog_Text {
+            get {
+                return ResourceManager.GetString("CrawlWebPageDialog_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select none.
+        /// </summary>
+        internal static string CrawlWebPageDialog_unselectLabel_Text {
+            get {
+                return ResourceManager.GetString("CrawlWebPageDialog_unselectLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Text columns to sub-page titles.
+        /// </summary>
+        internal static string CrawlWebPageDialog_useTextBox_Text {
+            get {
+                return ResourceManager.GetString("CrawlWebPageDialog_useTextBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Would you like to create {0} pages?.
+        /// </summary>
+        internal static string CreatePagesCommand_CreatePages {
+            get {
+                return ResourceManager.GetString("CreatePagesCommand_CreatePages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A name list was not found on the page.
+        /// </summary>
+        internal static string CreatePagesCommand_NoNamesFound {
+            get {
+                return ResourceManager.GetString("CreatePagesCommand_NoNamesFound", resourceCulture);
             }
         }
         
@@ -1374,20 +1351,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No selection.
+        ///   Looks up a localized string similar to This image is from a printout. If it is cropped, it will no longer be associated with that original file. Do you want to continue cropping?.
         /// </summary>
-        internal static string CropImageDialog_noSelection {
+        internal static string CropImageDialog_printout {
             get {
-                return ResourceManager.GetString("CropImageDialog_noSelection", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Select All.
-        /// </summary>
-        internal static string CropImageDialog_selectButton_Text {
-            get {
-                return ResourceManager.GetString("CropImageDialog_selectButton.Text", resourceCulture);
+                return ResourceManager.GetString("CropImageDialog_printout", resourceCulture);
             }
         }
         
@@ -1397,16 +1365,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string CropImageDialog_Text {
             get {
                 return ResourceManager.GetString("CropImageDialog.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Cross {
-            get {
-                object obj = ResourceManager.GetObject("Cross", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -1492,30 +1450,97 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CustomStyles.xml.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string CustomStylesFilename {
+        internal static System.Drawing.Bitmap CustomStyles {
             get {
-                return ResourceManager.GetString("CustomStylesFilename", resourceCulture);
+                object obj = ResourceManager.GetObject("CustomStyles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cyclist {
+        internal static System.Drawing.Bitmap DarkCustomStyles {
             get {
-                object obj = ResourceManager.GetObject("Cyclist", resourceCulture);
+                object obj = ResourceManager.GetObject("DarkCustomStyles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkFavorites {
+            get {
+                object obj = ResourceManager.GetObject("DarkFavorites", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkSnippets {
+            get {
+                object obj = ResourceManager.GetObject("DarkSnippets", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DarkTableStyles {
+            get {
+                object obj = ResourceManager.GetObject("DarkTableStyles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;DarkMode&quot;: true,
+        ///  &quot;Colors&quot;: {
+        ///    &quot;BackColor&quot;: &quot;#292929&quot;,
+        ///    &quot;ForeColor&quot;: &quot;#E6E6E6&quot;,
+        ///    &quot;Border&quot;: &quot;DarkOrchid&quot;,
+        ///    &quot;IconColor&quot;: &quot;MediumOrchid&quot;,
+        ///    &quot;ButtonBack&quot;: &quot;#323232&quot;,
+        ///    &quot;ButtonFore&quot;: &quot;#E6E6E6&quot;,
+        ///    &quot;ButtonDisabled&quot;: &quot;Gray&quot;,
+        ///    &quot;ButtonBorder&quot;: &quot;#464646&quot;,
+        ///    &quot;ButtonHotBack&quot;: &quot;#505050&quot;,
+        ///    &quot;ButtonHotBorder&quot;: &quot;Gray&quot;,
+        ///    &quot;ButtonPressBorder&quot;: &quot;DarkOrchid&quot;,
+        ///
+        ///    &quot;ActiveBorder&quot;: &quot;#7F7F7F&quot;,
+        ///    &quot;ActiveCaption&quot;: &quot;#C980EE&quot;,
+        ///    &quot;ActiveCaptionText&quot;: &quot;#000000&quot;,
+        ///    &quot;AppWorkspace&quot;:  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DarkTheme {
+            get {
+                return ResourceManager.GetString("DarkTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OneMore.db.
+        /// </summary>
+        internal static string DatabaseFilename {
+            get {
+                return ResourceManager.GetString("DatabaseFilename", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-        ///&lt;Theme name=&quot;Orange&quot; dark=&quot;false&quot;&gt;
+        ///&lt;Theme key=&quot;Orange&quot; name=&quot;Orange&quot; color=&quot;automatic&quot; setColor=&quot;False&quot; dark=&quot;False&quot; isPredefined=&quot;True&quot;&gt;
         ///  &lt;Style index=&quot;0&quot; name=&quot;Heading 1&quot; font=&quot;Calibri Light&quot; fontColor=&quot;Black&quot; fontSize=&quot;20.0&quot; spaceBefore=&quot;14.0&quot; spaceAfter=&quot;0.0&quot; applyColors=&quot;true&quot; styleType=&quot;Heading&quot; /&gt;
         ///  &lt;Style index=&quot;1&quot; name=&quot;Heading 2&quot; font=&quot;Calibri Light&quot; fontColor=&quot;#E67832&quot; fontSize=&quot;18.0&quot; spaceBefore=&quot;14.0&quot; spaceAfter=&quot;0.0&quot; applyColors=&quot;true&quot; styleType=&quot;Heading&quot; /&gt;
-        ///  &lt;Style index=&quot;2&quot; name=&quot;Heading 3&quot; font=&quot;Calibri Light&quot; fontColor=&quot;#823D0A&quot; fontSize=&quot;16.0&quot; s [rest of string was truncated]&quot;;.
+        ///  &lt;Style index=&quot;2&quot; name=&quot;H [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DefaultStyles {
             get {
@@ -1524,12 +1549,33 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;Name&quot;: &quot;White-Purple Rows&quot;,
+        ///    &quot;FirstRowStripe&quot;: &quot;Transparent&quot;,
+        ///    &quot;SecondRowStripe&quot;: &quot;229, 224, 236&quot;
+        ///  },
+        ///  {
+        ///    &quot;Name&quot;: &quot;White-Blue Rows&quot;,
+        ///    &quot;FirstRowStripe&quot;: &quot;Transparent&quot;,
+        ///    &quot;SecondRowStripe&quot;: &quot;222, 235, 246&quot;
+        ///  },
+        ///  {
+        ///    &quot;Name&quot;: &quot;White-Green Rows&quot;,
+        ///    &quot;FirstRowStripe&quot;: &quot;Transparent&quot;,
+        ///    &quot;SecondRowStripe&quot;: &quot;226, 239, 217&quot;
+        ///  },
+        ///  {
+        ///    &quot;Name&quot;: &quot;White-Yellow Rows&quot;,
+        ///    &quot;FirstRowStripe&quot;: &quot;Transparent&quot;,
+        ///    &quot;SecondRowStripe&quot;: &quot;255, 242, 204&quot;
+        ///  },
+        ///  {
+        ///    &quot;Name&quot;: &quot;Wh [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static System.Drawing.Bitmap Delete {
+        internal static string DefaultTableThemes {
             get {
-                object obj = ResourceManager.GetObject("Delete", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("DefaultTableThemes", resourceCulture);
             }
         }
         
@@ -1579,6 +1625,33 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Diagram text is either invalid or cannot find connection between text and image.
+        /// </summary>
+        internal static string DiagramCommand_broken {
+            get {
+                return ResourceManager.GetString("DiagramCommand_broken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Empty selection. Select a valid block of diagram text..
+        /// </summary>
+        internal static string DiagramCommand_EmptySelection {
+            get {
+                return ResourceManager.GetString("DiagramCommand_EmptySelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://kroki.io/.
+        /// </summary>
+        internal static string DiagramCommand_Uri {
+            get {
+                return ResourceManager.GetString("DiagramCommand_Uri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reset Settings.
         /// </summary>
         internal static string DialogResetSettings_Text {
@@ -1608,6 +1681,593 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Architecture {
+            get {
+                object obj = ResourceManager.GetObject("e_Architecture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Automobile {
+            get {
+                object obj = ResourceManager.GetObject("e_Automobile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_BallotBox {
+            get {
+                object obj = ResourceManager.GetObject("e_BallotBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Bell {
+            get {
+                object obj = ResourceManager.GetObject("e_Bell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Bullet {
+            get {
+                object obj = ResourceManager.GetObject("e_Bullet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Calendar {
+            get {
+                object obj = ResourceManager.GetObject("e_Calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Camera {
+            get {
+                object obj = ResourceManager.GetObject("e_Camera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_CheckMark {
+            get {
+                object obj = ResourceManager.GetObject("e_CheckMark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Circle {
+            get {
+                object obj = ResourceManager.GetObject("e_Circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Clipboard {
+            get {
+                object obj = ResourceManager.GetObject("e_Clipboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Cloud {
+            get {
+                object obj = ResourceManager.GetObject("e_Cloud", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Copyright {
+            get {
+                object obj = ResourceManager.GetObject("e_Copyright", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Cross {
+            get {
+                object obj = ResourceManager.GetObject("e_Cross", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Cycling {
+            get {
+                object obj = ResourceManager.GetObject("e_Cycling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Delta {
+            get {
+                object obj = ResourceManager.GetObject("e_Delta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Envelope {
+            get {
+                object obj = ResourceManager.GetObject("e_Envelope", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Eyes {
+            get {
+                object obj = ResourceManager.GetObject("e_Eyes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Family {
+            get {
+                object obj = ResourceManager.GetObject("e_Family", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Financial {
+            get {
+                object obj = ResourceManager.GetObject("e_Financial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Flag {
+            get {
+                object obj = ResourceManager.GetObject("e_Flag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Folder {
+            get {
+                object obj = ResourceManager.GetObject("e_Folder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Globe {
+            get {
+                object obj = ResourceManager.GetObject("e_Globe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Hammer {
+            get {
+                object obj = ResourceManager.GetObject("e_Hammer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Heart {
+            get {
+                object obj = ResourceManager.GetObject("e_Heart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Interrobang {
+            get {
+                object obj = ResourceManager.GetObject("e_Interrobang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Journal {
+            get {
+                object obj = ResourceManager.GetObject("e_Journal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_LeftwardsArrow {
+            get {
+                object obj = ResourceManager.GetObject("e_LeftwardsArrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Lock {
+            get {
+                object obj = ResourceManager.GetObject("e_Lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Memo {
+            get {
+                object obj = ResourceManager.GetObject("e_Memo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Passwords {
+            get {
+                object obj = ResourceManager.GetObject("e_Passwords", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Pencil {
+            get {
+                object obj = ResourceManager.GetObject("e_Pencil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Pushpin {
+            get {
+                object obj = ResourceManager.GetObject("e_Pushpin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Recycle {
+            get {
+                object obj = ResourceManager.GetObject("e_Recycle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_RightwardsArrow {
+            get {
+                object obj = ResourceManager.GetObject("e_RightwardsArrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Section {
+            get {
+                object obj = ResourceManager.GetObject("e_Section", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Shazam {
+            get {
+                object obj = ResourceManager.GetObject("e_Shazam", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Smiley {
+            get {
+                object obj = ResourceManager.GetObject("e_Smiley", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Software {
+            get {
+                object obj = ResourceManager.GetObject("e_Software", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Sports {
+            get {
+                object obj = ResourceManager.GetObject("e_Sports", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_SportsEU {
+            get {
+                object obj = ResourceManager.GetObject("e_SportsEU", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Star {
+            get {
+                object obj = ResourceManager.GetObject("e_Star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Summary {
+            get {
+                object obj = ResourceManager.GetObject("e_Summary", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Tasks {
+            get {
+                object obj = ResourceManager.GetObject("e_Tasks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Tools {
+            get {
+                object obj = ResourceManager.GetObject("e_Tools", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Travel {
+            get {
+                object obj = ResourceManager.GetObject("e_Travel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Video {
+            get {
+                object obj = ResourceManager.GetObject("e_Video", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Warning {
+            get {
+                object obj = ResourceManager.GetObject("e_Warning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_Watch {
+            get {
+                object obj = ResourceManager.GetObject("e_Watch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_XMark {
+            get {
+                object obj = ResourceManager.GetObject("e_XMark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colors.
+        /// </summary>
+        internal static string EditTableThemesDialog_colorsTab_Text {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_colorsTab.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete this style?.
+        /// </summary>
+        internal static string EditTableThemesDialog_deleteStyle {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_deleteStyle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discard unsaved changes?.
+        /// </summary>
+        internal static string EditTableThemesDialog_discard {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_discard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whole Table
+        ///First Column Stripe
+        ///Second Column Stripe
+        ///First Row Stripe
+        ///Second Row Stripe
+        ///First Column
+        ///Last Column
+        ///Header Row
+        ///Total Row
+        ///Header First Cell
+        ///Header Last Cell
+        ///Total Row First Cell
+        ///Total Row Last Cell.
+        /// </summary>
+        internal static string EditTableThemesDialog_elements {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_elements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table Elements.
+        /// </summary>
+        internal static string EditTableThemesDialog_elementsGroup_Text {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_elementsGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Default Font
+        ///Header Row Font
+        ///Total Row Font
+        ///First Column Font
+        ///Last Column Font.
+        /// </summary>
+        internal static string EditTableThemesDialog_fontElements {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_fontElements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fonts.
+        /// </summary>
+        internal static string EditTableThemesDialog_fontsTab_Text {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_fontsTab.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset All.
+        /// </summary>
+        internal static string EditTableThemesDialog_resetButton_Text {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_resetButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Table Styles.
+        /// </summary>
+        internal static string EditTableThemesDialog_Text {
+            get {
+                return ResourceManager.GetString("EditTableThemesDialog_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Source page contains no content.
         /// </summary>
         internal static string EmbedSubpageCommand_NoContent {
@@ -1631,15 +2291,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string EmbedSubpageCommand_NoSource {
             get {
                 return ResourceManager.GetString("EmbedSubpageCommand_NoSource", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Refresh.
-        /// </summary>
-        internal static string EmbedSubpageCommand_Refresh {
-            get {
-                return ResourceManager.GetString("EmbedSubpageCommand_Refresh", resourceCulture);
             }
         }
         
@@ -1680,6 +2331,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ballot Box.
+        /// </summary>
+        internal static string Emoji_BallotBox {
+            get {
+                return ResourceManager.GetString("Emoji_BallotBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bell.
+        /// </summary>
+        internal static string Emoji_Bell {
+            get {
+                return ResourceManager.GetString("Emoji_Bell", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bullet.
         /// </summary>
         internal static string Emoji_Bullet {
@@ -1698,6 +2367,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Camera.
+        /// </summary>
+        internal static string Emoji_Camera {
+            get {
+                return ResourceManager.GetString("Emoji_Camera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Mark.
+        /// </summary>
+        internal static string Emoji_CheckMark {
+            get {
+                return ResourceManager.GetString("Emoji_CheckMark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Circle.
         /// </summary>
         internal static string Emoji_Circle {
@@ -1707,11 +2394,38 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clipboard.
+        /// </summary>
+        internal static string Emoji_Clipboard {
+            get {
+                return ResourceManager.GetString("Emoji_Clipboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cloud.
+        /// </summary>
+        internal static string Emoji_Cloud {
+            get {
+                return ResourceManager.GetString("Emoji_Cloud", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copyright.
+        /// </summary>
+        internal static string Emoji_Copyright {
+            get {
+                return ResourceManager.GetString("Emoji_Copyright", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cross Mark.
         /// </summary>
-        internal static string Emoji_CrossMark {
+        internal static string Emoji_Cross {
             get {
-                return ResourceManager.GetString("Emoji_CrossMark", resourceCulture);
+                return ResourceManager.GetString("Emoji_Cross", resourceCulture);
             }
         }
         
@@ -1725,11 +2439,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email.
+        ///   Looks up a localized string similar to Delta.
         /// </summary>
-        internal static string Emoji_Email {
+        internal static string Emoji_Delta {
             get {
-                return ResourceManager.GetString("Emoji_Email", resourceCulture);
+                return ResourceManager.GetString("Emoji_Delta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Envelope.
+        /// </summary>
+        internal static string Emoji_Envelope {
+            get {
+                return ResourceManager.GetString("Emoji_Envelope", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eyes.
+        /// </summary>
+        internal static string Emoji_Eyes {
+            get {
+                return ResourceManager.GetString("Emoji_Eyes", resourceCulture);
             }
         }
         
@@ -1752,11 +2484,47 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Flag.
+        /// </summary>
+        internal static string Emoji_Flag {
+            get {
+                return ResourceManager.GetString("Emoji_Flag", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Folder.
+        /// </summary>
+        internal static string Emoji_Folder {
+            get {
+                return ResourceManager.GetString("Emoji_Folder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Globe.
+        /// </summary>
+        internal static string Emoji_Globe {
+            get {
+                return ResourceManager.GetString("Emoji_Globe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hammer.
         /// </summary>
         internal static string Emoji_Hammer {
             get {
                 return ResourceManager.GetString("Emoji_Hammer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Heart.
+        /// </summary>
+        internal static string Emoji_Heart {
+            get {
+                return ResourceManager.GetString("Emoji_Heart", resourceCulture);
             }
         }
         
@@ -1770,11 +2538,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Important.
+        ///   Looks up a localized string similar to Interrobang.
         /// </summary>
-        internal static string Emoji_Important {
+        internal static string Emoji_Interrobang {
             get {
-                return ResourceManager.GetString("Emoji_Important", resourceCulture);
+                return ResourceManager.GetString("Emoji_Interrobang", resourceCulture);
             }
         }
         
@@ -1784,6 +2552,24 @@ namespace River.OneMoreAddIn.Properties {
         internal static string Emoji_Journal {
             get {
                 return ResourceManager.GetString("Emoji_Journal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leftwards Arrow.
+        /// </summary>
+        internal static string Emoji_LeftwardsArrow {
+            get {
+                return ResourceManager.GetString("Emoji_LeftwardsArrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lock.
+        /// </summary>
+        internal static string Emoji_Lock {
+            get {
+                return ResourceManager.GetString("Emoji_Lock", resourceCulture);
             }
         }
         
@@ -1824,6 +2610,33 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Recycle.
+        /// </summary>
+        internal static string Emoji_Recycle {
+            get {
+                return ResourceManager.GetString("Emoji_Recycle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rightwards Arrow.
+        /// </summary>
+        internal static string Emoji_RightwardsArrow {
+            get {
+                return ResourceManager.GetString("Emoji_RightwardsArrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Section.
+        /// </summary>
+        internal static string Emoji_Section {
+            get {
+                return ResourceManager.GetString("Emoji_Section", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shazam!.
         /// </summary>
         internal static string Emoji_Shazam {
@@ -1860,6 +2673,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sports EU.
+        /// </summary>
+        internal static string Emoji_SportsEU {
+            get {
+                return ResourceManager.GetString("Emoji_SportsEU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Star.
         /// </summary>
         internal static string Emoji_Star {
@@ -1878,11 +2700,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tasks.
+        ///   Looks up a localized string similar to Task.
         /// </summary>
         internal static string Emoji_Tasks {
             get {
                 return ResourceManager.GetString("Emoji_Tasks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tools.
+        /// </summary>
+        internal static string Emoji_Tools {
+            get {
+                return ResourceManager.GetString("Emoji_Tools", resourceCulture);
             }
         }
         
@@ -1896,6 +2727,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Video.
+        /// </summary>
+        internal static string Emoji_Video {
+            get {
+                return ResourceManager.GetString("Emoji_Video", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        internal static string Emoji_Warning {
+            get {
+                return ResourceManager.GetString("Emoji_Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Watch.
         /// </summary>
         internal static string Emoji_Watch {
@@ -1905,11 +2754,81 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to X Mark.
+        /// </summary>
+        internal static string Emoji_XMark {
+            get {
+                return ResourceManager.GetString("Emoji_XMark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select on or more emojis to insert.
+        /// </summary>
+        internal static string EmojiDialog_introLabel_Text {
+            get {
+                return ResourceManager.GetString("EmojiDialog_introLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert Emojis.
+        /// </summary>
+        internal static string EmojiDialog_Text {
+            get {
+                return ResourceManager.GetString("EmojiDialog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;glyph&quot;: &quot;📐&quot;,
+        ///    &quot;resID&quot;: &quot;e_Architecture&quot;
+        ///  },
+        ///  {
+        ///    &quot;glyph&quot;: &quot;🚗&quot;,
+        ///    &quot;resID&quot;: &quot;e_Automobile&quot;
+        ///  },
+        ///  {
+        ///    &quot;glyph&quot;: &quot;☐&quot;,
+        ///    &quot;resID&quot;: &quot;e_BallotBox&quot;,
+        ///    &quot;color&quot;: &quot;#5B9BD5&quot;
+        ///  },
+        ///  {
+        ///    &quot;glyph&quot;: &quot;🔔&quot;,
+        ///    &quot;resID&quot;: &quot;e_Bell&quot;
+        ///  },
+        ///  {
+        ///    &quot;glyph&quot;: &quot;●&quot;,
+        ///    &quot;resID&quot;: &quot;e_Bullet&quot;,
+        ///    &quot;color&quot;: &quot;#0070C0&quot;
+        ///  },
+        ///  {
+        ///    &quot;glyph&quot;: &quot;📆&quot;,
+        ///    &quot;resID&quot;: &quot;e_Calendar&quot;
+        ///  },
+        ///  {
+        ///    &quot;glyph&quot;: &quot;📷&quot;,
+        ///    &quot;resID&quot;: &quot;e_Camera&quot;
+        ///  },
+        ///  {
+        ///    &quot;glyph&quot;: &quot;✓&quot;,
+        ///    &quot;resID&quot;: &quot;e_CheckMark&quot;,
+        ///    [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Emojis {
+            get {
+                return ResourceManager.GetString("Emojis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Envelope {
+        internal static System.Drawing.Bitmap Equal {
             get {
-                object obj = ResourceManager.GetObject("Envelope", resourceCulture);
+                object obj = ResourceManager.GetObject("Equal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1920,6 +2839,33 @@ namespace River.OneMoreAddIn.Properties {
         internal static string Error_BodyContext {
             get {
                 return ResourceManager.GetString("Error_BodyContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Position the cursor in the body of the page without selecting a range of text.
+        /// </summary>
+        internal static string Error_CursorContext {
+            get {
+                return ResourceManager.GetString("Error_CursorContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No attachments found on page.
+        /// </summary>
+        internal static string Error_NoAttachments {
+            get {
+                return ResourceManager.GetString("Error_NoAttachments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select some content before proceeding.
+        /// </summary>
+        internal static string Error_SelectContent {
+            get {
+                return ResourceManager.GetString("Error_SelectContent", resourceCulture);
             }
         }
         
@@ -1935,9 +2881,9 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Exit {
+        internal static System.Drawing.Bitmap ExpandArrow {
             get {
-                object obj = ResourceManager.GetObject("Exit", resourceCulture);
+                object obj = ResourceManager.GetObject("ExpandArrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1961,11 +2907,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Folder:.
+        ///   Looks up a localized string similar to Embed attachments.
         /// </summary>
-        internal static string ExportDialog_folderLabel_Text {
+        internal static string ExportDialog_embeddedBox_Text {
             get {
-                return ResourceManager.GetString("ExportDialog_folderLabel.Text", resourceCulture);
+                return ResourceManager.GetString("ExportDialog_embeddedBox.Text", resourceCulture);
             }
         }
         
@@ -1980,15 +2926,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ExportDialog_formatBox_Text {
             get {
                 return ResourceManager.GetString("ExportDialog_formatBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Format:.
-        /// </summary>
-        internal static string ExportDialog_formatLabel_Text {
-            get {
-                return ResourceManager.GetString("ExportDialog_formatLabel.Text", resourceCulture);
             }
         }
         
@@ -2031,37 +2968,55 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Family {
+        internal static System.Drawing.Bitmap Favorites {
             get {
-                object obj = ResourceManager.GetObject("Family", resourceCulture);
+                object obj = ResourceManager.GetObject("Favorites", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OneNote Keyboard Shortcuts.
+        ///   Looks up a localized string similar to Page not found; it may have been renamed or moved.
         /// </summary>
-        internal static string Favorite_OneNoteKeyboardShortcuts {
+        internal static string Favorites_suspect {
             get {
-                return ResourceManager.GetString("Favorite_OneNoteKeyboardShortcuts", resourceCulture);
+                return ResourceManager.GetString("Favorites_suspect", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add current page.
+        ///   Looks up a localized string similar to Page no longer found; it may have been deleted.
         /// </summary>
-        internal static string Favorites_addButton_Label {
+        internal static string Favorites_unknown {
             get {
-                return ResourceManager.GetString("Favorites_addButton_Label", resourceCulture);
+                return ResourceManager.GetString("Favorites_unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Current Page.
+        /// </summary>
+        internal static string FavoritesDialog_addButton_Text {
+            get {
+                return ResourceManager.GetString("FavoritesDialog_addButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Favorites.
+        /// </summary>
+        internal static string FavoritesDialog_checkButton_Text {
+            get {
+                return ResourceManager.GetString("FavoritesDialog_checkButton.Text", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Manage Favorites.
         /// </summary>
-        internal static string Favorites_manageButton_Label {
+        internal static string FavoritesDialog_manageButton_Text {
             get {
-                return ResourceManager.GetString("Favorites_manageButton_Label", resourceCulture);
+                return ResourceManager.GetString("FavoritesDialog_manageButton.Text", resourceCulture);
             }
         }
         
@@ -2093,24 +3048,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
-        /// </summary>
-        internal static string FavoritesSheet_nameColumn_HeaderText {
-            get {
-                return ResourceManager.GetString("FavoritesSheet_nameColumn.HeaderText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Options.
-        /// </summary>
-        internal static string FavoritesSheet_optionsBox_Text {
-            get {
-                return ResourceManager.GetString("FavoritesSheet_optionsBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Include reference to keyboard shortcuts page.
         /// </summary>
         internal static string FavoritesSheet_shortcutsBox_Text {
@@ -2120,21 +3057,56 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Manage Favorites.
+        ///   Looks up a localized string similar to Customize PowerPoint and PDF import options.
         /// </summary>
-        internal static string FavoritesSheet_Text {
+        internal static string FileImportSheet_introBox_Text {
             get {
-                return ResourceManager.GetString("FavoritesSheet_Text", resourceCulture);
+                return ResourceManager.GetString("FileImportSheet_introBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to File Import.
         /// </summary>
-        internal static System.Drawing.Bitmap Financial {
+        internal static string FileImportSheet_Title {
             get {
-                object obj = ResourceManager.GetObject("Financial", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("FileImportSheet_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preferred import image width.
+        /// </summary>
+        internal static string FileImportSheet_widthLabel_Text {
+            get {
+                return ResourceManager.GetString("FileImportSheet_widthLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not load Quick Notes. Check the location in OneNote Options..
+        /// </summary>
+        internal static string FileQuickNotesCommand_noQuickNotes {
+            get {
+                return ResourceManager.GetString("FileQuickNotesCommand_noQuickNotes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot find target notebook. Open OneMore Settings to specify a target..
+        /// </summary>
+        internal static string FileQuickNotesCommand_noTargetNotebook {
+            get {
+                return ResourceManager.GetString("FileQuickNotesCommand_noTargetNotebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot find target section. Open OneMore Settings to specify a target..
+        /// </summary>
+        internal static string FileQuickNotesCommand_noTargetSection {
+            get {
+                return ResourceManager.GetString("FileQuickNotesCommand_noTargetSection", resourceCulture);
             }
         }
         
@@ -2204,16 +3176,6 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Flag {
-            get {
-                object obj = ResourceManager.GetObject("Flag", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap FolderClose {
             get {
                 object obj = ResourceManager.GetObject("FolderClose", resourceCulture);
@@ -2227,16 +3189,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static System.Drawing.Bitmap FolderOpen {
             get {
                 object obj = ResourceManager.GetObject("FolderOpen", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FontColor {
-            get {
-                object obj = ResourceManager.GetObject("FontColor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2280,7 +3232,8 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Number
         ///Currency
-        ///Percentage.
+        ///Percentage
+        ///Time.
         /// </summary>
         internal static string FormulaDialog_formatBox_Items {
             get {
@@ -2307,27 +3260,19 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Entered formula should apply to the first selected cell. This formula will be incremented automatically for additional selected cells.
+        ///   Looks up a localized string similar to Formula apply to the first selected cell and are incremented automatically for additional selected cells.
         ///
-        ///Functions: abs, acos, asin, atan, atan2, average, ceiling, cos, cosh, exp, floor, log, log10, max, median, min, mode, pow, range, round, sign, sin, sinh, sqrt, stdev, sum, tan, tanh, trunc, variance
+        ///Functions: abs, acos, arccos, arcsin, arctan, asin, atan, atan2, average, ceil, ceiling, cos, cosh, exp, floor, log, log10, max, median, min, mode, pow, range, rem, root, round, sign, sin, sinh, sqrt, stdev, sum, tan, tanh, trunc, truncate, and variance.
         ///
-        ///Operators: + - / * ^
+        ///Operators: + - / * ^ %
+        ///Variables: e, phi, pi, tao, tablecols, tablerows
         ///Cell reference: A1, A2, ... ZZZ999
         ///Cell range: A1:A22
-        ///Symbols: PI, E.
+        ///Relative ranges [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string FormulaDialog_helpBox_Text {
             get {
                 return ResourceManager.GetString("FormulaDialog_helpBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Help.
-        /// </summary>
-        internal static string FormulaDialog_helpButton_Text {
-            get {
-                return ResourceManager.GetString("FormulaDialog_helpButton.Text", resourceCulture);
             }
         }
         
@@ -2359,15 +3304,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OK.
-        /// </summary>
-        internal static string FormulaDialog_status_OK {
-            get {
-                return ResourceManager.GetString("FormulaDialog_status_OK", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Status:.
         /// </summary>
         internal static string FormulaDialog_statusLabel_Text {
@@ -2395,11 +3331,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enable dynamic menu context settings. Disable if you&apos;ve added OneMore commands to the Quick Access toolbar.
+        ///   Looks up a localized string similar to Enable experimental features.
         /// </summary>
-        internal static string GeneralSheet_enablersBox_Text {
+        internal static string GeneralSheet_experimentalBox_Text {
             get {
-                return ResourceManager.GetString("GeneralSheet_enablersBox.Text", resourceCulture);
+                return ResourceManager.GetString("GeneralSheet_experimentalBox.Text", resourceCulture);
             }
         }
         
@@ -2413,11 +3349,49 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Allow nonsequential name matching in Command Palettes.
+        /// </summary>
+        internal static string GeneralSheet_sequentialBox_Text {
+            get {
+                return ResourceManager.GetString("GeneralSheet_sequentialBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System
+        ///Light
+        ///Dark.
+        /// </summary>
+        internal static string GeneralSheet_themeBox_Text {
+            get {
+                return ResourceManager.GetString("GeneralSheet_themeBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string GeneralSheet_themeLabel_Text {
+            get {
+                return ResourceManager.GetString("GeneralSheet_themeLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to General Options.
         /// </summary>
         internal static string GeneralSheet_Title {
             get {
                 return ResourceManager.GetString("GeneralSheet_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable verbose logging.
+        /// </summary>
+        internal static string GeneralSheet_verboseBox_Text {
+            get {
+                return ResourceManager.GetString("GeneralSheet_verboseBox.Text", resourceCulture);
             }
         }
         
@@ -2433,10 +3407,426 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Hammer {
+        internal static System.Drawing.Bitmap Grid40 {
             get {
-                object obj = ResourceManager.GetObject("Hammer", resourceCulture);
+                object obj = ResourceManager.GetObject("Grid40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot invoke OneMore commands while there is an active recording. Please stop the recording and try again..
+        /// </summary>
+        internal static string HasActiveMedia {
+            get {
+                return ResourceManager.GetString("HasActiveMedia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tagged Pages.
+        /// </summary>
+        internal static string HashtagCommand_indexTitle {
+            get {
+                return ResourceManager.GetString("HashtagCommand_indexTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OneMore is currently creating your hashtag catalog.
+        ///
+        ///Searching for hashtags is unavailable until this is completed..
+        /// </summary>
+        internal static string HashtagCommand_scanning {
+            get {
+                return ResourceManager.GetString("HashtagCommand_scanning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your hashtag catalog is scheduled to be created on {0}. You can change this schedule from the OneMore Tray application.
+        ///
+        ///Searching for hashtags is unavailable until this is completed..
+        /// </summary>
+        internal static string HashtagCommand_waiting {
+            get {
+                return ResourceManager.GetString("HashtagCommand_waiting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jump to this paragraph; last updated {0}.
+        /// </summary>
+        internal static string HashtagContext_jumpParaTip {
+            get {
+                return ResourceManager.GetString("HashtagContext_jumpParaTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jump to this page.
+        /// </summary>
+        internal static string HashtagContext_jumpTip {
+            get {
+                return ResourceManager.GetString("HashtagContext_jumpTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to all tags.
+        /// </summary>
+        internal static string HashtagDialog_allTags {
+            get {
+                return ResourceManager.GetString("HashtagDialog_allTags", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot navigate to this page. It may have been deleted.
+        /// </summary>
+        internal static string HashtagDialog_badLink {
+            get {
+                return ResourceManager.GetString("HashtagDialog_badLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check all.
+        /// </summary>
+        internal static string HashtagDialog_checkAllLink_Text {
+            get {
+                return ResourceManager.GetString("HashtagDialog_checkAllLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide Offline Notebooks.
+        /// </summary>
+        internal static string HashtagDialog_hideOfflineMenuItem {
+            get {
+                return ResourceManager.GetString("HashtagDialog_hideOfflineMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type any part of one or more hashtags. Wildcards are implied unless a tag is ended with a period. Parenthesis and logical operators are allowed..
+        /// </summary>
+        internal static string HashtagDialog_introLabel_Text {
+            get {
+                return ResourceManager.GetString("HashtagDialog_introLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last scan: {0}, Next scan: {1}.
+        /// </summary>
+        internal static string HashtagDialog_lastScanLabel {
+            get {
+                return ResourceManager.GetString("HashtagDialog_lastScanLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No results found.
+        /// </summary>
+        internal static string HashtagDialog_noResults {
+            get {
+                return ResourceManager.GetString("HashtagDialog_noResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to recent tags.
+        /// </summary>
+        internal static string HashtagDialog_recentTags {
+            get {
+                return ResourceManager.GetString("HashtagDialog_recentTags", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan Now.
+        /// </summary>
+        internal static string HashtagDialog_scanButton_Text {
+            get {
+                return ResourceManager.GetString("HashtagDialog_scanButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New notebooks discovered. Click here to scan..
+        /// </summary>
+        internal static string HashtagDialog_scanLink_Text {
+            get {
+                return ResourceManager.GetString("HashtagDialog_scanLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule Scan.
+        /// </summary>
+        internal static string HashtagDialog_scheduleButton_Text {
+            get {
+                return ResourceManager.GetString("HashtagDialog_scheduleButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All notebooks
+        ///This notebook
+        ///This section
+        ///This page.
+        /// </summary>
+        internal static string HashtagDialog_scopeBox_Text {
+            get {
+                return ResourceManager.GetString("HashtagDialog_scopeBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Case-sensitive search.
+        /// </summary>
+        internal static string HashtagDialog_sensitiveTip {
+            get {
+                return ResourceManager.GetString("HashtagDialog_sensitiveTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Offline Notebooks.
+        /// </summary>
+        internal static string HashtagDialog_showOfflineMenuItem {
+            get {
+                return ResourceManager.GetString("HashtagDialog_showOfflineMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search Hashtags.
+        /// </summary>
+        internal static string HashtagDialog_Title {
+            get {
+                return ResourceManager.GetString("HashtagDialog.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uncheck all.
+        /// </summary>
+        internal static string HashtagDialog_uncheckAllLink_Text {
+            get {
+                return ResourceManager.GetString("HashtagDialog_uncheckAllLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add to tag bank at top of page.
+        /// </summary>
+        internal static string HashtaggerDialog_bankBox_Text {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_bankBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All hashtags.
+        /// </summary>
+        internal static string HashtaggerDialog_cloudGroup_Text {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_cloudGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Common words on this page.
+        /// </summary>
+        internal static string HashtaggerDialog_commonGroup_Text {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_commonGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide common words.
+        /// </summary>
+        internal static string HashtaggerDialog_hideCommonMenuItem {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_hideCommonMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide recently used.
+        /// </summary>
+        internal static string HashtaggerDialog_hideRecentMenuItem {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_hideRecentMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recently used tags.
+        /// </summary>
+        internal static string HashtaggerDialog_recentGroup_Text {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_recentGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show common words.
+        /// </summary>
+        internal static string HashtaggerDialog_showCommonMenuItem {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_showCommonMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show recently used.
+        /// </summary>
+        internal static string HashtaggerDialog_showRecentMenuItem {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_showRecentMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tags.
+        /// </summary>
+        internal static string HashtaggerDialog_tagsLabel_Text {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog_tagsLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hashtags.
+        /// </summary>
+        internal static string HashtaggerDialog_Text {
+            get {
+                return ResourceManager.GetString("HashtaggerDialog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CREATE TABLE IF NOT EXISTS hashtag_scanner (scannerID INTEGER PRIMARY KEY UNIQUE NOT NULL, version NUMERIC (12) UNIQUE NOT NULL, scanTime TEXT NOT NULL);
+        ///CREATE TABLE IF NOT EXISTS hashtag (tag TEXT NOT NULL, moreID TEXT NOT NULL, objectID TEXT NOT NULL, snippet TEXT, documentOrder INTEGER DEFAULT (0), lastModified TEXT NOT NULL, PRIMARY KEY (tag, objectID), CONSTRAINT FK_moreID FOREIGN KEY (moreID) REFERENCES hashtag_page (moreID) ON DELETE CASCADE);
+        ///CREATE TABLE IF NOT EXISTS hashtag_page (moreID PRIMAR [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HashtagsDB {
+            get {
+                return ResourceManager.GetString("HashtagsDB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable the hashtag service. This will also disable hashtag searching..
+        /// </summary>
+        internal static string HashtagSheet_disabledBox_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_disabledBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Treat HTML Hex colors and C# and C++ directives as hashtags.
+        /// </summary>
+        internal static string HashtagSheet_filterBox_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_filterBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan for hashtags every.
+        /// </summary>
+        internal static string HashtagSheet_intervalLabel_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_intervalLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customize advanced options for the Hashtag Scanner Service.
+        /// </summary>
+        internal static string HashtagSheet_introBox_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A scan is scheduled for {0}. Use the options below to change this or press Cancel to keep the current schedule..
+        /// </summary>
+        internal static string HashtagSheet_prescheduled {
+            get {
+                return ResourceManager.GetString("HashtagSheet_prescheduled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Advanced: Reset the upgrade flag.
+        /// </summary>
+        internal static string HashtagSheet_resetTooltip {
+            get {
+                return ResourceManager.GetString("HashtagSheet_resetTooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule an incremental scan of your newly added notebooks.
+        /// </summary>
+        internal static string HashtagSheet_scanNotebooks {
+            get {
+                return ResourceManager.GetString("HashtagSheet_scanNotebooks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule a rebuild of your hashtag catalog.
+        /// </summary>
+        internal static string HashtagSheet_scheduleLink_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_scheduleLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to None
+        ///Red Foreground
+        ///Yellow Background.
+        /// </summary>
+        internal static string HashtagSheet_styleBox_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_styleBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply custom style.
+        /// </summary>
+        internal static string HashtagSheet_styleLabel_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_styleLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upgrade page tags to inline hashtags.
+        /// </summary>
+        internal static string HashtagSheet_upgradeLink_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_upgradeLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This should be used after adding or removing one or more notebooks. It is recommended to schedule rebuilds after-hours, such as midnight..
+        /// </summary>
+        internal static string HashtagSheet_warningLabel_Text {
+            get {
+                return ResourceManager.GetString("HashtagSheet_warningLabel.Text", resourceCulture);
             }
         }
         
@@ -2450,7 +3840,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deep:.
+        ///   Looks up a localized string similar to Deep.
         /// </summary>
         internal static string HighlightsSheet_deepRadio_Text {
             get {
@@ -2459,7 +3849,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Faded:.
+        ///   Looks up a localized string similar to Faded.
         /// </summary>
         internal static string HighlightsSheet_fadedRadio_Text {
             get {
@@ -2477,7 +3867,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bright:.
+        ///   Looks up a localized string similar to Bright.
         /// </summary>
         internal static string HighlightsSheet_normalRadio_Text {
             get {
@@ -2488,18 +3878,108 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Themes.
         /// </summary>
-        internal static string HighlightsSheet_themeGroup_Text {
+        internal static string HighlightsSheet_themesGroup_Text {
             get {
-                return ResourceManager.GetString("HighlightsSheet_themeGroup.Text", resourceCulture);
+                return ResourceManager.GetString("HighlightsSheet_themesGroup.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rotating Highlighter Options.
+        ///   Looks up a localized string similar to Highlighter Themes.
         /// </summary>
         internal static string HighlightsSheet_Title {
             get {
                 return ResourceManager.GetString("HighlightsSheet_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image Viewer.
+        /// </summary>
+        internal static string ImagesSheet_imageBrowser {
+            get {
+                return ResourceManager.GetString("ImagesSheet_imageBrowser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to External image viewer (default if empty is mspaint).
+        /// </summary>
+        internal static string ImagesSheet_imageViewerLabel_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_imageViewerLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customize the defaults for Image commands.
+        /// </summary>
+        internal static string ImagesSheet_introBox_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert drawing after PlantUML text rather than before.
+        /// </summary>
+        internal static string ImagesSheet_plantAfterBox_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_plantAfterBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Collapse PlantUML text.
+        /// </summary>
+        internal static string ImagesSheet_plantCollapseBox_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_plantCollapseBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PlantUML Options.
+        /// </summary>
+        internal static string ImagesSheet_plantGroup_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_plantGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove PlantUML text and embed it in the image.
+        /// </summary>
+        internal static string ImagesSheet_plantRemoveBox_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_plantRemoveBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PlantUML Server Address (leave blank to use default).
+        /// </summary>
+        internal static string ImagesSheet_plantUriLabel_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_plantUriLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resize Options.
+        /// </summary>
+        internal static string ImagesSheet_resizeGroup_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_resizeGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preferred resize width.
+        /// </summary>
+        internal static string ImagesSheet_widthLabel_Text {
+            get {
+                return ResourceManager.GetString("ImagesSheet_widthLabel.Text", resourceCulture);
             }
         }
         
@@ -2531,7 +4011,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All files (*.docx;*.pptx;*.md;*.one;*.xml)|*.docx;*.doc;*.pptx;*ppt;*.md;*.one;*.xml|Word files (*.docx)|*.docx|Powerpoint files (*.pptx)|*.pptx|Markdown (*.md)|*.md|OneNote File (*.one)|*.one|OneMore Template files (*.xml)|*.xml.
+        ///   Looks up a localized string similar to All files (*.docx;*.pptx;*.pdf;*.md;*.one;*.xml)|*.docx;*.doc;*.pptx;*ppt;*.pdf;*.md;*.one;*.xml|Word files (*.docx)|*.docx|Powerpoint files (*.pptx)|*.pptx|PDF (*.pdf)|*.pdf|Markdown (*.md)|*.md|OneNote File (*.one)|*.one|OneMore Template files (*.xml)|*.xml.
         /// </summary>
         internal static string ImportDialog_OpenFileFilter {
             get {
@@ -2549,20 +4029,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Append to this page.
+        ///   Looks up a localized string similar to PDF Options.
         /// </summary>
-        internal static string ImportDialog_powerAppendButton_Text {
+        internal static string ImportDialog_pdfGroup_Text {
             get {
-                return ResourceManager.GetString("ImportDialog_powerAppendButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Create a new page.
-        /// </summary>
-        internal static string ImportDialog_powerCreateButton_Text {
-            get {
-                return ResourceManager.GetString("ImportDialog_powerCreateButton.Text", resourceCulture);
+                return ResourceManager.GetString("ImportDialog_pdfGroup.Text", resourceCulture);
             }
         }
         
@@ -2590,24 +4061,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ImportDialog_Text {
             get {
                 return ResourceManager.GetString("ImportDialog_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Append to this page.
-        /// </summary>
-        internal static string ImportDialog_wordAppendButton_Text {
-            get {
-                return ResourceManager.GetString("ImportDialog_wordAppendButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Create a new page.
-        /// </summary>
-        internal static string ImportDialog_wordCreateButton_Text {
-            get {
-                return ResourceManager.GetString("ImportDialog_wordCreateButton.Text", resourceCulture);
             }
         }
         
@@ -2747,6 +4200,45 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;info&quot;: {
+        ///    &quot;shading&quot;: &quot;#DEEBF6&quot;,
+        ///    &quot;symbol&quot;: &quot;1F6C8&quot;,
+        ///    &quot;symbolFont&quot;: &quot;Segoe UI Symbol&quot;,
+        ///    &quot;symbolSize&quot;: 22,
+        ///    &quot;symbolColor&quot;: &quot;#2E75B5&quot;,
+        ///    &quot;titlex&quot;: &quot;word_Information&quot;,
+        ///    &quot;titleColor&quot;: &quot;#333333&quot;,
+        ///    &quot;textColor&quot;: &quot;#333333&quot;
+        ///  },
+        ///  &quot;note&quot;: {
+        ///    &quot;shading&quot;: &quot;#E5E0EC&quot;,
+        ///    &quot;symbol&quot;: &quot;1F4D3&quot;,
+        ///    &quot;symbolFont&quot;: &quot;Segoe UI Symbol&quot;,
+        ///    &quot;symbolSize&quot;: 22,
+        ///    &quot;symbolColor&quot;: &quot;#5F497A&quot;,
+        ///    &quot;titlex&quot;: &quot;word_Notes&quot;,
+        ///    &quot;titleColor&quot;: &quot;#333333&quot;,
+        ///    &quot;textColor&quot;: &quot;#333333&quot;
+        ///  },
+        ///  &quot;wa [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string InfoBoxThemes {
+            get {
+                return ResourceManager.GetString("InfoBoxThemes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your code here....
+        /// </summary>
+        internal static string InsertBoxCommand_Code {
+            get {
+                return ResourceManager.GetString("InsertBoxCommand_Code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to click to change.
         /// </summary>
         internal static string InsertCalendarDialog_clickLabel_Text {
@@ -2770,15 +4262,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string InsertCalendarDialog_firstLabel_Text {
             get {
                 return ResourceManager.GetString("InsertCalendarDialog_firstLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Format.
-        /// </summary>
-        internal static string InsertCalendarDialog_formatLabel_Text {
-            get {
-                return ResourceManager.GetString("InsertCalendarDialog_formatLabel.Text", resourceCulture);
             }
         }
         
@@ -2882,24 +4365,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your code here....
-        /// </summary>
-        internal static string InsertCodeBlockCommand_Code {
-            get {
-                return ResourceManager.GetString("InsertCodeBlockCommand_Code", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your content here....
-        /// </summary>
-        internal static string InsertCodeBlockCommand_Text {
-            get {
-                return ResourceManager.GetString("InsertCodeBlockCommand_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Selected text cannot exceed {0} characters.
         /// </summary>
         internal static string InsertQRCommand_MaxLength {
@@ -2918,7 +4383,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cloud not load snippet from &quot;{0}&quot;.
+        ///   Looks up a localized string similar to Could not load snippet from &quot;{0}&quot;.
         /// </summary>
         internal static string InsertSnippets_CouldNotLoad {
             get {
@@ -2936,15 +4401,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Refresh.
-        /// </summary>
-        internal static string InsertTocCommand_Refresh {
-            get {
-                return ResourceManager.GetString("InsertTocCommand_Refresh", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Table of Contents.
         /// </summary>
         internal static string InsertTocCommand_TOC {
@@ -2954,7 +4410,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Table of Contents - Notebook {0}.
+        ///   Looks up a localized string similar to Table of Contents📓 {0}.
         /// </summary>
         internal static string InsertTocCommand_TOCNotebook {
             get {
@@ -2963,7 +4419,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Table of Contents - Section {0}.
+        ///   Looks up a localized string similar to Table of Contents § {0}.
         /// </summary>
         internal static string InsertTocCommand_TOCSections {
             get {
@@ -2981,7 +4437,36 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add page with table of sections in this notebook.
+        ///   Looks up a localized string similar to Show Levels.
+        /// </summary>
+        internal static string InsertTocDialog_levelsLabel_Text {
+            get {
+                return ResourceManager.GetString("InsertTocDialog_levelsLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to At top of page
+        ///At top of page, overlayed
+        ///At current cursor.
+        /// </summary>
+        internal static string InsertTocDialog_locationBox_Text {
+            get {
+                return ResourceManager.GetString("InsertTocDialog_locationBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert Location.
+        /// </summary>
+        internal static string InsertTocDialog_locationLabel_Text {
+            get {
+                return ResourceManager.GetString("InsertTocDialog_locationLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New page with index of sections in this notebook.
         /// </summary>
         internal static string InsertTocDialog_notebookRadio_Text {
             get {
@@ -3008,6 +4493,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Include text preview of each page.
+        /// </summary>
+        internal static string InsertTocDialog_previewBox_Text {
+            get {
+                return ResourceManager.GetString("InsertTocDialog_previewBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Right-align top of page link.
         /// </summary>
         internal static string InsertTocDialog_rightAlignBox_Text {
@@ -3017,7 +4511,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add page with table of pages in this section.
+        ///   Looks up a localized string similar to New page with index of pages in this section.
         /// </summary>
         internal static string InsertTocDialog_sectionRadio_Text {
             get {
@@ -3026,11 +4520,27 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Table of Contents.
+        ///   Looks up a localized string similar to Standard Page Title
+        ///Standard Heading 1
+        ///Standard Heading 2
+        ///Standard Heading 3
+        ///Custom Page Title
+        ///Custom Heading 1
+        ///Custom Heading 2
+        ///Custom Heading 3.
         /// </summary>
-        internal static string InsertTocDialog_Text {
+        internal static string InsertTocDialog_styleBox_Text {
             get {
-                return ResourceManager.GetString("InsertTocDialog.Text", resourceCulture);
+                return ResourceManager.GetString("InsertTocDialog_styleBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title Style.
+        /// </summary>
+        internal static string InsertTocDialog_styleLabel_Text {
+            get {
+                return ResourceManager.GetString("InsertTocDialog_styleLabel.Text", resourceCulture);
             }
         }
         
@@ -3044,12 +4554,35 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to There is a table of contents page for this notebook. You can refresh that page or create a new page.
+        ///
+        ///Do you want to refresh the existing page?.
         /// </summary>
-        internal static System.Drawing.Bitmap Italic {
+        internal static string InsertTocForNotebook_RefreshQuestion {
             get {
-                object obj = ResourceManager.GetObject("Italic", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("InsertTocForNotebook_RefreshQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There are no headings on this page. However, there is a table of contents.
+        ///
+        ///Would you like to remove the table of contents from this page?.
+        /// </summary>
+        internal static string InsertTocForPage_ClearToc {
+            get {
+                return ResourceManager.GetString("InsertTocForPage_ClearToc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There is a table of contents page for this section. You can refresh that page or create a new page.
+        ///
+        ///Do you want to refresh the existing page?.
+        /// </summary>
+        internal static string InsertTocForSection_RefreshQuestion {
+            get {
+                return ResourceManager.GetString("InsertTocForSection_RefreshQuestion", resourceCulture);
             }
         }
         
@@ -3063,12 +4596,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Manage my custom keyboard shortcuts. Select a command and press a key sequence..
         /// </summary>
-        internal static System.Drawing.Bitmap Journal {
+        internal static string KeyboardSheet_introBox_Text {
             get {
-                object obj = ResourceManager.GetObject("Journal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("KeyboardSheet_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Key Sequence.
+        /// </summary>
+        internal static string KeyboardSheet_keyColumn_HeaderText {
+            get {
+                return ResourceManager.GetString("KeyboardSheet_keyColumn.HeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset all.
+        /// </summary>
+        internal static string KeyboardSheet_resetAllButton_Text {
+            get {
+                return ResourceManager.GetString("KeyboardSheet_resetAllButton.Text", resourceCulture);
             }
         }
         
@@ -3093,47 +4643,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (click to change).
+        ///   Looks up a localized string similar to {
+        ///  &quot;DarkMode&quot;: false,
+        ///  &quot;Colors&quot;: {
+        ///    &quot;BackColor&quot;: &quot;White&quot;,
+        ///    &quot;ForeColor&quot;: &quot;Black&quot;,
+        ///    &quot;Border&quot;: &quot;#D2A1DF&quot;,
+        ///    &quot;IconColor&quot;: &quot;#80397B&quot;,
+        ///    &quot;ButtonBack&quot;: &quot;#F7EDF7&quot;,
+        ///    &quot;ButtonFore&quot;: &quot;#73356E&quot;,
+        ///    &quot;ButtonDisabled&quot;: &quot;Gray&quot;,
+        ///    &quot;ButtonBorder&quot;: &quot;#F0DAEE&quot;,
+        ///    &quot;ButtonHotBack&quot;: &quot;#F0DAEE&quot;,
+        ///    &quot;ButtonHotBorder&quot;: &quot;#9E5499&quot;,
+        ///    &quot;ButtonPressBorder&quot;: &quot;#9E5499&quot;,
+        ///
+        ///    &quot;ActiveBorder&quot;: &quot;#B4B4B4&quot;,
+        ///    &quot;ActiveCaption&quot;: &quot;#C980EE&quot;,
+        ///    &quot;ActiveCaptionText&quot;: &quot;#000000&quot;,
+        ///    &quot;AppWorkspace&quot;: &quot;#ABABAB&quot;,        /// [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string LinesSheet_clickLabel_Text {
+        internal static string LightTheme {
             get {
-                return ResourceManager.GetString("LinesSheet_clickLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Line color:.
-        /// </summary>
-        internal static string LinesSheet_colorLabel_Text {
-            get {
-                return ResourceManager.GetString("LinesSheet_colorLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Customize the default style for horiztonal line snippets.
-        /// </summary>
-        internal static string LinesSheet_introBox_Text {
-            get {
-                return ResourceManager.GetString("LinesSheet_introBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Length:.
-        /// </summary>
-        internal static string LinesSheet_lengthLabel_Text {
-            get {
-                return ResourceManager.GetString("LinesSheet_lengthLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Horizontal Line Options.
-        /// </summary>
-        internal static string LinesSheet_Title {
-            get {
-                return ResourceManager.GetString("LinesSheet_Title", resourceCulture);
+                return ResourceManager.GetString("LightTheme", resourceCulture);
             }
         }
         
@@ -3156,56 +4688,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All sections in the current notebook.
-        /// </summary>
-        internal static string LinkDialog_notebookRadio_Text {
-            get {
-                return ResourceManager.GetString("LinkDialog_notebookRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to All notebooks.
-        /// </summary>
-        internal static string LinkDialog_notebooksRadio_Text {
-            get {
-                return ResourceManager.GetString("LinkDialog_notebooksRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The current section.
-        /// </summary>
-        internal static string LinkDialog_sectionRadio_Text {
-            get {
-                return ResourceManager.GetString("LinkDialog_sectionRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Link References.
         /// </summary>
         internal static string LinkDialog_Text {
             get {
                 return ResourceManager.GetString("LinkDialog_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Include unindexed pages in query.
-        /// </summary>
-        internal static string LinkDialog_unindexedBox_Text {
-            get {
-                return ResourceManager.GetString("LinkDialog_unindexedBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Enable to search newer text that has not yet been indexed by OneNote. This may be slower..
-        /// </summary>
-        internal static string LinkDialog_unindexedBox_Tooltip {
-            get {
-                return ResourceManager.GetString("LinkDialog_unindexedBox.Tooltip", resourceCulture);
             }
         }
         
@@ -3228,6 +4715,43 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cannot load file or file is empty.
+        /// </summary>
+        internal static string LoadStyleTheme_errorLoading {
+            get {
+                return ResourceManager.GetString("LoadStyleTheme_errorLoading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Style definitions (*.xml)|*.xml|All files (*.*)|*.*.
+        /// </summary>
+        internal static string LoadStyleTheme_filter {
+            get {
+                return ResourceManager.GetString("LoadStyleTheme_filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load Styles.
+        /// </summary>
+        internal static string LoadStyleTheme_Title {
+            get {
+                return ResourceManager.GetString("LoadStyleTheme_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Locked {
+            get {
+                object obj = ResourceManager.GetObject("Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Logo {
@@ -3238,38 +4762,291 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Bold {
+            get {
+                object obj = ResourceManager.GetObject("m_Bold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Copy {
+            get {
+                object obj = ResourceManager.GetObject("m_Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Delete {
+            get {
+                object obj = ResourceManager.GetObject("m_Delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_FileOpen {
+            get {
+                object obj = ResourceManager.GetObject("m_FileOpen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_FolderClose {
+            get {
+                object obj = ResourceManager.GetObject("m_FolderClose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_FolderOpen {
+            get {
+                object obj = ResourceManager.GetObject("m_FolderOpen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_FontColor {
+            get {
+                object obj = ResourceManager.GetObject("m_FontColor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Help {
+            get {
+                object obj = ResourceManager.GetObject("m_Help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Highlighter {
+            get {
+                object obj = ResourceManager.GetObject("m_Highlighter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Italic {
+            get {
+                object obj = ResourceManager.GetObject("m_Italic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_MoveDown {
+            get {
+                object obj = ResourceManager.GetObject("m_MoveDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_MoveUp {
+            get {
+                object obj = ResourceManager.GetObject("m_MoveUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_NewStyle {
+            get {
+                object obj = ResourceManager.GetObject("m_NewStyle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Refresh {
+            get {
+                object obj = ResourceManager.GetObject("m_Refresh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Rename {
+            get {
+                object obj = ResourceManager.GetObject("m_Rename", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Reorder {
+            get {
+                object obj = ResourceManager.GetObject("m_Reorder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Reset {
+            get {
+                object obj = ResourceManager.GetObject("m_Reset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Restart {
+            get {
+                object obj = ResourceManager.GetObject("m_Restart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_SaveAs {
+            get {
+                object obj = ResourceManager.GetObject("m_SaveAs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Search {
+            get {
+                object obj = ResourceManager.GetObject("m_Search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_SearchTags {
+            get {
+                object obj = ResourceManager.GetObject("m_SearchTags", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_SelectAll {
+            get {
+                object obj = ResourceManager.GetObject("m_SelectAll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Sort {
+            get {
+                object obj = ResourceManager.GetObject("m_Sort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Stop {
+            get {
+                object obj = ResourceManager.GetObject("m_Stop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Strikethrough {
+            get {
+                object obj = ResourceManager.GetObject("m_Strikethrough", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Subscript {
+            get {
+                object obj = ResourceManager.GetObject("m_Subscript", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Superscript {
+            get {
+                object obj = ResourceManager.GetObject("m_Superscript", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_Underline {
+            get {
+                object obj = ResourceManager.GetObject("m_Underline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pages in.
         /// </summary>
         internal static string MapDialog_groupBox_Text {
             get {
                 return ResourceManager.GetString("MapDialog_groupBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to All sections in the current notebook.
-        /// </summary>
-        internal static string MapDialog_notebookRadio_Text {
-            get {
-                return ResourceManager.GetString("MapDialog_notebookRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to All notebooks.
-        /// </summary>
-        internal static string MapDialog_notebooksRadio_Text {
-            get {
-                return ResourceManager.GetString("MapDialog_notebooksRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The current section.
-        /// </summary>
-        internal static string MapDialog_sectionRadio_Text {
-            get {
-                return ResourceManager.GetString("MapDialog_sectionRadio.Text", resourceCulture);
             }
         }
         
@@ -3292,12 +5069,218 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Hide this message in the future.
         /// </summary>
-        internal static System.Drawing.Bitmap Memo {
+        internal static string MoreMessageBox_hideBox_Text {
             get {
-                object obj = ResourceManager.GetObject("Memo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("MoreMessageBox_hideBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There are no pages selected to move.
+        /// </summary>
+        internal static string MovePageCommand_noPages {
+            get {
+                return ResourceManager.GetString("MovePageCommand_noPages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name exists. Choose a different name..
+        /// </summary>
+        internal static string NameStyleDialog_errorLabel_Text {
+            get {
+                return ResourceManager.GetString("NameStyleDialog_errorLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Style Name.
+        /// </summary>
+        internal static string NameStyleDialog_nameLabel_Text {
+            get {
+                return ResourceManager.GetString("NameStyleDialog_nameLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rename Style.
+        /// </summary>
+        internal static string NameStyleDialog_RenameStyle {
+            get {
+                return ResourceManager.GetString("NameStyleDialog_RenameStyle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not available.
+        /// </summary>
+        internal static string NavigatorSheet_corrallBox_disabled {
+            get {
+                return ResourceManager.GetString("NavigatorSheet_corrallBox_disabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restrict the Navigator window to the active screen.
+        /// </summary>
+        internal static string NavigatorSheet_corrallBox_Text {
+            get {
+                return ResourceManager.GetString("NavigatorSheet_corrallBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max length of stored history.
+        /// </summary>
+        internal static string NavigatorSheet_depthLabel_Text {
+            get {
+                return ResourceManager.GetString("NavigatorSheet_depthLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable the navigation service. This will render the Navigator window inoperaable..
+        /// </summary>
+        internal static string NavigatorSheet_disabledBox_Text {
+            get {
+                return ResourceManager.GetString("NavigatorSheet_disabledBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide the My Reading List panel.
+        /// </summary>
+        internal static string NavigatorSheet_hidePinnedBox_Text {
+            get {
+                return ResourceManager.GetString("NavigatorSheet_hidePinnedBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Min read time before adding to history.
+        /// </summary>
+        internal static string NavigatorSheet_intervalLabel_Text {
+            get {
+                return ResourceManager.GetString("NavigatorSheet_intervalLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customize advanced options for the Navigator Service.
+        /// </summary>
+        internal static string NavigatorSheet_introBox_Text {
+            get {
+                return ResourceManager.GetString("NavigatorSheet_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Track Quick Notes.
+        /// </summary>
+        internal static string NavigatorSheet_quickBox_Text {
+            get {
+                return ResourceManager.GetString("NavigatorSheet_quickBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete the {0} selected records?.
+        /// </summary>
+        internal static string NavigatorWindow_confirmDelete {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_confirmDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy selected items to the clipboard.
+        /// </summary>
+        internal static string NavigatorWindow_copyTooltip {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_copyTooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete selected items from the History list.
+        /// </summary>
+        internal static string NavigatorWindow_deleteHistoryButton_Tooltip {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_deleteHistoryButton_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The navigation service is disabled. Open Settings to enable the service..
+        /// </summary>
+        internal static string NavigatorWindow_disabled {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_disabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move selected items down.
+        /// </summary>
+        internal static string NavigatorWindow_downButton_Tooltip {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_downButton_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add selected items to My Reading List.
+        /// </summary>
+        internal static string NavigatorWindow_pinButton_Tooltip {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_pinButton_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My Reading List.
+        /// </summary>
+        internal static string NavigatorWindow_pinnedHeadLabel_Text {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_pinnedHeadLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refresh headings from current page (F5).
+        /// </summary>
+        internal static string NavigatorWindow_refreshButton_Tooltip {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_refreshButton_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Navigator Window.
+        /// </summary>
+        internal static string NavigatorWindow_Text {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove selected items from My Reading List.
+        /// </summary>
+        internal static string NavigatorWindow_unpinButton_Tooltip {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_unpinButton_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move selected items up.
+        /// </summary>
+        internal static string NavigatorWindow_upButton_Tooltip {
+            get {
+                return ResourceManager.GetString("NavigatorWindow_upButton_Tooltip", resourceCulture);
             }
         }
         
@@ -3311,12 +5294,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to No unread pages found in that direction.
         /// </summary>
-        internal static System.Drawing.Bitmap NewStyle {
+        internal static string NextUnreadPageCommand_nomore {
             get {
-                object obj = ResourceManager.GetObject("NewStyle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("NextUnreadPageCommand_nomore", resourceCulture);
             }
         }
         
@@ -3341,20 +5323,21 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NotEqual {
+            get {
+                object obj = ResourceManager.GetObject("NotEqual", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Numbering page {0}.
         /// </summary>
         internal static string NumberingPage_Message {
             get {
                 return ResourceManager.GetString("NumberingPage_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Alpha-numeric.
-        /// </summary>
-        internal static string NumberPagesDialog_alphaRadio_Text {
-            get {
-                return ResourceManager.GetString("NumberPagesDialog_alphaRadio.Text", resourceCulture);
             }
         }
         
@@ -3377,29 +5360,38 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Numbering.
-        /// </summary>
-        internal static string NumberPagesDialog_numberingGroup_Text {
-            get {
-                return ResourceManager.GetString("NumberPagesDialog_numberingGroup.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Numeric.
-        /// </summary>
-        internal static string NumberPagesDialog_numRadio_Text {
-            get {
-                return ResourceManager.GetString("NumberPagesDialog_numRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Page Numbering.
         /// </summary>
         internal static string NumberPagesDialog_Text {
             get {
                 return ResourceManager.GetString("NumberPagesDialog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/stevencohn/OneMore.
+        /// </summary>
+        internal static string OneMore_GitHub {
+            get {
+                return ResourceManager.GetString("OneMore_GitHub", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://onemoreaddin.com.
+        /// </summary>
+        internal static string OneMore_Home {
+            get {
+                return ResourceManager.GetString("OneMore_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/sponsors/stevencohn.
+        /// </summary>
+        internal static string OneMore_Sponsor {
+            get {
+                return ResourceManager.GetString("OneMore_Sponsor", resourceCulture);
             }
         }
         
@@ -3441,11 +5433,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alpha-numeric.
+        ///   Looks up a localized string similar to Select one image to open.
         /// </summary>
-        internal static string OutlineDialog_alphaRadio_Text {
+        internal static string OpenImageWithCommand_selectOne {
             get {
-                return ResourceManager.GetString("OutlineDialog_alphaRadio.Text", resourceCulture);
+                return ResourceManager.GetString("OpenImageWithCommand_selectOne", resourceCulture);
             }
         }
         
@@ -3513,24 +5505,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Numbering.
-        /// </summary>
-        internal static string OutlineDialog_numberingGroup_Text {
-            get {
-                return ResourceManager.GetString("OutlineDialog_numberingGroup.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Numeric.
-        /// </summary>
-        internal static string OutlineDialog_numRadio_Text {
-            get {
-                return ResourceManager.GetString("OutlineDialog_numRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Remove tags.
         /// </summary>
         internal static string OutlineDialog_removeTagsBox_Text {
@@ -3585,35 +5559,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Low
-        ///Medium
-        ///High.
-        /// </summary>
-        internal static string OutlookTaskReport_importances {
-            get {
-                return ResourceManager.GetString("OutlookTaskReport_importances", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to % Complete.
-        /// </summary>
-        internal static string OutlookTaskReport_Percent {
-            get {
-                return ResourceManager.GetString("OutlookTaskReport_Percent", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Status.
-        /// </summary>
-        internal static string OutlookTaskReport_Status {
-            get {
-                return ResourceManager.GetString("OutlookTaskReport_Status", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Not Started
         ///In Progress
         ///Completed
@@ -3654,21 +5599,94 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Apply styles and page color.
+        /// </summary>
+        internal static string PageColorDialog_applyThemeBox_Text {
+            get {
+                return ResourceManager.GetString("PageColorDialog_applyThemeBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There may not be enough contrast between the text color and the page color.
+        /// </summary>
+        internal static string PageColorDialog_contrastTooltip {
+            get {
+                return ResourceManager.GetString("PageColorDialog_contrastTooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text may be unreadable.
+        /// </summary>
+        internal static string PageColorDialog_contrastWarning {
+            get {
+                return ResourceManager.GetString("PageColorDialog_contrastWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The current styles definition is &quot;{0}&quot;.
+        /// </summary>
+        internal static string PageColorDialog_currentThemeLabel_Text {
+            get {
+                return ResourceManager.GetString("PageColorDialog_currentThemeLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click here to change your own custom color.
+        /// </summary>
+        internal static string PageColorDialog_customLabel {
+            get {
+                return ResourceManager.GetString("PageColorDialog_customLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load different styles.
+        /// </summary>
+        internal static string PageColorDialog_loadThemeLink_Text {
+            get {
+                return ResourceManager.GetString("PageColorDialog_loadThemeLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to or choose no page color.
+        /// </summary>
+        internal static string PageColorDialog_noLabel_Text {
+            get {
+                return ResourceManager.GetString("PageColorDialog_noLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click here to select a pre-defined color.
+        /// </summary>
+        internal static string PageColorDialog_omLabel {
+            get {
+                return ResourceManager.GetString("PageColorDialog_omLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply to this page
+        ///Apply to this section
+        ///Apply to this notebook.
+        /// </summary>
+        internal static string PageColorDialog_scopeBox_Text {
+            get {
+                return ResourceManager.GetString("PageColorDialog_scopeBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Page Color.
         /// </summary>
         internal static string PageColorDialog_Text {
             get {
                 return ResourceManager.GetString("PageColorDialog.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Passwords {
-            get {
-                object obj = ResourceManager.GetObject("Passwords", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -3691,12 +5709,150 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Advanced Options.
         /// </summary>
-        internal static System.Drawing.Bitmap Pencil {
+        internal static string phrase_AdvancedOptions {
             get {
-                object obj = ResourceManager.GetObject("Pencil", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("phrase_AdvancedOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All notebooks.
+        /// </summary>
+        internal static string phrase_AllNotebooks {
+            get {
+                return ResourceManager.GetString("phrase_AllNotebooks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All sections in the current notebook.
+        /// </summary>
+        internal static string phrase_AllSectionInTheCurrentNotebook {
+            get {
+                return ResourceManager.GetString("phrase_AllSectionInTheCurrentNotebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Append to this page.
+        /// </summary>
+        internal static string phrase_AppendToThisPage {
+            get {
+                return ResourceManager.GetString("phrase_AppendToThisPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create a new page.
+        /// </summary>
+        internal static string phrase_CreateANewPage {
+            get {
+                return ResourceManager.GetString("phrase_CreateANewPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Style.
+        /// </summary>
+        internal static string phrase_NewStyle {
+            get {
+                return ResourceManager.GetString("phrase_NewStyle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Path not found.
+        /// </summary>
+        internal static string phrase_PathNotFound {
+            get {
+                return ResourceManager.GetString("phrase_PathNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to % Complete.
+        /// </summary>
+        internal static string phrase_PctComplete {
+            get {
+                return ResourceManager.GetString("phrase_PctComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Low
+        ///Medium
+        ///High.
+        /// </summary>
+        internal static string phrase_priorityOptions {
+            get {
+                return ResourceManager.GetString("phrase_priorityOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quick Note.
+        /// </summary>
+        internal static string phrase_QuickNote {
+            get {
+                return ResourceManager.GetString("phrase_QuickNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In all notebooks
+        ///In this notebook
+        ///In this section.
+        /// </summary>
+        internal static string phrase_scopeOptions {
+            get {
+                return ResourceManager.GetString("phrase_scopeOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select All.
+        /// </summary>
+        internal static string phrase_SelectAll {
+            get {
+                return ResourceManager.GetString("phrase_SelectAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select None.
+        /// </summary>
+        internal static string phrase_SelectNone {
+            get {
+                return ResourceManager.GetString("phrase_SelectNone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The current section.
+        /// </summary>
+        internal static string phrase_TheCurrentSection {
+            get {
+                return ResourceManager.GetString("phrase_TheCurrentSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your content here....
+        /// </summary>
+        internal static string phrase_YourContentHere {
+            get {
+                return ResourceManager.GetString("phrase_YourContentHere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to http://www.plantuml.com/plantuml/png/.
+        /// </summary>
+        internal static string PlantUmlCommand_PlantUrl {
+            get {
+                return ResourceManager.GetString("PlantUmlCommand_PlantUrl", resourceCulture);
             }
         }
         
@@ -3746,6 +5902,17 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trial run completed
+        ///
+        ///Cache: {0}.
+        /// </summary>
+        internal static string Plugin_trialCompleted {
+            get {
+                return ResourceManager.GetString("Plugin_trialCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Plugin did not complete successfully. See log file..
         /// </summary>
         internal static string Plugin_Unsuccessful {
@@ -3791,15 +5958,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Command.
-        /// </summary>
-        internal static string PluginDialog_cmdLabel_Text {
-            get {
-                return ResourceManager.GetString("PluginDialog_cmdLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Create a new page named.
         /// </summary>
         internal static string PluginDialog_createRadio_Text {
@@ -3818,11 +5976,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to Fail if any section is locked.
         /// </summary>
-        internal static string PluginDialog_nameLabel_Text {
+        internal static string PluginDialog_failLockRadio_Text {
             get {
-                return ResourceManager.GetString("PluginDialog_nameLabel.Text", resourceCulture);
+                return ResourceManager.GetString("PluginDialog_failLockRadio.Text", resourceCulture);
             }
         }
         
@@ -3854,11 +6012,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plugins.
+        ///   Looks up a localized string similar to Skip locked sections.
         /// </summary>
-        internal static string PluginDialog_pluginsLabel_Text {
+        internal static string PluginDialog_skipLockRadio_Text {
             get {
-                return ResourceManager.GetString("PluginDialog_pluginsLabel.Text", resourceCulture);
+                return ResourceManager.GetString("PluginDialog_skipLockRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current page
+        ///Current section and its pages
+        ///Current notebook and its sections
+        ///Current notebook and its pages
+        ///All notebooks and their pages.
+        /// </summary>
+        internal static string PluginDialog_targetBox_Text {
+            get {
+                return ResourceManager.GetString("PluginDialog_targetBox.Text", resourceCulture);
             }
         }
         
@@ -3881,6 +6052,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trial run - keep cache file and do not update OneNote.
+        /// </summary>
+        internal static string PluginDialog_trialBox_Text {
+            get {
+                return ResourceManager.GetString("PluginDialog_trialBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Update current page.
         /// </summary>
         internal static string PluginDialog_updateRadio_Text {
@@ -3890,20 +6070,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to User Arguments.
         /// </summary>
-        internal static string PluginsSheet_cancelButton_Text {
+        internal static string PluginDialog_userArgsLabel_Text {
             get {
-                return ResourceManager.GetString("PluginsSheet_cancelButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Command.
-        /// </summary>
-        internal static string PluginsSheet_cmdColumn_HeaderText {
-            get {
-                return ResourceManager.GetString("PluginsSheet_cmdColumn.HeaderText", resourceCulture);
+                return ResourceManager.GetString("PluginDialog_userArgsLabel.Text", resourceCulture);
             }
         }
         
@@ -3917,47 +6088,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
-        /// </summary>
-        internal static string PluginsSheet_deleteLabel_Text {
-            get {
-                return ResourceManager.GetString("PluginsSheet_deleteLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Manage my plugins.
         /// </summary>
-        internal static string PluginsSheet_introLabel_Text {
+        internal static string PluginsSheet_introBox_Text {
             get {
-                return ResourceManager.GetString("PluginsSheet_introLabel.Text", resourceCulture);
+                return ResourceManager.GetString("PluginsSheet_introBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to Markdown Preview.
         /// </summary>
-        internal static string PluginsSheet_nameColumn_HeaderText {
+        internal static string PreviewMarkdownCommand_Title {
             get {
-                return ResourceManager.GetString("PluginsSheet_nameColumn.HeaderText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to OK.
-        /// </summary>
-        internal static string PluginsSheet_okButton_Text {
-            get {
-                return ResourceManager.GetString("PluginsSheet_okButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Manage My Plugins.
-        /// </summary>
-        internal static string PluginsSheet_Text {
-            get {
-                return ResourceManager.GetString("PluginsSheet.Text", resourceCulture);
+                return ResourceManager.GetString("PreviewMarkdownCommand_Title", resourceCulture);
             }
         }
         
@@ -3967,24 +6111,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ProgramName {
             get {
                 return ResourceManager.GetString("ProgramName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Cancel.
-        /// </summary>
-        internal static string ProgressDialog_cancelButton_Text {
-            get {
-                return ResourceManager.GetString("ProgressDialog_cancelButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to OneMore.
-        /// </summary>
-        internal static string ProgressDialog_Text {
-            get {
-                return ResourceManager.GetString("ProgressDialog.Text", resourceCulture);
             }
         }
         
@@ -4007,8 +6133,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Could not fetch definition of word {0}
-        ///Try again later.
+        ///   Looks up a localized string similar to Could not fetch {0} pronunciation of &quot;{1}&quot;. Either word does not exist or there was a temporary network failure..
         /// </summary>
         internal static string Pronunciate_NetError {
             get {
@@ -4017,20 +6142,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Could not find word {0}.
+        ///   Looks up a localized string similar to Could not fetch {0} pronunciation of &quot;{1}&quot;.
         /// </summary>
         internal static string Pronunciate_NoWord {
             get {
                 return ResourceManager.GetString("Pronunciate_NoWord", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Language.
-        /// </summary>
-        internal static string PronunciateDialog_languageLabel_Text {
-            get {
-                return ResourceManager.GetString("PronunciateDialog_languageLabel.Text", resourceCulture);
             }
         }
         
@@ -4065,21 +6181,219 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Word.
+        ///   Looks up a localized string similar to Work Week (2023-02-13 W7)
+        ///Month (2023-02)
+        ///Quarter (2023 Q1)
+        ///Year (2023)
+        ///#Keyword in first line of note.
         /// </summary>
-        internal static string PronunciateDialog_wordLabel_Text {
+        internal static string QuickNotesSheet_groupingBox_Text {
             get {
-                return ResourceManager.GetString("PronunciateDialog_wordLabel.Text", resourceCulture);
+                return ResourceManager.GetString("QuickNotesSheet_groupingBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Group into sections by.
         /// </summary>
-        internal static System.Drawing.Bitmap Pushpin {
+        internal static string QuickNotesSheet_groupingLabel_Text {
             get {
-                object obj = ResourceManager.GetObject("Pushpin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("QuickNotesSheet_groupingLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom the behavior of the Organize Quick Notes command.
+        /// </summary>
+        internal static string QuickNotesSheet_introBox_Text {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move Quick Notes into this notebook.
+        /// </summary>
+        internal static string QuickNotesSheet_notebookButton_Text {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_notebookButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click here to select the notebook.
+        /// </summary>
+        internal static string QuickNotesSheet_notebookLink_Text {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_notebookLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move Quick Notes into this section.
+        /// </summary>
+        internal static string QuickNotesSheet_sectionButton_Text {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_sectionButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click here to select the section.
+        /// </summary>
+        internal static string QuickNotesSheet_sectionLink_Text {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_sectionLink.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select the notebook used to organize your Quick Notes.
+        /// </summary>
+        internal static string QuickNotesSheet_SelectNotebookIntro {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_SelectNotebookIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Notebook.
+        /// </summary>
+        internal static string QuickNotesSheet_SelectNotebookTitle {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_SelectNotebookTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select the section used to organize your Quick Notes.
+        /// </summary>
+        internal static string QuickNotesSheet_SelectSectionIntro {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_SelectSectionIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Section.
+        /// </summary>
+        internal static string QuickNotesSheet_SelectSectionTitle {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_SelectSectionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prepend the title with the date that the note was created.
+        /// </summary>
+        internal static string QuickNotesSheet_stampBox_Text {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_stampBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quick Notes.
+        /// </summary>
+        internal static string QuickNotesSheet_Title {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set the page title to the first fiew words of the note.
+        /// </summary>
+        internal static string QuickNotesSheet_titleBox_Text {
+            get {
+                return ResourceManager.GetString("QuickNotesSheet_titleBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to basic text.
+        /// </summary>
+        internal static string QuickPaletteCommand_basic_category {
+            get {
+                return ResourceManager.GetString("QuickPaletteCommand_basic_category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bold
+        ///Italic
+        ///Underline
+        ///Strikethrough
+        ///Subscript
+        ///Superscript.
+        /// </summary>
+        internal static string QuickPaletteCommand_basics {
+            get {
+                return ResourceManager.GetString("QuickPaletteCommand_basics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to font colors.
+        /// </summary>
+        internal static string QuickPaletteCommand_color_category {
+            get {
+                return ResourceManager.GetString("QuickPaletteCommand_color_category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blue
+        ///Green
+        ///Orange
+        ///Purple
+        ///Red
+        ///Yellow.
+        /// </summary>
+        internal static string QuickPaletteCommand_colors {
+            get {
+                return ResourceManager.GetString("QuickPaletteCommand_colors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to highlight colors.
+        /// </summary>
+        internal static string QuickPaletteCommand_highlight_category {
+            get {
+                return ResourceManager.GetString("QuickPaletteCommand_highlight_category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blue Highlight
+        ///Green Highlight
+        ///Orange Highlight
+        ///Purple Highlight
+        ///Red Highlight
+        ///Yellow Highlight.
+        /// </summary>
+        internal static string QuickPaletteCommand_highlights {
+            get {
+                return ResourceManager.GetString("QuickPaletteCommand_highlights", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose a style attribute to apply to the selected text.
+        /// </summary>
+        internal static string QuickPaletteCommand_Intro {
+            get {
+                return ResourceManager.GetString("QuickPaletteCommand_Intro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quick Palette.
+        /// </summary>
+        internal static string QuickPaletteCommand_Title {
+            get {
+                return ResourceManager.GetString("QuickPaletteCommand_Title", resourceCulture);
             }
         }
         
@@ -4089,16 +6403,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string RecalculateFormulaCommand_NoFormula {
             get {
                 return ResourceManager.GetString("RecalculateFormulaCommand_NoFormula", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Refresh {
-            get {
-                object obj = ResourceManager.GetObject("Refresh", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -4126,33 +6430,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string RefreshPageLinksDialog_groupBox_Text {
             get {
                 return ResourceManager.GetString("RefreshPageLinksDialog_groupBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to All sections in the current notebook.
-        /// </summary>
-        internal static string RefreshPageLinksDialog_notebookRadio_Text {
-            get {
-                return ResourceManager.GetString("RefreshPageLinksDialog_notebookRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to All notebooks.
-        /// </summary>
-        internal static string RefreshPageLinksDialog_notebooksRadio_Text {
-            get {
-                return ResourceManager.GetString("RefreshPageLinksDialog_notebooksRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The current section.
-        /// </summary>
-        internal static string RefreshPageLinksDialog_sectionRadio_Text {
-            get {
-                return ResourceManager.GetString("RefreshPageLinksDialog_sectionRadio.Text", resourceCulture);
             }
         }
         
@@ -4193,58 +6470,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Click Yes to update this existing report, No to create a new report, or Cancel.
-        /// </summary>
-        internal static string RemindCommand_Reuse {
-            get {
-                return ResourceManager.GetString("RemindCommand_Reuse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Completed.
-        /// </summary>
-        internal static string RemindDialog_completedLabel_Text {
-            get {
-                return ResourceManager.GetString("RemindDialog_completedLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Due date.
         /// </summary>
         internal static string RemindDialog_dueDateLabel_Text {
             get {
                 return ResourceManager.GetString("RemindDialog_dueDateLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Options.
-        /// </summary>
-        internal static string RemindDialog_optionsBox_Text {
-            get {
-                return ResourceManager.GetString("RemindDialog_optionsBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to % Complete.
-        /// </summary>
-        internal static string RemindDialog_percentLabel_Text {
-            get {
-                return ResourceManager.GetString("RemindDialog_percentLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Low
-        ///Medium
-        ///High.
-        /// </summary>
-        internal static string RemindDialog_priorityBox_Text {
-            get {
-                return ResourceManager.GetString("RemindDialog_priorityBox.Text", resourceCulture);
             }
         }
         
@@ -4315,15 +6545,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Started.
-        /// </summary>
-        internal static string RemindDialog_startedLabel_Text {
-            get {
-                return ResourceManager.GetString("RemindDialog_startedLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Not started
         ///In progress
         ///Completed
@@ -4333,15 +6554,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string RemindDialog_statusBox_Text {
             get {
                 return ResourceManager.GetString("RemindDialog_statusBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Status.
-        /// </summary>
-        internal static string RemindDialog_statusLabel_Text {
-            get {
-                return ResourceManager.GetString("RemindDialog_statusLabel.Text", resourceCulture);
             }
         }
         
@@ -4364,15 +6576,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reminder.
-        /// </summary>
-        internal static string RemindDialog_Text {
-            get {
-                return ResourceManager.GetString("RemindDialog.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Task is past its due date of {0}, &quot;{1}&quot;. Click here to navigate to this task.
         /// </summary>
         internal static string Reminder_PastDue {
@@ -4382,7 +6585,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Task is past its start date of {0}, &quot;{1}&quot;. Click here to navigate to this task.
+        ///   Looks up a localized string similar to Task is past its start date of {0}; due {1}. &quot;{2}&quot;. Click here to navigate to this task.
         /// </summary>
         internal static string Reminder_PastStart {
             get {
@@ -4454,15 +6657,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reminder.
-        /// </summary>
-        internal static string ReminderReport_ReminderColumn {
-            get {
-                return ResourceManager.GetString("ReminderReport_ReminderColumn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Snoozed until {0}.
         /// </summary>
         internal static string ReminderReport_SnoozedUntil {
@@ -4499,11 +6693,104 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to From &amp;lt;&lt;a\shref=.+?&lt;/a&gt;&amp;gt;.
+        ///   Looks up a localized string similar to From.
         /// </summary>
-        internal static string RemoveCitations_FromUrl {
+        internal static string RemoveCitations_From {
             get {
-                return ResourceManager.GetString("RemoveCitations_FromUrl", resourceCulture);
+                return ResourceManager.GetString("RemoveCitations_From", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Basic XML structure.
+        /// </summary>
+        internal static string RemoveDuplicatesDialog_basicRadio_Text {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesDialog_basicRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deep XML with binary comparison (slow).
+        /// </summary>
+        internal static string RemoveDuplicatesDialog_deepRadio_Text {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesDialog_deepRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scanning Depth.
+        /// </summary>
+        internal static string RemoveDuplicatesDialog_depthBox_Text {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesDialog_depthBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Include page titles when comparing.
+        /// </summary>
+        internal static string RemoveDuplicatesDialog_includeTitlesBox_Text {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesDialog_includeTitlesBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Simple text (quick).
+        /// </summary>
+        internal static string RemoveDuplicatesDialog_simpleRadio_Text {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesDialog_simpleRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Duplicate Pages.
+        /// </summary>
+        internal static string RemoveDuplicatesDialog_Text {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesDialog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete the selected page?.
+        /// </summary>
+        internal static string RemoveDuplicatesNavigator_confirm1 {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesNavigator_confirm1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete the {0} selected pages?.
+        /// </summary>
+        internal static string RemoveDuplicatesNavigator_confirmAll {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesNavigator_confirmAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pages similar to {0}.
+        /// </summary>
+        internal static string RemoveDuplicatesNavigator_pagesSimilarTo {
+            get {
+                return ResourceManager.GetString("RemoveDuplicatesNavigator_pagesSimilarTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove all empty lines?
+        ///
+        ///Select Yes to remove all empty lines between paragraphs
+        ///Select No to keep one empty line between paragraphs.
+        /// </summary>
+        internal static string RemoveEmptyCommand_option {
+            get {
+                return ResourceManager.GetString("RemoveEmptyCommand_option", resourceCulture);
             }
         }
         
@@ -4562,16 +6849,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Reorder {
-            get {
-                object obj = ResourceManager.GetObject("Reorder", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Reorder how styles appear in the gallery. Also changes the order of headings in a TOC.
         /// </summary>
         internal static string ReorderDialog_label_Text {
@@ -4581,7 +6858,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reorder Custom Styles.
+        ///   Looks up a localized string similar to Reorder Styles.
         /// </summary>
         internal static string ReorderDialog_Text {
             get {
@@ -4590,174 +6867,56 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Storage: {0}.
+        ///   Looks up a localized string similar to Generate report for reminders in this scope.
         /// </summary>
-        internal static string ResizeImageDialog_qualBox_Size {
+        internal static string ReportRemindersDialog_introLabel_Text {
             get {
-                return ResourceManager.GetString("ResizeImageDialog_qualBox_Size", resourceCulture);
+                return ResourceManager.GetString("ReportRemindersDialog_introLabel.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Storage.
+        ///   Looks up a localized string similar to Include completed reminders.
         /// </summary>
-        internal static string ResizeImageDialog_qualBox_Text {
+        internal static string ReportRemindersDialog_showCompletedBox_Text {
             get {
-                return ResourceManager.GetString("ResizeImageDialog_qualBox.Text", resourceCulture);
+                return ResourceManager.GetString("ReportRemindersDialog_showCompletedBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0}% quality.
+        ///   Looks up a localized string similar to Report Scope.
         /// </summary>
-        internal static string ResizeImageDialog_qualLabel_Text {
+        internal static string ReportRemindersDialog_Text {
             get {
-                return ResourceManager.GetString("ResizeImageDialog_qualLabel.Text", resourceCulture);
+                return ResourceManager.GetString("ReportRemindersDialog.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Absolute.
+        ///   Looks up a localized string similar to Create a new report page.
         /// </summary>
-        internal static string ResizeImagesDialog_absRadio_Text {
+        internal static string ReportRemindersReuseDialog_newRadio_Text {
             get {
-                return ResourceManager.GetString("ResizeImagesDialog_absRadio.Text", resourceCulture);
+                return ResourceManager.GetString("ReportRemindersReuseDialog_newRadio.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to all images on page.
+        ///   Looks up a localized string similar to Update this existing report.
         /// </summary>
-        internal static string ResizeImagesDialog_allLabel_Text {
+        internal static string ReportRemindersReuseDialog_oldRadio_Text {
             get {
-                return ResourceManager.GetString("ResizeImagesDialog_allLabel.Text", resourceCulture);
+                return ResourceManager.GetString("ReportRemindersReuseDialog_oldRadio.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maintain aspect ratio.
+        ///   Looks up a localized string similar to Old or New.
         /// </summary>
-        internal static string ResizeImagesDialog_aspectBox_Text {
+        internal static string ReportRemindersReuseDialog_Text {
             get {
-                return ResourceManager.GetString("ResizeImagesDialog_aspectBox.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Apply to.
-        /// </summary>
-        internal static string ResizeImagesDialog_currentLabel_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_currentLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Current size.
-        /// </summary>
-        internal static string ResizeImagesDialog_currentLabelSize_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_currentLabelSize.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Height.
-        /// </summary>
-        internal static string ResizeImagesDialog_heightLabel_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_heightLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Original size.
-        /// </summary>
-        internal static string ResizeImagesDialog_origLabel_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_origLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {0} x {1}.
-        /// </summary>
-        internal static string ResizeImagesDialog_origSizeLink_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_origSizeLink.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to %.
-        /// </summary>
-        internal static string ResizeImagesDialog_pctLabel_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_pctLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Percentage.
-        /// </summary>
-        internal static string ResizeImagesDialog_pctRadio_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_pctRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Width.
-        /// </summary>
-        internal static string ResizeImagesDialog_presetLabel_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_presetLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Preset.
-        /// </summary>
-        internal static string ResizeImagesDialog_presetRadio_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_presetRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {0} x {1}.
-        /// </summary>
-        internal static string ResizeImagesDialog_sizeLink_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_sizeLink.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Resize Image.
-        /// </summary>
-        internal static string ResizeImagesDialog_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Width.
-        /// </summary>
-        internal static string ResizeImagesDialog_widthLabel_Text {
-            get {
-                return ResourceManager.GetString("ResizeImagesDialog_widthLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Restart {
-            get {
-                object obj = ResourceManager.GetObject("Restart", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("ReportRemindersReuseDialog_Text", resourceCulture);
             }
         }
         
@@ -4771,11 +6930,83 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show information about OneMore.
+        /// </summary>
+        internal static string ribAboutButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribAboutButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Caption.
+        /// </summary>
+        internal static string ribAddCaptionButton_Label {
+            get {
+                return ResourceManager.GetString("ribAddCaptionButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add caption to selected image.
+        /// </summary>
+        internal static string ribAddCaptionButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribAddCaptionButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add current page.
+        /// </summary>
+        internal static string ribAddFavoritePageButton_Label {
+            get {
+                return ResourceManager.GetString("ribAddFavoritePageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add current page to Favorites.
+        /// </summary>
+        internal static string ribAddFavoritePageButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribAddFavoritePageButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add to Favorites.
         /// </summary>
         internal static string ribAddFavoriteSectionButton_Label {
             get {
                 return ResourceManager.GetString("ribAddFavoriteSectionButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add section to Favorites menu.
+        /// </summary>
+        internal static string ribAddFavoriteSectionButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribAddFavoriteSectionButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Footnote.
+        /// </summary>
+        internal static string ribAddFootnoteButton_Label {
+            get {
+                return ResourceManager.GetString("ribAddFootnoteButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add new footnote from current position (Ctrl + Alt + F).
+        /// </summary>
+        internal static string ribAddFootnoteButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribAddFootnoteButton_Screentip", resourceCulture);
             }
         }
         
@@ -4789,11 +7020,47 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add/edit formula in selected table cells (F5).
+        ///   Looks up a localized string similar to Add or edit a formula in selected table cells (F5).
         /// </summary>
         internal static string ribAddFormulaButton_Screentip {
             get {
                 return ResourceManager.GetString("ribAddFormulaButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Tag Bank.
+        /// </summary>
+        internal static string ribAddTagBankButton_Label {
+            get {
+                return ResourceManager.GetString("ribAddTagBankButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add top-of-page tag outline.
+        /// </summary>
+        internal static string ribAddTagBankButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribAddTagBankButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resize and Adjust.
+        /// </summary>
+        internal static string ribAdjustImagesButton_Label {
+            get {
+                return ResourceManager.GetString("ribAdjustImagesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resize and adjust selected images.
+        /// </summary>
+        internal static string ribAdjustImagesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribAdjustImagesButton_Screentip", resourceCulture);
             }
         }
         
@@ -4807,11 +7074,110 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apply Styles to Page.
+        ///   Looks up a localized string similar to Generate a report of storage used by section or notebook.
+        /// </summary>
+        internal static string ribAnalyzeButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribAnalyzeButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 1.
+        /// </summary>
+        internal static string ribApplyStyle0Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle0Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 2.
+        /// </summary>
+        internal static string ribApplyStyle1Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle1Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 3.
+        /// </summary>
+        internal static string ribApplyStyle2Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle2Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 4.
+        /// </summary>
+        internal static string ribApplyStyle3Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle3Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 5.
+        /// </summary>
+        internal static string ribApplyStyle4Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle4Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 6.
+        /// </summary>
+        internal static string ribApplyStyle5Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle5Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 7.
+        /// </summary>
+        internal static string ribApplyStyle6Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle6Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 8.
+        /// </summary>
+        internal static string ribApplyStyle7Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle7Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply Style 9.
+        /// </summary>
+        internal static string ribApplyStyle8Button_Label {
+            get {
+                return ResourceManager.GetString("ribApplyStyle8Button_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply These Styles to Page.
         /// </summary>
         internal static string ribApplyStylesButton_Label {
             get {
                 return ResourceManager.GetString("ribApplyStylesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply these styles to all content on this page.
+        /// </summary>
+        internal static string ribApplyStylesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribApplyStylesButton_Screentip", resourceCulture);
             }
         }
         
@@ -4825,29 +7191,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zip all pages including attachments.
-        /// </summary>
-        internal static string ribArchiveNotebookButton_Screentip {
-            get {
-                return ResourceManager.GetString("ribArchiveNotebookButton_Screentip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Archive Section.
         /// </summary>
         internal static string ribArchiveSectionButton_Label {
             get {
                 return ResourceManager.GetString("ribArchiveSectionButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zip all pages including attachments.
-        /// </summary>
-        internal static string ribArchiveSectionButton_Screentip {
-            get {
-                return ResourceManager.GetString("ribArchiveSectionButton_Screentip", resourceCulture);
             }
         }
         
@@ -4861,42 +7209,27 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blue Status.
-        /// </summary>
-        internal static string ribBlueStatusButton_Label {
-            get {
-                return ResourceManager.GetString("ribBlueStatusButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;customUI
         ///  xmlns=&quot;http://schemas.microsoft.com/office/2009/07/customui&quot;
         ///	onLoad=&quot;RibbonLoaded&quot;
         ///	loadImage=&quot;GetRibbonImage&quot;&gt;
         ///  &lt;ribbon&gt;
-        ///    &lt;tabs&gt;
-        ///      &lt;tab idMso=&quot;TabHome&quot;&gt;
-        ///        &lt;group id=&quot;ribOneMoreGroup&quot; getLabel=&quot;GetRibbonLabel&quot;&gt;
-        ///          &lt;gallery
-        ///            id=&quot;ribCustomStylesButton&quot; columns=&quot;4&quot; showItemLabel=&quot;false&quot; size=&quot;large&quot; imageMso=&quot;StylesPane&quot;
-        ///            getLabel=&quot;GetRibbonLabel&quot;
-        ///            getItemCount=&quot;GetStyleGalleryItemCount&quot;
-        ///     [rest of string was truncated]&quot;;.
+        ///    &lt;tabs/&gt;
+        ///  &lt;/ribbon&gt;
+        ///  &lt;contextMenus&gt;
+        ///    &lt;contextMenu idMso=&quot;ContextMenuFileAttachment&quot;&gt;
+        ///      &lt;button
+        ///        id=&quot;ctxCaptionAttachmentsButton&quot;
+        ///        imageMso=&quot;CaptionInsert&quot;
+        ///        getLabel=&quot;GetRibbonLabel&quot;
+        ///        getScreentip=&quot;GetRibbonScreentip&quot;
+        ///        onAction=&quot;CaptionAttachmentsCmd&quot;
+        ///        insertBeforeMs [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Ribbon {
             get {
                 return ResourceManager.GetString("Ribbon", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Edit Commands.
-        /// </summary>
-        internal static string RibbonBarSheet_editGroup_Text {
-            get {
-                return ResourceManager.GetString("RibbonBarSheet_editGroup.Text", resourceCulture);
             }
         }
         
@@ -4910,11 +7243,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Formula Commands.
+        ///   Looks up a localized string similar to Edit Commands.
         /// </summary>
-        internal static string RibbonBarSheet_formulaGroup_Text {
+        internal static string RibbonBarSheet_editRibbonBox_Text {
             get {
-                return ResourceManager.GetString("RibbonBarSheet_formulaGroup.Text", resourceCulture);
+                return ResourceManager.GetString("RibbonBarSheet_editRibbonBox.Text", resourceCulture);
             }
         }
         
@@ -4928,7 +7261,34 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose which commands to include in the ribbon bar and whether to display icons or icons and lables. Restart OneNote to see changes..
+        ///   Looks up a localized string similar to Formula Commands.
+        /// </summary>
+        internal static string RibbonBarSheet_formulaRibbonBox_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_formulaRibbonBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show only icons for hashtag commands.
+        /// </summary>
+        internal static string RibbonBarSheet_hashtagsIconBox_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_hashtagsIconBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hashtag Commands.
+        /// </summary>
+        internal static string RibbonBarSheet_hashtagsRibbonBox_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_hashtagsRibbonBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose optional preset grouping to add to the ribbon bar.
         /// </summary>
         internal static string RibbonBarSheet_introBox_Text {
             get {
@@ -4937,7 +7297,92 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ribbon Bar Options.
+        ///   Looks up a localized string similar to Aa a group in the Home tab
+        ///As a separate OneMore tab.
+        /// </summary>
+        internal static string RibbonBarSheet_layoutBox_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_layoutBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Layout.
+        /// </summary>
+        internal static string RibbonBarSheet_layoutLabel_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_layoutLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clipboard Group
+        ///Basic Text Group
+        ///Styles Group
+        ///Tags Group
+        ///Email Group
+        ///Meetings Group
+        ///After last group.
+        /// </summary>
+        internal static string RibbonBarSheet_positionBox_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_positionBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Position.
+        /// </summary>
+        internal static string RibbonBarSheet_positionGroup_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_positionGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select the location of the OneMore ribbon group..
+        /// </summary>
+        internal static string RibbonBarSheet_positionIntroLabel_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_positionIntroLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Position after.
+        /// </summary>
+        internal static string RibbonBarSheet_positionLabel_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_positionLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home Tab
+        ///Insert Tab
+        ///Draw Tab
+        ///History Tab
+        ///Review Tab
+        ///View Tab
+        ///Help Tab.
+        /// </summary>
+        internal static string RibbonBarSheet_positionTabBox_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_positionTabBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quick Commands.
+        /// </summary>
+        internal static string RibbonBarSheet_quickGroup_Text {
+            get {
+                return ResourceManager.GetString("RibbonBarSheet_quickGroup.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ribbon Bar.
         /// </summary>
         internal static string RibbonBarSheet_Title {
             get {
@@ -4946,29 +7391,47 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Text Box.
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;tab
+        ///  xmlns=&quot;http://schemas.microsoft.com/office/2009/07/customui&quot;
+        ///  idMso=&quot;TabHome&quot;&gt;
+        ///  &lt;group id=&quot;ribOneMoreGroup&quot; getLabel=&quot;GetRibbonLabel&quot;&gt;
+        ///    &lt;gallery
+        ///      id=&quot;ribCustomStylesButton&quot; columns=&quot;4&quot; showItemLabel=&quot;false&quot; size=&quot;normal&quot;
+        ///      image=&quot;CustomStyles&quot;
+        ///      getLabel=&quot;GetRibbonLabel&quot;
+        ///      getItemCount=&quot;GetStyleGalleryItemCount&quot;
+        ///      getItemID=&quot;GetStyleGalleryItemId&quot;
+        ///      getItemImage=&quot;GetStyleGalleryItemImage&quot;
+        ///      getItemScreentip=&quot;GetStyl [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ribBoxButton_Label {
+        internal static string RibbonTabHome {
             get {
-                return ResourceManager.GetString("ribBoxButton_Label", resourceCulture);
+                return ResourceManager.GetString("RibbonTabHome", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Insert a single-cell table, optionally wrapping selected text.
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;tab
+        ///  xmlns=&quot;http://schemas.microsoft.com/office/2009/07/customui&quot;
+        ///  id=&quot;TabOneMore&quot;
+        ///  getLabel=&quot;GetRibbonLabel&quot;
+        ///  insertAfterMso=&quot;TabView&quot;
+        ///  keytip=&quot;M&quot;&gt;
+        ///
+        ///  &lt;group id=&quot;ribOneMoreBasicsGroup&quot; getLabel=&quot;GetRibbonLabel&quot; getImage=&quot;GetOneMoreRibbonImage&quot;&gt;
+        ///    &lt;button
+        ///      id=&quot;ribCommandPaletteButton&quot;
+        ///      imageMso=&quot;FormControlEditBox&quot;
+        ///      getLabel=&quot;GetRibbonLabel&quot;
+        ///      getScreentip=&quot;GetRibbonScreentip&quot;
+        ///      onAction=&quot;CommandPaletteCmd&quot;
+        ///      size=&quot;lar [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ribBoxButton_Screentip {
+        internal static string RibbonTabOneMore {
             get {
-                return ResourceManager.GetString("ribBoxButton_Screentip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Breadcrumb.
-        /// </summary>
-        internal static string ribBreadcrumbButton_Label {
-            get {
-                return ResourceManager.GetString("ribBreadcrumbButton_Label", resourceCulture);
+                return ResourceManager.GetString("RibbonTabOneMore", resourceCulture);
             }
         }
         
@@ -4982,7 +7445,16 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Calendar.
+        ///   Looks up a localized string similar to Toggle between one and two spaces between sentences.
+        /// </summary>
+        internal static string ribBreakingButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribBreakingButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OneMore Calendar.
         /// </summary>
         internal static string ribCalendarButton_Label {
             get {
@@ -4991,11 +7463,74 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Caption.
+        ///   Looks up a localized string similar to Open the OneMore Calendar app.
         /// </summary>
-        internal static string ribCaptionButton_Label {
+        internal static string ribCalendarButton_Screentip {
             get {
-                return ResourceManager.GetString("ribCaptionButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribCalendarButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Caption Attachments.
+        /// </summary>
+        internal static string ribCaptionAttachmentsButton_Label {
+            get {
+                return ResourceManager.GetString("ribCaptionAttachmentsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a caption to each attachment on the page.
+        /// </summary>
+        internal static string ribCaptionAttachmentsButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCaptionAttachmentsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check for Updates.
+        /// </summary>
+        internal static string ribCheckForUpdatesButton_Label {
+            get {
+                return ResourceManager.GetString("ribCheckForUpdatesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check URLs.
+        /// </summary>
+        internal static string ribCheckUrlsButton_Label {
+            get {
+                return ResourceManager.GetString("ribCheckUrlsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check for and highlight invalid URLs.
+        /// </summary>
+        internal static string ribCheckUrlsButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCheckUrlsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colorize.
+        /// </summary>
+        internal static string ribChooseColorizerButton_Label {
+            get {
+                return ResourceManager.GetString("ribChooseColorizerButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose Favorite.
+        /// </summary>
+        internal static string ribChooseFavoriteButton_Label {
+            get {
+                return ResourceManager.GetString("ribChooseFavoriteButton_Label", resourceCulture);
             }
         }
         
@@ -5009,6 +7544,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clean Reminders.
+        /// </summary>
+        internal static string ribCleanRemindersButton_Label {
+            get {
+                return ResourceManager.GetString("ribCleanRemindersButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clean broken reminders on this page.
+        /// </summary>
+        internal static string ribCleanRemindersButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCleanRemindersButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clear Background Color.
         /// </summary>
         internal static string ribClearBackgroundButton_Label {
@@ -5018,20 +7571,38 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Code block.
+        ///   Looks up a localized string similar to Reset the background color of the page.
         /// </summary>
-        internal static string ribCodeBlockButton_Label {
+        internal static string ribClearBackgroundButton_Screentip {
             get {
-                return ResourceManager.GetString("ribCodeBlockButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribClearBackgroundButton_Screentip", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Insert a code block (F6).
+        ///   Looks up a localized string similar to Clear Log File.
         /// </summary>
-        internal static string ribCodeBlockButton_Screentip {
+        internal static string ribClearLogButton_Label {
             get {
-                return ResourceManager.GetString("ribCodeBlockButton_Screentip", resourceCulture);
+                return ResourceManager.GetString("ribClearLogButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear All Table Styling.
+        /// </summary>
+        internal static string ribClearTableShadingButton_Label {
+            get {
+                return ResourceManager.GetString("ribClearTableShadingButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset shading in all cells in the current table.
+        /// </summary>
+        internal static string ribClearTableShadingButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribClearTableShadingButton_Screentip", resourceCulture);
             }
         }
         
@@ -5045,11 +7616,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Collapse all headings with indented content.
+        /// </summary>
+        internal static string ribCollapseContentButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCollapseContentButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Collapse Pages.
         /// </summary>
         internal static string ribCollapsePagesButton_Label {
             get {
                 return ResourceManager.GetString("ribCollapsePagesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Collapse child pages in Page navigation panel.
+        /// </summary>
+        internal static string ribCollapsePagesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCollapsePagesButton_Screentip", resourceCulture);
             }
         }
         
@@ -5063,11 +7652,74 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Command Palette.
+        /// </summary>
+        internal static string ribCommandPaletteButton_Label {
+            get {
+                return ResourceManager.GetString("ribCommandPaletteButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open the Command Palette window.
+        /// </summary>
+        internal static string ribCommandPaletteButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCommandPaletteButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Complete Reminder.
         /// </summary>
         internal static string ribCompleteReminderButton_Label {
             get {
                 return ResourceManager.GetString("ribCompleteReminderButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mark the paragraph reminder as complete.
+        /// </summary>
+        internal static string ribCompleteReminderButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCompleteReminderButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Compress Images.
+        /// </summary>
+        internal static string ribCompressImagesButton_Label {
+            get {
+                return ResourceManager.GetString("ribCompressImagesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Compress images by converting PNG to JPG.
+        /// </summary>
+        internal static string ribCompressImagesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCompressImagesButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convert Markdown.
+        /// </summary>
+        internal static string ribConvertMarkdownButton_Label {
+            get {
+                return ResourceManager.GetString("ribConvertMarkdownButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convert page or selected markdown to OneNote format.
+        /// </summary>
+        internal static string ribConvertMarkdownButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribConvertMarkdownButton_Screentip", resourceCulture);
             }
         }
         
@@ -5081,11 +7733,65 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Copy content across the selected rows.
+        /// </summary>
+        internal static string ribCopyAcrossButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCopyAcrossButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy as Markdown.
+        /// </summary>
+        internal static string ribCopyAsMarkdownButton_Label {
+            get {
+                return ResourceManager.GetString("ribCopyAsMarkdownButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy select content as markdown.
+        /// </summary>
+        internal static string ribCopyAsMarkdownButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCopyAsMarkdownButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy as Text.
+        /// </summary>
+        internal static string ribCopyAsTextButton_Label {
+            get {
+                return ResourceManager.GetString("ribCopyAsTextButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy select context as plain text.
+        /// </summary>
+        internal static string ribCopyAsTextButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCopyAsTextButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copy Down.
         /// </summary>
         internal static string ribCopyDownButton_Label {
             get {
                 return ResourceManager.GetString("ribCopyDownButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy content down the selected columns.
+        /// </summary>
+        internal static string ribCopyDownButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCopyDownButton_Screentip", resourceCulture);
             }
         }
         
@@ -5099,11 +7805,92 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create Style from Selection.
+        ///   Looks up a localized string similar to Copy Link to Page.
         /// </summary>
-        internal static string ribCreateStyleButton_Label {
+        internal static string ribCopyLinkToPageButton_Label {
             get {
-                return ResourceManager.GetString("ribCreateStyleButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribCopyLinkToPageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy a hyperlink to the current page.
+        /// </summary>
+        internal static string ribCopyLinkToPageButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCopyLinkToPageButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy Link to Paragraph.
+        /// </summary>
+        internal static string ribCopyLinkToParagraphButton_Label {
+            get {
+                return ResourceManager.GetString("ribCopyLinkToParagraphButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy a hyperlink to the current paragraph.
+        /// </summary>
+        internal static string ribCopyLinkToParagraphButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCopyLinkToParagraphButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy Selected Content.
+        /// </summary>
+        internal static string ribCopyPageContentButton_Label {
+            get {
+                return ResourceManager.GetString("ribCopyPageContentButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy selected content to a new page.
+        /// </summary>
+        internal static string ribCopyPageContentButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCopyPageContentButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import Hyperlinks.
+        /// </summary>
+        internal static string ribCrawlWebPageButton_Label {
+            get {
+                return ResourceManager.GetString("ribCrawlWebPageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import hyperlinks as new pages.
+        /// </summary>
+        internal static string ribCrawlWebPageButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCrawlWebPageButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Pages from List.
+        /// </summary>
+        internal static string ribCreatePagesButton_Label {
+            get {
+                return ResourceManager.GetString("ribCreatePagesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create new pages using list items as titles.
+        /// </summary>
+        internal static string ribCreatePagesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCreatePagesButton_Screentip", resourceCulture);
             }
         }
         
@@ -5117,7 +7904,16 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My Custom Snippets.
+        ///   Looks up a localized string similar to Crop and rotate selected image.
+        /// </summary>
+        internal static string ribCropImageButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribCropImageButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My Snippets.
         /// </summary>
         internal static string ribCustomSnippetsMenu_Label {
             get {
@@ -5126,7 +7922,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Custom Styles.
+        ///   Looks up a localized string similar to My Styles.
         /// </summary>
         internal static string ribCustomStylesButton_Label {
             get {
@@ -5198,6 +7994,87 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete reminder from current paragraph.
+        /// </summary>
+        internal static string ribDeleteReminderButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribDeleteReminderButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dump Diagnostics to Log.
+        /// </summary>
+        internal static string ribDiagnosticsButton_Label {
+            get {
+                return ResourceManager.GetString("ribDiagnosticsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable Spell Check.
+        /// </summary>
+        internal static string ribDisableSpellCheckButton_Label {
+            get {
+                return ResourceManager.GetString("ribDisableSpellCheckButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable spell checking within selected content.
+        /// </summary>
+        internal static string ribDisableSpellCheckButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribDisableSpellCheckButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duplicate Paragraph Above.
+        /// </summary>
+        internal static string ribDuplicateLineAboveButton_Label {
+            get {
+                return ResourceManager.GetString("ribDuplicateLineAboveButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duplicate Paragraph.
+        /// </summary>
+        internal static string ribDuplicateLineButton_Label {
+            get {
+                return ResourceManager.GetString("ribDuplicateLineButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duplicate the current paragraph.
+        /// </summary>
+        internal static string ribDuplicateLineButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribDuplicateLineButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duplicate Page.
+        /// </summary>
+        internal static string ribDuplicatePageButton_Label {
+            get {
+                return ResourceManager.GetString("ribDuplicatePageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duplicate the current page.
+        /// </summary>
+        internal static string ribDuplicatePageButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribDuplicatePageButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit.
         /// </summary>
         internal static string ribEditMenu_Label {
@@ -5212,6 +8089,42 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ribEditStylesButton_Label {
             get {
                 return ResourceManager.GetString("ribEditStylesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Styles ({0}).
+        /// </summary>
+        internal static string ribEditStylesButton_named {
+            get {
+                return ResourceManager.GetString("ribEditStylesButton_named", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit styles or load different styles.
+        /// </summary>
+        internal static string ribEditStylesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribEditStylesButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Custom Table Styles.
+        /// </summary>
+        internal static string ribEditTableThemesButton_Label {
+            get {
+                return ResourceManager.GetString("ribEditTableThemesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit custom custom table styles.
+        /// </summary>
+        internal static string ribEditTableThemesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribEditTableThemesButton_Screentip", resourceCulture);
             }
         }
         
@@ -5234,11 +8147,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Expand/Collapse.
+        ///   Looks up a localized string similar to Enable Spell Check.
         /// </summary>
-        internal static string ribExpandButton_Label {
+        internal static string ribEnableSpellCheckButton_Label {
             get {
-                return ResourceManager.GetString("ribExpandButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribEnableSpellCheckButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable spell check within selected content.
+        /// </summary>
+        internal static string ribEnableSpellCheckButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribEnableSpellCheckButton_Screentip", resourceCulture);
             }
         }
         
@@ -5248,6 +8170,24 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ribExpandContentButton_Label {
             get {
                 return ResourceManager.GetString("ribExpandContentButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expand all headings with indented content.
+        /// </summary>
+        internal static string ribExpandContentButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribExpandContentButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expand Snippet From Name.
+        /// </summary>
+        internal static string ribExpandSnippetButton_Label {
+            get {
+                return ResourceManager.GetString("ribExpandSnippetButton_Label", resourceCulture);
             }
         }
         
@@ -5297,11 +8237,38 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to File Quick Notes.
+        /// </summary>
+        internal static string ribFileQuickNotesButton_Label {
+            get {
+                return ResourceManager.GetString("ribFileQuickNotesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Organize Quick Notes into a notebook or section.
+        /// </summary>
+        internal static string ribFileQuickNotesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribFileQuickNotesButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fill Across.
         /// </summary>
         internal static string ribFillAcrossButton_Label {
             get {
                 return ResourceManager.GetString("ribFillAcrossButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill sequence across selected rows.
+        /// </summary>
+        internal static string ribFillAcrossButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribFillAcrossButton_Screentip", resourceCulture);
             }
         }
         
@@ -5315,11 +8282,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fill Down (Ctrl + D).
+        ///   Looks up a localized string similar to Fill sequence down selected columns (Ctrl + D).
         /// </summary>
         internal static string ribFillDownButton_Screentip {
             get {
                 return ResourceManager.GetString("ribFillDownButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search Hashtags.
+        /// </summary>
+        internal static string ribFindHashtagsButton_Label {
+            get {
+                return ResourceManager.GetString("ribFindHashtagsButton_Label", resourceCulture);
             }
         }
         
@@ -5333,56 +8309,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Finish link between anchor and current location.
+        /// </summary>
+        internal static string ribFinishBiLinkButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribFinishBiLinkButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fit Grid to Text.
         /// </summary>
-        internal static string ribFitGridButton_Label {
+        internal static string ribFitGridToTextButton_Label {
             get {
-                return ResourceManager.GetString("ribFitGridButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribFitGridToTextButton_Label", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Icon to Page Title.
+        ///   Looks up a localized string similar to Resize background grid to match common font size.
         /// </summary>
-        internal static string ribFlagTitleButton_Label {
+        internal static string ribFitGridToTextButton_Screentip {
             get {
-                return ResourceManager.GetString("ribFlagTitleButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Add Footnote.
-        /// </summary>
-        internal static string ribFootnoteButton_Label {
-            get {
-                return ResourceManager.GetString("ribFootnoteButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Add footnote (Ctrl + Alt + F).
-        /// </summary>
-        internal static string ribFootnoteButton_Screentip {
-            get {
-                return ResourceManager.GetString("ribFootnoteButton_Screentip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Remove Footnote.
-        /// </summary>
-        internal static string ribFootnoteRemoveButton_Label {
-            get {
-                return ResourceManager.GetString("ribFootnoteRemoveButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Remove footnote (Ctrl + Shift + F).
-        /// </summary>
-        internal static string ribFootnoteRemoveButton_Screentip {
-            get {
-                return ResourceManager.GetString("ribFootnoteRemoveButton_Screentip", resourceCulture);
+                return ResourceManager.GetString("ribFitGridToTextButton_Screentip", resourceCulture);
             }
         }
         
@@ -5396,20 +8345,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gray Status.
+        ///   Looks up a localized string similar to Download and insert referenced images.
         /// </summary>
-        internal static string ribGrayStatusButton_Label {
+        internal static string ribGetImagesButton_Screentip {
             get {
-                return ResourceManager.GetString("ribGrayStatusButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribGetImagesButton_Screentip", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Green Status.
+        ///   Looks up a localized string similar to Insert Hashtags.
         /// </summary>
-        internal static string ribGreenStatusButton_Label {
+        internal static string ribHashtaggerButton_Label {
             get {
-                return ResourceManager.GetString("ribGreenStatusButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribHashtaggerButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pick from a smart list of words and tags to insert hashtags.
+        /// </summary>
+        internal static string ribHashtaggerButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribHashtaggerButton_Screentip", resourceCulture);
             }
         }
         
@@ -5423,6 +8381,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Highligt text with a rotating highlighter.
+        /// </summary>
+        internal static string ribHighlightButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribHighlightButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Highlight Formula.
         /// </summary>
         internal static string ribHighlightFormulaButton_Label {
@@ -5432,11 +8399,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to High cells with formula in current table.
+        ///   Looks up a localized string similar to Select cells with formula in current table.
         /// </summary>
         internal static string ribHighlightFormulaButton_Screentip {
             get {
                 return ResourceManager.GetString("ribHighlightFormulaButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Repeat Rotating Highlighter Color.
+        /// </summary>
+        internal static string ribHighlightLastButton_Label {
+            get {
+                return ResourceManager.GetString("ribHighlightLastButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Highlighting.
+        /// </summary>
+        internal static string ribHighlightNoneButton_Label {
+            get {
+                return ResourceManager.GetString("ribHighlightNoneButton_Label", resourceCulture);
             }
         }
         
@@ -5459,11 +8444,47 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Import a file.
+        /// </summary>
+        internal static string ribImportButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribImportButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import Tasks from Outlook.
+        /// </summary>
+        internal static string ribImportOutlookTasksButton_Label {
+            get {
+                return ResourceManager.GetString("ribImportOutlookTasksButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import task information from Outlook.
+        /// </summary>
+        internal static string ribImportOutlookTasksButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribImportOutlookTasksButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Import Web Page.
         /// </summary>
         internal static string ribImportWebButton_Label {
             get {
                 return ResourceManager.GetString("ribImportWebButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import Web Page given a URL.
+        /// </summary>
+        internal static string ribImportWebButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribImportWebButton_Screentip", resourceCulture);
             }
         }
         
@@ -5486,11 +8507,38 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Info block.
+        ///   Looks up a localized string similar to Blue Status.
         /// </summary>
-        internal static string ribInfoBlockButton_Label {
+        internal static string ribInsertBlueStatusButton_Label {
             get {
-                return ResourceManager.GetString("ribInfoBlockButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribInsertBlueStatusButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a blue status label.
+        /// </summary>
+        internal static string ribInsertBlueStatusButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertBlueStatusButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Breadcrumb.
+        /// </summary>
+        internal static string ribInsertBreadcrumbButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertBreadcrumbButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert breadcrumb of page location at top of page.
+        /// </summary>
+        internal static string ribInsertBreadcrumbButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertBreadcrumbButton_Screentip", resourceCulture);
             }
         }
         
@@ -5504,11 +8552,47 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Insert a montly calendar.
+        /// </summary>
+        internal static string ribInsertCalendarButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertCalendarButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Insert Table Cells.
         /// </summary>
         internal static string ribInsertCellsButton_Label {
             get {
                 return ResourceManager.GetString("ribInsertCellsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert cells into current table.
+        /// </summary>
+        internal static string ribInsertCellsButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertCellsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Code Box.
+        /// </summary>
+        internal static string ribInsertCodeBoxButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertCodeBoxButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a code box (F6), wrapping selected content.
+        /// </summary>
+        internal static string ribInsertCodeBoxButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertCodeBoxButton_Screentip", resourceCulture);
             }
         }
         
@@ -5531,6 +8615,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sortable Date with Time.
+        /// </summary>
+        internal static string ribInsertDateTimeButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertDateTimeButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Double Horizontal Line.
         /// </summary>
         internal static string ribInsertDoubleLineButton_Label {
@@ -5549,11 +8642,156 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Emoji.
+        /// </summary>
+        internal static string ribInsertEmojiButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertEmojiButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert one or more emojis.
+        /// </summary>
+        internal static string ribInsertEmojiButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertEmojiButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expand/Collapse.
+        /// </summary>
+        internal static string ribInsertExpandButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertExpandButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a collapsible control.
+        /// </summary>
+        internal static string ribInsertExpandButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertExpandButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gray Status.
+        /// </summary>
+        internal static string ribInsertGrayStatusButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertGrayStatusButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a gray status label.
+        /// </summary>
+        internal static string ribInsertGrayStatusButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertGrayStatusButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Green Status.
+        /// </summary>
+        internal static string ribInsertGreenStatusButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertGreenStatusButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a green status label.
+        /// </summary>
+        internal static string ribInsertGreenStatusButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertGreenStatusButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Info Box.
+        /// </summary>
+        internal static string ribInsertInfoBoxButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertInfoBoxButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert an informational box.
+        /// </summary>
+        internal static string ribInsertInfoBoxButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertInfoBoxButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ribInsertNoteBoxButton {
+            get {
+                object obj = ResourceManager.GetObject("ribInsertNoteBoxButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notes Box.
+        /// </summary>
+        internal static string ribInsertNoteBoxButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertNoteBoxButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a notes box.
+        /// </summary>
+        internal static string ribInsertNoteBoxButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertNoteBoxButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Insert QR Code.
         /// </summary>
         internal static string ribInsertQRButton_Label {
             get {
                 return ResourceManager.GetString("ribInsertQRButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a QR Code represented the selected text.
+        /// </summary>
+        internal static string ribInsertQRButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertQRButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red Status.
+        /// </summary>
+        internal static string ribInsertRedStatusButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertRedStatusButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a red status label.
+        /// </summary>
+        internal static string ribInsertRedStatusButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertRedStatusButton_Screentip", resourceCulture);
             }
         }
         
@@ -5576,11 +8814,102 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Text Box.
+        /// </summary>
+        internal static string ribInsertTextBoxButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertTextBoxButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a single-cell table, wrapping selected text.
+        /// </summary>
+        internal static string ribInsertTextBoxButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertTextBoxButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Insert Timer.
         /// </summary>
         internal static string ribInsertTimerButton_Label {
             get {
                 return ResourceManager.GetString("ribInsertTimerButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert the current timer value.
+        /// </summary>
+        internal static string ribInsertTimerButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertTimerButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table of Contents.
+        /// </summary>
+        internal static string ribInsertTocButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertTocButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a headings table of contents at the top of the page.
+        /// </summary>
+        internal static string ribInsertTocButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertTocButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ribInsertWarnBoxButton {
+            get {
+                object obj = ResourceManager.GetObject("ribInsertWarnBoxButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning Box.
+        /// </summary>
+        internal static string ribInsertWarnBoxButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertWarnBoxButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a warning box.
+        /// </summary>
+        internal static string ribInsertWarnBoxButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertWarnBoxButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yellow Status.
+        /// </summary>
+        internal static string ribInsertYellowStatusButton_Label {
+            get {
+                return ResourceManager.GetString("ribInsertYellowStatusButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert a yellow status label.
+        /// </summary>
+        internal static string ribInsertYellowStatusButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInsertYellowStatusButton_Screentip", resourceCulture);
             }
         }
         
@@ -5594,11 +8923,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invert selection.
+        /// </summary>
+        internal static string ribInvertSelectionButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribInvertSelectionButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Join Paragraph.
         /// </summary>
         internal static string ribJoinParagraphButton_Label {
             get {
                 return ResourceManager.GetString("ribJoinParagraphButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Join selected paragraphs.
+        /// </summary>
+        internal static string ribJoinParagraphButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribJoinParagraphButton_Screentip", resourceCulture);
             }
         }
         
@@ -5612,11 +8959,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Generate bi-directional links to this page based on its title.
+        /// </summary>
+        internal static string ribLinkReferencesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribLinkReferencesButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Load Styles.
         /// </summary>
         internal static string ribLoadStylesButton_Label {
             get {
                 return ResourceManager.GetString("ribLoadStylesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load My Styles from a definition file.
+        /// </summary>
+        internal static string ribLoadStylesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribLoadStylesButton_Screentip", resourceCulture);
             }
         }
         
@@ -5639,6 +9004,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manage Favorites.
+        /// </summary>
+        internal static string ribManageFavoritesButton_Label {
+            get {
+                return ResourceManager.GetString("ribManageFavoritesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manage Saved Plugins.
         /// </summary>
         internal static string ribManagePluginsButton_Label {
@@ -5648,7 +9022,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Manage Custom Snippets.
+        ///   Looks up a localized string similar to Manage My Snippets.
         /// </summary>
         internal static string ribManageSnippetsButton_Label {
             get {
@@ -5666,6 +9040,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Report all pages that contain links to other pages.
+        /// </summary>
+        internal static string ribMapButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribMapButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Merge Pages.
         /// </summary>
         internal static string ribMergeButton_Label {
@@ -5675,7 +9058,88 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace URLs with Web Page Titles.
+        ///   Looks up a localized string similar to Merge selected pages.
+        /// </summary>
+        internal static string ribMergeButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribMergeButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Draw Mermaid Diagram.
+        /// </summary>
+        internal static string ribMermaidButton_Label {
+            get {
+                return ResourceManager.GetString("ribMermaidButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Render Mermaid image from selected text.
+        /// </summary>
+        internal static string ribMermaidButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribMermaidButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move to Bottom.
+        /// </summary>
+        internal static string ribMovePageBottomButton_Label {
+            get {
+                return ResourceManager.GetString("ribMovePageBottomButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move selected pages to bottom of list.
+        /// </summary>
+        internal static string ribMovePageBottomButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribMovePageBottomButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move Selected Content.
+        /// </summary>
+        internal static string ribMovePageContentButton_Label {
+            get {
+                return ResourceManager.GetString("ribMovePageContentButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move selected content to a new page.
+        /// </summary>
+        internal static string ribMovePageContentButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribMovePageContentButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move to Top.
+        /// </summary>
+        internal static string ribMovePageTopButton_Label {
+            get {
+                return ResourceManager.GetString("ribMovePageTopButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move selected pages to top of list.
+        /// </summary>
+        internal static string ribMovePageTopButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribMovePageTopButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replace URLs with Titles.
         /// </summary>
         internal static string ribNameUrlsButton_Label {
             get {
@@ -5684,11 +9148,75 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Disable Spell Check.
+        ///   Looks up a localized string similar to Replace URLs with Web page titles.
         /// </summary>
-        internal static string ribNoSpellCheckButton_Label {
+        internal static string ribNameUrlsButton_Screentip {
             get {
-                return ResourceManager.GetString("ribNoSpellCheckButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribNameUrlsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ribNavigatorButton {
+            get {
+                object obj = ResourceManager.GetObject("ribNavigatorButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Navigator.
+        /// </summary>
+        internal static string ribNavigatorButton_Label {
+            get {
+                return ResourceManager.GetString("ribNavigatorButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open the OneMore Navigator window.
+        /// </summary>
+        internal static string ribNavigatorButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribNavigatorButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create New Style from Text.
+        /// </summary>
+        internal static string ribNewStyleButton_Label {
+            get {
+                return ResourceManager.GetString("ribNewStyleButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create a new style from the current selection.
+        /// </summary>
+        internal static string ribNewStyleButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribNewStyleButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next Unread Page.
+        /// </summary>
+        internal static string ribNextUnreadPageButton_Label {
+            get {
+                return ResourceManager.GetString("ribNextUnreadPageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move to the next unread page.
+        /// </summary>
+        internal static string ribNextUnreadPageButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribNextUnreadPageButton_Screentip", resourceCulture);
             }
         }
         
@@ -5698,6 +9226,15 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ribNoSpellCheckButton_Screentip {
             get {
                 return ResourceManager.GetString("ribNoSpellCheckButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Words in Notebook.
+        /// </summary>
+        internal static string ribNotebookWordCountButton_Label {
+            get {
+                return ResourceManager.GetString("ribNotebookWordCountButton_Label", resourceCulture);
             }
         }
         
@@ -5747,6 +9284,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Basics.
+        /// </summary>
+        internal static string ribOneMoreBasicsGroup_Label {
+            get {
+                return ResourceManager.GetString("ribOneMoreBasicsGroup_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More.
+        /// </summary>
+        internal static string ribOneMoreEvenMoreGroup_Label {
+            get {
+                return ResourceManager.GetString("ribOneMoreEvenMoreGroup_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OneMore.
         /// </summary>
         internal static string ribOneMoreGroup_Label {
@@ -5765,6 +9320,69 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Snippets.
+        /// </summary>
+        internal static string ribOneMoreSnippetsGroup_Label {
+            get {
+                return ResourceManager.GetString("ribOneMoreSnippetsGroup_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Styles.
+        /// </summary>
+        internal static string ribOneMoreStylesGroup_Label {
+            get {
+                return ResourceManager.GetString("ribOneMoreStylesGroup_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table.
+        /// </summary>
+        internal static string ribOneMoreTableGroup_Label {
+            get {
+                return ResourceManager.GetString("ribOneMoreTableGroup_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        internal static string ribOneMoreTagGroup_Label {
+            get {
+                return ResourceManager.GetString("ribOneMoreTagGroup_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Image With.
+        /// </summary>
+        internal static string ribOpenImageWithButton_Label {
+            get {
+                return ResourceManager.GetString("ribOpenImageWithButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open the selected image with an external editor.
+        /// </summary>
+        internal static string ribOpenImageWithButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribOpenImageWithButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Log File.
+        /// </summary>
+        internal static string ribOpenLogButton_Label {
+            get {
+                return ResourceManager.GetString("ribOpenLogButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Outline Formatting.
         /// </summary>
         internal static string ribOutlineButton_Label {
@@ -5774,11 +9392,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change Page Theme.
+        ///   Looks up a localized string similar to Numbering headings on this page.
+        /// </summary>
+        internal static string ribOutlineButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribOutlineButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set Page Color.
         /// </summary>
         internal static string ribPageColorButton_Label {
             get {
                 return ResourceManager.GetString("ribPageColorButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change the background of this page to a custom color.
+        /// </summary>
+        internal static string ribPageColorButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribPageColorButton_Screentip", resourceCulture);
             }
         }
         
@@ -5801,6 +9437,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paste content in existing cells.
+        /// </summary>
+        internal static string ribPasteCellsButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribPasteCellsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Paste Rich Text.
         /// </summary>
         internal static string ribPasteRtfButton_Label {
@@ -5819,6 +9464,51 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paste and Keep Text Only.
+        /// </summary>
+        internal static string ribPasteTextButton_Label {
+            get {
+                return ResourceManager.GetString("ribPasteTextButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paste and Keep Text Only (Ctrl + Shift + V).
+        /// </summary>
+        internal static string ribPasteTextButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribPasteTextButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Page To My Reading List.
+        /// </summary>
+        internal static string ribPinPageButton_Label {
+            get {
+                return ResourceManager.GetString("ribPinPageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Draw PlantUML.
+        /// </summary>
+        internal static string ribPlantUmlButton_Label {
+            get {
+                return ResourceManager.GetString("ribPlantUmlButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Render PlantUML or Graphviz image from selected text.
+        /// </summary>
+        internal static string ribPlantUmlButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribPlantUmlButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Run Plugin.
         /// </summary>
         internal static string ribPluginButton_Label {
@@ -5828,11 +9518,56 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My Saved Plugins.
+        ///   Looks up a localized string similar to Plugins.
         /// </summary>
         internal static string ribPluginsMenu_Label {
             get {
                 return ResourceManager.GetString("ribPluginsMenu_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Run and manage custom plugins.
+        /// </summary>
+        internal static string ribPluginsMenu_Screentip {
+            get {
+                return ResourceManager.GetString("ribPluginsMenu_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preview Markdown.
+        /// </summary>
+        internal static string ribPreviewMarkdownButton_Label {
+            get {
+                return ResourceManager.GetString("ribPreviewMarkdownButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preview page or selected text as markdown.
+        /// </summary>
+        internal static string ribPreviewMarkdownButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribPreviewMarkdownButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Unread Page.
+        /// </summary>
+        internal static string ribPreviousUnreadPageButton_Label {
+            get {
+                return ResourceManager.GetString("ribPreviousUnreadPageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move to the previous unread page.
+        /// </summary>
+        internal static string ribPreviousUnreadPageButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribPreviousUnreadPageButton_Screentip", resourceCulture);
             }
         }
         
@@ -5846,11 +9581,38 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Insert phonetic pronunciation of selected text.
+        /// </summary>
+        internal static string ribPronunciateButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribPronunciateButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Proofing Language.
         /// </summary>
         internal static string ribProofingMenu_Label {
             get {
                 return ResourceManager.GetString("ribProofingMenu_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quick Palette.
+        /// </summary>
+        internal static string ribQuickPaletteButton_Label {
+            get {
+                return ResourceManager.GetString("ribQuickPaletteButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open the Quick Palette window.
+        /// </summary>
+        internal static string ribQuickPaletteButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribQuickPaletteButton_Screentip", resourceCulture);
             }
         }
         
@@ -5873,15 +9635,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Red Status.
-        /// </summary>
-        internal static string ribRedStatusButton_Label {
-            get {
-                return ResourceManager.GetString("ribRedStatusButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to References.
         /// </summary>
         internal static string ribReferencesMenu_Label {
@@ -5893,18 +9646,18 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Refresh Footnotes.
         /// </summary>
-        internal static string ribRefreshFootenotesButton_Label {
+        internal static string ribRefreshFootnotesButton_Label {
             get {
-                return ResourceManager.GetString("ribRefreshFootenotesButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribRefreshFootnotesButton_Label", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Refresh footnote reference numbers sequentially.
         /// </summary>
-        internal static string ribRefreshFootenotesButton_Screentip {
+        internal static string ribRefreshFootnotesButton_Screentip {
             get {
-                return ResourceManager.GetString("ribRefreshFootenotesButton_Screentip", resourceCulture);
+                return ResourceManager.GetString("ribRefreshFootnotesButton_Screentip", resourceCulture);
             }
         }
         
@@ -5918,11 +9671,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refresh bi-directional link references.
+        /// </summary>
+        internal static string ribRefreshPageLinksButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRefreshPageLinksButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add or Update Reminders.
         /// </summary>
         internal static string ribRemindButton_Label {
             get {
                 return ResourceManager.GetString("ribRemindButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add or update a reminder on the current paragraph.
+        /// </summary>
+        internal static string ribRemindButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRemindButton_Screentip", resourceCulture);
             }
         }
         
@@ -5972,7 +9743,34 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remove empty paragraphs and headers.
+        ///   Looks up a localized string similar to Remove Date Stamps.
+        /// </summary>
+        internal static string ribRemoveDateStampButton_Label {
+            get {
+                return ResourceManager.GetString("ribRemoveDateStampButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Duplicate Pages.
+        /// </summary>
+        internal static string ribRemoveDuplicatesButton_Label {
+            get {
+                return ResourceManager.GetString("ribRemoveDuplicatesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Identify and remove duplicate pages.
+        /// </summary>
+        internal static string ribRemoveDuplicatesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRemoveDuplicatesButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Empty Lines.
         /// </summary>
         internal static string ribRemoveEmptyButton_Label {
             get {
@@ -5990,11 +9788,38 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove Footnote.
+        /// </summary>
+        internal static string ribRemoveFootnoteButton_Label {
+            get {
+                return ResourceManager.GetString("ribRemoveFootnoteButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove footnote (Ctrl + Shift + F).
+        /// </summary>
+        internal static string ribRemoveFootnoteButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRemoveFootnoteButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove Ink.
         /// </summary>
         internal static string ribRemoveInkButton_Label {
             get {
                 return ResourceManager.GetString("ribRemoveInkButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove all pen drawings from this page.
+        /// </summary>
+        internal static string ribRemoveInkButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRemoveInkButton_Screentip", resourceCulture);
             }
         }
         
@@ -6053,6 +9878,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove Tag Bank.
+        /// </summary>
+        internal static string ribRemoveTagBankButton_Label {
+            get {
+                return ResourceManager.GetString("ribRemoveTagBankButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove top-of-page tag outline.
+        /// </summary>
+        internal static string ribRemoveTagBankButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRemoveTagBankButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove Tags.
         /// </summary>
         internal static string ribRemoveTagsButton_Label {
@@ -6067,24 +9910,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ribRemoveTagsButton_Screentip {
             get {
                 return ResourceManager.GetString("ribRemoveTagsButton_Screentip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search and Replace.
-        /// </summary>
-        internal static string ribReplaceButton_Label {
-            get {
-                return ResourceManager.GetString("ribReplaceButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search and replace (Ctrl + H).
-        /// </summary>
-        internal static string ribReplaceButton_Screentip {
-            get {
-                return ResourceManager.GetString("ribReplaceButton_Screentip", resourceCulture);
             }
         }
         
@@ -6116,11 +9941,65 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Resize.
+        ///   Looks up a localized string similar to Generate a summary report of reminders.
         /// </summary>
-        internal static string ribResizeImagesButton_Label {
+        internal static string ribReportRemindersButton_Screentip {
             get {
-                return ResourceManager.GetString("ribResizeImagesButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribReportRemindersButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset All Completed Tasks.
+        /// </summary>
+        internal static string ribResetTasksButton_Label {
+            get {
+                return ResourceManager.GetString("ribResetTasksButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uncheck and reset all completed tasks on this page.
+        /// </summary>
+        internal static string ribResetTasksButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribResetTasksButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart Timer.
+        /// </summary>
+        internal static string ribRestartTimerButton_Label {
+            get {
+                return ResourceManager.GetString("ribRestartTimerButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart the Timer, setting it back to zero.
+        /// </summary>
+        internal static string ribRestartTimerButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRestartTimerButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restore Container Widths.
+        /// </summary>
+        internal static string ribRestoreAutosizeButton_Label {
+            get {
+                return ResourceManager.GetString("ribRestoreAutosizeButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset automatic width of all containers.
+        /// </summary>
+        internal static string ribRestoreAutosizeButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRestoreAutosizeButton_Screentip", resourceCulture);
             }
         }
         
@@ -6134,11 +10013,29 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Expand headings to recently saved state.
+        /// </summary>
+        internal static string ribRestoreCollapsedButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRestoreCollapsedButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Run Plugin.
         /// </summary>
         internal static string ribRunPluginButton_Label {
             get {
                 return ResourceManager.GetString("ribRunPluginButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Run or define a custom plugin.
+        /// </summary>
+        internal static string ribRunPluginButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribRunPluginButton_Screentip", resourceCulture);
             }
         }
         
@@ -6152,11 +10049,83 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save Custom Snippet.
+        ///   Looks up a localized string similar to Saved the collapsed state of all headings.
+        /// </summary>
+        internal static string ribSaveCollapsedButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSaveCollapsedButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save New Snippet.
         /// </summary>
         internal static string ribSaveSnippetButton_Label {
             get {
                 return ResourceManager.GetString("ribSaveSnippetButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save a new snippet from the selected content.
+        /// </summary>
+        internal static string ribSaveSnippetButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSaveSnippetButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan Hashtags.
+        /// </summary>
+        internal static string ribScanHashtagsButton_Label {
+            get {
+                return ResourceManager.GetString("ribScanHashtagsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan hashtags immediately.
+        /// </summary>
+        internal static string ribScanHashtagsButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribScanHashtagsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan Hashtags On This Page.
+        /// </summary>
+        internal static string ribScanHashtagsOnPageButton_Label {
+            get {
+                return ResourceManager.GetString("ribScanHashtagsOnPageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule Hashtag Scan.
+        /// </summary>
+        internal static string ribScheduleHashtagScanButton_Label {
+            get {
+                return ResourceManager.GetString("ribScheduleHashtagScanButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search and Replace.
+        /// </summary>
+        internal static string ribSearchAndReplaceButton_Label {
+            get {
+                return ResourceManager.GetString("ribSearchAndReplaceButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search and replace (Ctrl + H).
+        /// </summary>
+        internal static string ribSearchAndReplaceButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSearchAndReplaceButton_Screentip", resourceCulture);
             }
         }
         
@@ -6179,7 +10148,35 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ribSearchHashtagsButton {
+            get {
+                object obj = ResourceManager.GetObject("ribSearchHashtagsButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search Hashtags.
+        /// </summary>
+        internal static string ribSearchHashtagsButton_Label {
+            get {
+                return ResourceManager.GetString("ribSearchHashtagsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search for hashtags.
+        /// </summary>
+        internal static string ribSearchHashtagsButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSearchHashtagsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search and Tag.
         /// </summary>
         internal static string ribSearchMenu_Label {
             get {
@@ -6197,6 +10194,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total Words in Section.
+        /// </summary>
+        internal static string ribSectionWordCountButton_Label {
+            get {
+                return ResourceManager.GetString("ribSectionWordCountButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select All Images.
         /// </summary>
         internal static string ribSelectImagesButton_Label {
@@ -6206,11 +10212,65 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select text with similar formatting.
+        ///   Looks up a localized string similar to Select all images on the page.
+        /// </summary>
+        internal static string ribSelectImagesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSelectImagesButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select All Ink.
+        /// </summary>
+        internal static string ribSelectInkButton_Label {
+            get {
+                return ResourceManager.GetString("ribSelectInkButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select all ink on the page.
+        /// </summary>
+        internal static string ribSelectInkButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSelectInkButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Similar Text.
         /// </summary>
         internal static string ribSelectStyleButton_Label {
             get {
                 return ResourceManager.GetString("ribSelectStyleButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select text with similar formatting.
+        /// </summary>
+        internal static string ribSelectStyleButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSelectStyleButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select All Tables.
+        /// </summary>
+        internal static string ribSelectTablesButton_Label {
+            get {
+                return ResourceManager.GetString("ribSelectTablesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select all tables on the page.
+        /// </summary>
+        internal static string ribSelectTablesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSelectTablesButton_Screentip", resourceCulture);
             }
         }
         
@@ -6220,6 +10280,24 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ribSettingsButton_Label {
             get {
                 return ResourceManager.GetString("ribSettingsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open the OneMore settings window.
+        /// </summary>
+        internal static string ribSettingsButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSettingsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OneNote Keyboard Shortcuts.
+        /// </summary>
+        internal static string ribShowKeyboardShortcutsButton_Label {
+            get {
+                return ResourceManager.GetString("ribShowKeyboardShortcutsButton_Label", resourceCulture);
             }
         }
         
@@ -6242,6 +10320,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stop Timer.
+        /// </summary>
+        internal static string ribShutdownTimerButton_Label {
+            get {
+                return ResourceManager.GetString("ribShutdownTimerButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop and close the Timer window.
+        /// </summary>
+        internal static string ribShutdownTimerButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribShutdownTimerButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Snippets.
         /// </summary>
         internal static string ribSnippetsMenu_Label {
@@ -6260,6 +10356,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sort pages, section, or notebooks.
+        /// </summary>
+        internal static string ribSortButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSortButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sort List.
         /// </summary>
         internal static string ribSortListButton_Label {
@@ -6269,20 +10374,74 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enable Spell Check.
+        ///   Looks up a localized string similar to Sort items within a list.
         /// </summary>
-        internal static string ribSpellCheckButton_Label {
+        internal static string ribSortListButton_Screentip {
             get {
-                return ResourceManager.GetString("ribSpellCheckButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribSortListButton_Screentip", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enable spell check for entire page.
+        ///   Looks up a localized string similar to Sort Notebooks.
         /// </summary>
-        internal static string ribSpellCheckButton_Screentip {
+        internal static string ribSortNotebooksButton_Label {
             get {
-                return ResourceManager.GetString("ribSpellCheckButton_Screentip", resourceCulture);
+                return ResourceManager.GetString("ribSortNotebooksButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort Sections in Notebook.
+        /// </summary>
+        internal static string ribSortNotebookSectionsButton_Label {
+            get {
+                return ResourceManager.GetString("ribSortNotebookSectionsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort Child Pages.
+        /// </summary>
+        internal static string ribSortPageButton_Label {
+            get {
+                return ResourceManager.GetString("ribSortPageButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort Pages in Section.
+        /// </summary>
+        internal static string ribSortPagesButton_Label {
+            get {
+                return ResourceManager.GetString("ribSortPagesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort Pages in Section.
+        /// </summary>
+        internal static string ribSortSectionPagesButton_Label {
+            get {
+                return ResourceManager.GetString("ribSortSectionPagesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort Sections in Group.
+        /// </summary>
+        internal static string ribSortSectionsInGroupButton_Label {
+            get {
+                return ResourceManager.GetString("ribSortSectionsInGroupButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort sections in the current section group.
+        /// </summary>
+        internal static string ribSortSectionsInGroupButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSortSectionsInGroupButton_Screentip", resourceCulture);
             }
         }
         
@@ -6296,11 +10455,47 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Split page at Heading 1 into multiple pages.
+        /// </summary>
+        internal static string ribSplitButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSplitButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Split Table.
         /// </summary>
         internal static string ribSplitTableButton_Label {
             get {
                 return ResourceManager.GetString("ribSplitTableButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Split table at current row.
+        /// </summary>
+        internal static string ribSplitTableButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribSplitTableButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stack Background Images.
+        /// </summary>
+        internal static string ribStackBackgroundImagesButton_Label {
+            get {
+                return ResourceManager.GetString("ribStackBackgroundImagesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reposition background images top to bottom.
+        /// </summary>
+        internal static string ribStackBackgroundImagesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribStackBackgroundImagesButton_Screentip", resourceCulture);
             }
         }
         
@@ -6314,11 +10509,38 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Start bi-directional link.
+        /// </summary>
+        internal static string ribStartBiLinkButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribStartBiLinkButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Start Timer.
         /// </summary>
         internal static string ribStartTimerButton_Label {
             get {
                 return ResourceManager.GetString("ribStartTimerButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open and start the timer window.
+        /// </summary>
+        internal static string ribStartTimerButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribStartTimerButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        internal static string ribStatusMenu_Label {
+            get {
+                return ResourceManager.GetString("ribStatusMenu_Label", resourceCulture);
             }
         }
         
@@ -6341,6 +10563,24 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stylize Images.
+        /// </summary>
+        internal static string ribStylizeImagesButton_Label {
+            get {
+                return ResourceManager.GetString("ribStylizeImagesButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recolor images using selected style.
+        /// </summary>
+        internal static string ribStylizeImagesButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribStylizeImagesButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Table.
         /// </summary>
         internal static string ribTableMenu_Label {
@@ -6350,20 +10590,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find Tagged Pages.
+        ///   Looks up a localized string similar to Table Styles.
         /// </summary>
-        internal static string ribTaggedButton_Label {
+        internal static string ribTableThemesButton_Label {
             get {
-                return ResourceManager.GetString("ribTaggedButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tag Page.
-        /// </summary>
-        internal static string ribTaggingButton_Label {
-            get {
-                return ResourceManager.GetString("ribTaggingButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribTableThemesButton_Label", resourceCulture);
             }
         }
         
@@ -6373,6 +10604,15 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ribTextToTableButton_Label {
             get {
                 return ResourceManager.GetString("ribTextToTableButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convert selected text to table.
+        /// </summary>
+        internal static string ribTextToTableButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribTextToTableButton_Screentip", resourceCulture);
             }
         }
         
@@ -6395,16 +10635,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Table of Contents.
-        /// </summary>
-        internal static string ribTocButton_Label {
-            get {
-                return ResourceManager.GetString("ribTocButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Show/Hide Page Date and Time Stamps.
+        ///   Looks up a localized string similar to Show/Hide Time Stamps.
         /// </summary>
         internal static string ribToggleDttmButton_Label {
             get {
@@ -6458,6 +10689,42 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Replace URL Titles with Addresses.
+        /// </summary>
+        internal static string ribUnnameUrlsButton_Label {
+            get {
+                return ResourceManager.GetString("ribUnnameUrlsButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replace URL titles with basic Web addresses.
+        /// </summary>
+        internal static string ribUnnameUrlsButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribUnnameUrlsButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Page Time.
+        /// </summary>
+        internal static string ribUpdatePageTimeButton_Label {
+            get {
+                return ResourceManager.GetString("ribUpdatePageTimeButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update page to current date/time.
+        /// </summary>
+        internal static string ribUpdatePageTimeButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribUpdatePageTimeButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Update Embedded Pages.
         /// </summary>
         internal static string ribUpdateSubpageButton_Label {
@@ -6494,11 +10761,56 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Warning block.
+        ///   Looks up a localized string similar to View Notebook In Browser.
         /// </summary>
-        internal static string ribWarnBlockButton_Label {
+        internal static string ribViewNotebookInBrowserButton_Label {
             get {
-                return ResourceManager.GetString("ribWarnBlockButton_Label", resourceCulture);
+                return ResourceManager.GetString("ribViewNotebookInBrowserButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View notebook in web browser.
+        /// </summary>
+        internal static string ribViewNotebookInBrowserButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribViewNotebookInBrowserButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View Page In Browser.
+        /// </summary>
+        internal static string ribViewPageInBrowserButton_Label {
+            get {
+                return ResourceManager.GetString("ribViewPageInBrowserButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View page in web browser.
+        /// </summary>
+        internal static string ribViewPageInBrowserButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribViewPageInBrowserButton_Screentip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View Section In Browser.
+        /// </summary>
+        internal static string ribViewSectionInBrowserButton_Label {
+            get {
+                return ResourceManager.GetString("ribViewSectionInBrowserButton_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View section in web browser.
+        /// </summary>
+        internal static string ribViewSectionInBrowserButton_Screentip {
+            get {
+                return ResourceManager.GetString("ribViewSectionInBrowserButton_Screentip", resourceCulture);
             }
         }
         
@@ -6512,21 +10824,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yellow Status.
+        ///   Looks up a localized string similar to Report the number of words on this page.
         /// </summary>
-        internal static string ribYellowStatusButton_Label {
+        internal static string ribWordCountButton_Screentip {
             get {
-                return ResourceManager.GetString("ribYellowStatusButton_Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SaveAs {
-            get {
-                object obj = ResourceManager.GetObject("SaveAs", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("ribWordCountButton_Screentip", resourceCulture);
             }
         }
         
@@ -6540,7 +10842,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Saved {0} pages to {1}.
+        ///   Looks up a localized string similar to Saved {0} of {1} pages to {2}.
         /// </summary>
         internal static string SaveAsMany_Success {
             get {
@@ -6594,6 +10896,107 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to HashtagScanner.json.
+        /// </summary>
+        internal static string ScanningCueFile {
+            get {
+                return ResourceManager.GetString("ScanningCueFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It is best to schedule the scan during off-hours, such as midnight.
+        /// </summary>
+        internal static string ScheduleScanDialog_hintLabel_Text {
+            get {
+                return ResourceManager.GetString("ScheduleScanDialog_hintLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The hashtag catalog has not yet been created. Choose below when OneMore should build the catalog..
+        /// </summary>
+        internal static string ScheduleScanDialog_introBox_Text {
+            get {
+                return ResourceManager.GetString("ScheduleScanDialog_introBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule the scan at a later time.
+        /// </summary>
+        internal static string ScheduleScanDialog_laterRadio_Text {
+            get {
+                return ResourceManager.GetString("ScheduleScanDialog_laterRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Run the scan now.
+        /// </summary>
+        internal static string ScheduleScanDialog_nowRadio_Text {
+            get {
+                return ResourceManager.GetString("ScheduleScanDialog_nowRadio.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hashtag scanning can result in slower responsiveness while using OneNote or the inability to restart OneNote until the scan completes.
+        ///
+        ///Are you sure you want to run the scan now.
+        /// </summary>
+        internal static string ScheduleScanDialog_nowWarning {
+            get {
+                return ResourceManager.GetString("ScheduleScanDialog_nowWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule Hashtag Scanning.
+        /// </summary>
+        internal static string ScheduleScanDialog_Title {
+            get {
+                return ResourceManager.GetString("ScheduleScanDialog_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OneNote may appear sluggish while scanning. If OneNote is closed during the scan, it cannot be opened until the scan completes..
+        /// </summary>
+        internal static string ScheduleScanDialog_warningLabel_Text {
+            get {
+                return ResourceManager.GetString("ScheduleScanDialog_warningLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This page.
+        /// </summary>
+        internal static string ScopeSelector_pageButton_Text {
+            get {
+                return ResourceManager.GetString("ScopeSelector_pageButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected notebooks....
+        /// </summary>
+        internal static string ScopeSelector_selectedButton_Text {
+            get {
+                return ResourceManager.GetString("ScopeSelector_selectedButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replaced {0} matches on {1} pages.
+        /// </summary>
+        internal static string SearchAndReplaceCommand_Results {
+            get {
+                return ResourceManager.GetString("SearchAndReplaceCommand_Results", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Match case.
         /// </summary>
         internal static string SearchAndReplaceDialog_matchBox_Text {
@@ -6603,11 +11006,41 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Replace with raw XML.
+        /// </summary>
+        internal static string SearchAndReplaceDialog_rawBox_Text {
+            get {
+                return ResourceManager.GetString("SearchAndReplaceDialog_rawBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Use regular expressions.
         /// </summary>
         internal static string SearchAndReplaceDialog_regBox_Text {
             get {
                 return ResourceManager.GetString("SearchAndReplaceDialog_regBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This page
+        ///This section
+        ///This notebook
+        ///All notebooks.
+        /// </summary>
+        internal static string SearchAndReplaceDialog_scopBox {
+            get {
+                return ResourceManager.GetString("SearchAndReplaceDialog_scopBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valid substitution parameters: {0}.
+        /// </summary>
+        internal static string SearchAndReplaceDialog_substitutions {
+            get {
+                return ResourceManager.GetString("SearchAndReplaceDialog_substitutions", resourceCulture);
             }
         }
         
@@ -6639,15 +11072,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copy.
-        /// </summary>
-        internal static string SearchDialog_copyButton_Text {
-            get {
-                return ResourceManager.GetString("SearchDialog_copyButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Find:.
         /// </summary>
         internal static string SearchDialog_findLabel_Text {
@@ -6666,49 +11090,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Move.
-        /// </summary>
-        internal static string SearchDialog_moveButton_Text {
-            get {
-                return ResourceManager.GetString("SearchDialog_moveButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to In all notebooks
-        ///In this notebook
-        ///In this section.
-        /// </summary>
-        internal static string SearchDialog_scopeBox_Items {
-            get {
-                return ResourceManager.GetString("SearchDialog_scopeBox.Items", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Search and Move/Copy.
         /// </summary>
         internal static string SearchDialog_Title {
             get {
                 return ResourceManager.GetString("SearchDialog_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Cancel.
-        /// </summary>
-        internal static string SearchEngineDialog_cancelButton_Text {
-            get {
-                return ResourceManager.GetString("SearchEngineDialog_cancelButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Delete.
-        /// </summary>
-        internal static string SearchEngineDialog_deleteButton_Text {
-            get {
-                return ResourceManager.GetString("SearchEngineDialog_deleteButton.Text", resourceCulture);
             }
         }
         
@@ -6758,24 +11144,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
-        /// </summary>
-        internal static string SearchEngineDialog_nameColumn_HeaderText {
-            get {
-                return ResourceManager.GetString("SearchEngineDialog_nameColumn.HeaderText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to OK.
-        /// </summary>
-        internal static string SearchEngineDialog_okButton_Text {
-            get {
-                return ResourceManager.GetString("SearchEngineDialog_okButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Refresh icons.
         /// </summary>
         internal static string SearchEngineDialog_refreshButton_Text {
@@ -6812,24 +11180,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
-        /// </summary>
-        internal static string SearchEngineSheet_deleteButton_Text {
-            get {
-                return ResourceManager.GetString("SearchEngineSheet_deleteButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Delete:.
-        /// </summary>
-        internal static string SearchEngineSheet_deleteLabel_Text {
-            get {
-                return ResourceManager.GetString("SearchEngineSheet_deleteLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Move down.
         /// </summary>
         internal static string SearchEngineSheet_downButton_Text {
@@ -6839,20 +11189,13 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to URL Patterns must contain a string replacement token, such as &amp;q={0}.
+        ///   Looks up a localized string similar to URL Patterns must contain a string replacement token, such as &amp;q={0}
+        ///
+        ///Search engines will appear in the page context menu, right-click..
         /// </summary>
-        internal static string SearchEngineSheet_introLabel_Text {
+        internal static string SearchEngineSheet_introBox_Text {
             get {
-                return ResourceManager.GetString("SearchEngineSheet_introLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Refresh.
-        /// </summary>
-        internal static string SearchEngineSheet_refreshButton_Text {
-            get {
-                return ResourceManager.GetString("SearchEngineSheet_refreshButton.Text", resourceCulture);
+                return ResourceManager.GetString("SearchEngineSheet_introBox.Text", resourceCulture);
             }
         }
         
@@ -6871,6 +11214,15 @@ namespace River.OneMoreAddIn.Properties {
         internal static string SearchQF_DescriptionCopy {
             get {
                 return ResourceManager.GetString("SearchQF_DescriptionCopy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pick the location to create the index page.
+        /// </summary>
+        internal static string SearchQF_DescriptionIndex {
+            get {
+                return ResourceManager.GetString("SearchQF_DescriptionIndex", resourceCulture);
             }
         }
         
@@ -6922,6 +11274,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Move the text cursor to a single position on the page. Selection regions are not allowed..
+        /// </summary>
+        internal static string SelectStyleCommand_context {
+            get {
+                return ResourceManager.GetString("SelectStyleCommand_context", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Content.
         /// </summary>
         internal static string sepContent_Label {
@@ -6949,56 +11310,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Context Menu.
+        ///   Looks up a localized string similar to Multiple OneNote window are open. Close these windows and restart OneNote to apply new settings.
         /// </summary>
-        internal static string SettingsDialog_contextNode_Text {
+        internal static string SettingsDialog_closeWindows {
             get {
-                return ResourceManager.GetString("SettingsDialog_contextNode.Text", resourceCulture);
+                return ResourceManager.GetString("SettingsDialog_closeWindows", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Favorites.
+        ///   Looks up a localized string similar to Keyboard Shortcuts.
         /// </summary>
-        internal static string SettingsDialog_favoritesNode_Text {
+        internal static string SettingsDialog_keyboardNode_Text {
             get {
-                return ResourceManager.GetString("SettingsDialog_favoritesNode.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to General Options.
-        /// </summary>
-        internal static string SettingsDialog_generalNode_Text {
-            get {
-                return ResourceManager.GetString("SettingsDialog_generalNode.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Highlighter Themes.
-        /// </summary>
-        internal static string SettingsDialog_highlightNode_Text {
-            get {
-                return ResourceManager.GetString("SettingsDialog_highlightNode.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Horizontal Lines.
-        /// </summary>
-        internal static string SettingsDialog_linesNode_Text {
-            get {
-                return ResourceManager.GetString("SettingsDialog_linesNode.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Plugins.
-        /// </summary>
-        internal static string SettingsDialog_pluginsNode_Text {
-            get {
-                return ResourceManager.GetString("SettingsDialog_pluginsNode.Text", resourceCulture);
+                return ResourceManager.GetString("SettingsDialog_keyboardNode.Text", resourceCulture);
             }
         }
         
@@ -7008,33 +11333,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string SettingsDialog_Restart {
             get {
                 return ResourceManager.GetString("SettingsDialog_Restart", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Ribbon Bar.
-        /// </summary>
-        internal static string SettingsDialog_ribbonNode_Text {
-            get {
-                return ResourceManager.GetString("SettingsDialog_ribbonNode.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search Engines.
-        /// </summary>
-        internal static string SettingsDialog_searchNode_Text {
-            get {
-                return ResourceManager.GetString("SettingsDialog_searchNode.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Snippets.
-        /// </summary>
-        internal static string SettingsDialog_snippetshNode_Text {
-            get {
-                return ResourceManager.GetString("SettingsDialog_snippetshNode_Text", resourceCulture);
             }
         }
         
@@ -7057,66 +11355,83 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Enable edit mode.
         /// </summary>
-        internal static System.Drawing.Bitmap Shazam {
+        internal static string ShowXmlDialog_editModeBox_Text {
             get {
-                object obj = ResourceManager.GetObject("Shazam", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("ShowXmlDialog_editModeBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Current Notebook.
+        ///   Looks up a localized string similar to Hide edited-by attributes.
         /// </summary>
-        internal static string ShowXmlDialog_currNotebookButton_Text {
+        internal static string ShowXmlDialog_hideEditedByBox_Text {
             get {
-                return ResourceManager.GetString("ShowXmlDialog_currNotebookButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Current Section.
-        /// </summary>
-        internal static string ShowXmlDialog_currSectionButton_Text {
-            get {
-                return ResourceManager.GetString("ShowXmlDialog_currSectionButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Hide edited-by attributes (uncheck to edit page).
-        /// </summary>
-        internal static string ShowXmlDialog_hideBox_Text {
-            get {
-                return ResourceManager.GetString("ShowXmlDialog_hideBox.Text", resourceCulture);
+                return ResourceManager.GetString("ShowXmlDialog_hideEditedByBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Remove LF from CDATA.
         /// </summary>
-        internal static string ShowXmlDialog_hideLFBox_Text {
+        internal static string ShowXmlDialog_linefeedBox_Text {
             get {
-                return ResourceManager.GetString("ShowXmlDialog_hideLFBox.Text", resourceCulture);
+                return ResourceManager.GetString("ShowXmlDialog_linefeedBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hierarchy.
+        ///   Looks up a localized string similar to Manual ObjectID.
         /// </summary>
-        internal static string ShowXmlDialog_hierTab_Text {
+        internal static string ShowXmlDialog_manualLabel_Text {
             get {
-                return ResourceManager.GetString("ShowXmlDialog_hierTab.Text", resourceCulture);
+                return ResourceManager.GetString("ShowXmlDialog_manualLabel.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Notebooks.
+        ///   Looks up a localized string similar to Manual lookup.
         /// </summary>
-        internal static string ShowXmlDialog_notebooksHierButton_Text {
+        internal static string ShowXmlDialog_manualTab_Text {
             get {
-                return ResourceManager.GetString("ShowXmlDialog_notebooksHierButton.Text", resourceCulture);
+                return ResourceManager.GetString("ShowXmlDialog_manualTab.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attributes on new lines.
+        /// </summary>
+        internal static string ShowXmlDialog_multilineBox_Text {
+            get {
+                return ResourceManager.GetString("ShowXmlDialog_multilineBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notebook with Pages.
+        /// </summary>
+        internal static string ShowXmlDialog_nbPagesTab_Text {
+            get {
+                return ResourceManager.GetString("ShowXmlDialog_nbPagesTab.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notebook with Sections.
+        /// </summary>
+        internal static string ShowXmlDialog_nbSectionsTab_Text {
+            get {
+                return ResourceManager.GetString("ShowXmlDialog_nbSectionsTab.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No hierarchy.
+        /// </summary>
+        internal static string ShowXmlDialog_noHierarchy {
+            get {
+                return ResourceManager.GetString("ShowXmlDialog_noHierarchy", resourceCulture);
             }
         }
         
@@ -7157,38 +11472,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pages.
+        ///   Looks up a localized string similar to Hide PID.
         /// </summary>
-        internal static string ShowXmlDialog_pagesHierButton_Text {
+        internal static string ShowXmlDialog_pidBox_Text {
             get {
-                return ResourceManager.GetString("ShowXmlDialog_pagesHierButton.Text", resourceCulture);
+                return ResourceManager.GetString("ShowXmlDialog_pidBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Page.
+        ///   Looks up a localized string similar to Save window location.
         /// </summary>
-        internal static string ShowXmlDialog_pageTab_Text {
+        internal static string ShowXmlDialog_saveWindowBox_Text {
             get {
-                return ResourceManager.GetString("ShowXmlDialog_pageTab.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sections.
-        /// </summary>
-        internal static string ShowXmlDialog_sectionsHierButton_Text {
-            get {
-                return ResourceManager.GetString("ShowXmlDialog_sectionsHierButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Select all.
-        /// </summary>
-        internal static string ShowXmlDialog_selectButton_Text {
-            get {
-                return ResourceManager.GetString("ShowXmlDialog_selectButton.Text", resourceCulture);
+                return ResourceManager.GetString("ShowXmlDialog_saveWindowBox.Text", resourceCulture);
             }
         }
         
@@ -7198,6 +11495,19 @@ namespace River.OneMoreAddIn.Properties {
         internal static string ShowXmlDialog_Text {
             get {
                 return ResourceManager.GetString("ShowXmlDialog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is a dangerous operation!
+        ///
+        ///Incorrect changes may result in lost data.
+        ///
+        ///Are you sure you want to continue?.
+        /// </summary>
+        internal static string ShowXmlDialog_WARNING {
+            get {
+                return ResourceManager.GetString("ShowXmlDialog_WARNING", resourceCulture);
             }
         }
         
@@ -7213,9 +11523,9 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Smiley {
+        internal static System.Drawing.Bitmap Snippets {
             get {
-                object obj = ResourceManager.GetObject("Smiley", resourceCulture);
+                object obj = ResourceManager.GetObject("Snippets", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7230,30 +11540,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to Manage my snippets.
         /// </summary>
-        internal static string SnippetsSheet_nameColumn_HeaderText {
+        internal static string SnippetsSheet_introBox_Text {
             get {
-                return ResourceManager.GetString("SnippetsSheet_nameColumn.HeaderText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Manage My Custom Snippets.
-        /// </summary>
-        internal static string SnippetsSheet_Text {
-            get {
-                return ResourceManager.GetString("SnippetsSheet_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Software {
-            get {
-                object obj = ResourceManager.GetObject("Software", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("SnippetsSheet_introBox.Text", resourceCulture);
             }
         }
         
@@ -7303,15 +11594,6 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
-        /// </summary>
-        internal static string SortDialog_nameButton_Text {
-            get {
-                return ResourceManager.GetString("SortDialog_nameButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Pin Notes to top and
         ///Quick Notes to bottom.
         /// </summary>
@@ -7322,8 +11604,10 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pages in this section
+        ///   Looks up a localized string similar to Children of Current Page
+        ///Pages in this section
         ///Sections in this notebook
+        ///Sections in this group
         ///Notebooks.
         /// </summary>
         internal static string SortDialog_scopeBox_Items {
@@ -7387,20 +11671,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove duplicates.
+        /// </summary>
+        internal static string SortListDialog_duplicatesBox_Text {
+            get {
+                return ResourceManager.GetString("SortListDialog_duplicatesBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Default is to sort the current list or only top level bullet lists.
         /// </summary>
         internal static string SortListDialog_introLabel_Text {
             get {
                 return ResourceManager.GetString("SortListDialog_introLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Options.
-        /// </summary>
-        internal static string SortListDialog_optionsBox_Text {
-            get {
-                return ResourceManager.GetString("SortListDialog_optionsBox.Text", resourceCulture);
             }
         }
         
@@ -7551,9 +11835,9 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sports {
+        internal static System.Drawing.Bitmap sponsor_dark {
             get {
-                object obj = ResourceManager.GetObject("Sports", resourceCulture);
+                object obj = ResourceManager.GetObject("sponsor_dark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -7561,10 +11845,19 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Star {
+        internal static System.Drawing.Bitmap sponsor_light {
             get {
-                object obj = ResourceManager.GetObject("Star", resourceCulture);
+                object obj = ResourceManager.GetObject("sponsor_light", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page must contain two or more background images.
+        /// </summary>
+        internal static string StackBackgroundImagesCommand_noImages {
+            get {
+                return ResourceManager.GetString("StackBackgroundImagesCommand_noImages", resourceCulture);
             }
         }
         
@@ -7574,16 +11867,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static string StartupFailureMessage {
             get {
                 return ResourceManager.GetString("StartupFailureMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Strikethrough {
-            get {
-                object obj = ResourceManager.GetObject("Strikethrough", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -7642,6 +11925,15 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Intended for pages with dark backgrounds.
+        /// </summary>
+        internal static string StyleDialog_darkBox_Text {
+            get {
+                return ResourceManager.GetString("StyleDialog_darkBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Default (Black).
         /// </summary>
         internal static string StyleDialog_defaultBlackToolStripMenuItem_Text {
@@ -7651,11 +11943,12 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
+        ///   Looks up a localized string similar to These styles include one or more unrecognized font families:
+        ///{0}.
         /// </summary>
-        internal static string StyleDialog_deleteButton_Text {
+        internal static string StyleDialog_familyWarning {
             get {
-                return ResourceManager.GetString("StyleDialog_deleteButton.Text", resourceCulture);
+                return ResourceManager.GetString("StyleDialog_familyWarning", resourceCulture);
             }
         }
         
@@ -7674,6 +11967,15 @@ namespace River.OneMoreAddIn.Properties {
         internal static string StyleDialog_fontLabel_Text {
             get {
                 return ResourceManager.GetString("StyleDialog_fontLabel.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable spell check.
+        /// </summary>
+        internal static string StyleDialog_ignoredBox_Text {
+            get {
+                return ResourceManager.GetString("StyleDialog_ignoredBox.Text", resourceCulture);
             }
         }
         
@@ -7705,7 +12007,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New Style.
+        ///   Looks up a localized string similar to New.
         /// </summary>
         internal static string StyleDialog_newStyleButton_Text {
             get {
@@ -7714,20 +12016,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New Custom Style.
+        ///   Looks up a localized string similar to Change the page color when applying these styles.
         /// </summary>
-        internal static string StyleDialog_NewText {
+        internal static string StyleDialog_pageColorBox_Text {
             get {
-                return ResourceManager.GetString("StyleDialog_NewText", resourceCulture);
+                return ResourceManager.GetString("StyleDialog_pageColorBox.Text", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OK (Save).
+        ///   Looks up a localized string similar to Click here to select the page color.
         /// </summary>
-        internal static string StyleDialog_okButton_Text {
+        internal static string StyleDialog_pageColorLink_Text {
             get {
-                return ResourceManager.GetString("StyleDialog_okButton.Text", resourceCulture);
+                return ResourceManager.GetString("StyleDialog_pageColorLink.Text", resourceCulture);
             }
         }
         
@@ -7746,6 +12048,15 @@ namespace River.OneMoreAddIn.Properties {
         internal static string StyleDialog_saveButton_Text {
             get {
                 return ResourceManager.GetString("StyleDialog_saveButton.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Styles.
+        /// </summary>
+        internal static string StyleDialog_saveStylesTitle {
+            get {
+                return ResourceManager.GetString("StyleDialog_saveStylesTitle", resourceCulture);
             }
         }
         
@@ -7806,7 +12117,7 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Custom Styles.
+        ///   Looks up a localized string similar to My Styles.
         /// </summary>
         internal static string StyleDialog_Text {
             get {
@@ -7842,124 +12153,89 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to No images found on this page.
         /// </summary>
-        internal static System.Drawing.Bitmap Subscript {
+        internal static string StylizeImagesCommand_noImages {
             get {
-                object obj = ResourceManager.GetObject("Subscript", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("StylizeImagesCommand_noImages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply to background images
+        ///Background images: {0}, selected: {1}.
+        /// </summary>
+        internal static string StylizeImagesDialog_backBox_Text {
+            get {
+                return ResourceManager.GetString("StylizeImagesDialog_backBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply to foreground images
+        ///Foreground images: {0}, selected: {1}.
+        /// </summary>
+        internal static string StylizeImagesDialog_foreBox_Text {
+            get {
+                return ResourceManager.GetString("StylizeImagesDialog_foreBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gray scale
+        ///Sepia
+        ///Polaroid
+        ///Invert.
+        /// </summary>
+        internal static string StylizeImagesDialog_styleBox_Text {
+            get {
+                return ResourceManager.GetString("StylizeImagesDialog_styleBox.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stylize Images.
+        /// </summary>
+        internal static string StylizeImagesDialog_Text {
+            get {
+                return ResourceManager.GetString("StylizeImagesDialog_Text", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Summary {
+        internal static System.Drawing.Bitmap TableStyles {
             get {
-                object obj = ResourceManager.GetObject("Summary", resourceCulture);
+                object obj = ResourceManager.GetObject("TableStyles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to OneMore Table Theme {0}.
         /// </summary>
-        internal static System.Drawing.Bitmap Superscript {
+        internal static string TableTheme_Screentip {
             get {
-                object obj = ResourceManager.GetObject("Superscript", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("TableTheme_Screentip", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Check all pages.
+        ///   Looks up a localized string similar to OneMore.
         /// </summary>
-        internal static string TaggedDialog_checkAllLabel_Text {
+        internal static string TabOneMore_Label {
             get {
-                return ResourceManager.GetString("TaggedDialog_checkAllLabel.Text", resourceCulture);
+                return ResourceManager.GetString("TabOneMore_Label", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Uncheck all pages.
+        ///   Looks up a localized string similar to The tag bank contains text. Are you sure you want to remove it?.
         /// </summary>
-        internal static string TaggedDialog_clearAllLabel_Text {
+        internal static string TagBankCommand_confirm {
             get {
-                return ResourceManager.GetString("TaggedDialog_clearAllLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Clear all.
-        /// </summary>
-        internal static string TaggedDialog_clearLabel_Text {
-            get {
-                return ResourceManager.GetString("TaggedDialog_clearLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copy.
-        /// </summary>
-        internal static string TaggedDialog_copyButton_Text {
-            get {
-                return ResourceManager.GetString("TaggedDialog_copyButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Index.
-        /// </summary>
-        internal static string TaggedDialog_indexButton_Text {
-            get {
-                return ResourceManager.GetString("TaggedDialog_indexButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Enter one or more tags separated by commas. Use the minus operator to exclude individual tags.
-        /// </summary>
-        internal static string TaggedDialog_introLabel_Text {
-            get {
-                return ResourceManager.GetString("TaggedDialog_introLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Move.
-        /// </summary>
-        internal static string TaggedDialog_moveButton_Text {
-            get {
-                return ResourceManager.GetString("TaggedDialog_moveButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to In all notebooks
-        ///In this notebook
-        ///In this section.
-        /// </summary>
-        internal static string TaggedDialog_scopeBox_Items {
-            get {
-                return ResourceManager.GetString("TaggedDialog_scopeBox.Items", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tags:.
-        /// </summary>
-        internal static string TaggedDialog_tagsLabel_Text {
-            get {
-                return ResourceManager.GetString("TaggedDialog_tagsLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Find Tagged Pages.
-        /// </summary>
-        internal static string TaggedDialog_Title {
-            get {
-                return ResourceManager.GetString("TaggedDialog_Title", resourceCulture);
+                return ResourceManager.GetString("TagBankCommand_confirm", resourceCulture);
             }
         }
         
@@ -7969,16 +12245,6 @@ namespace River.OneMoreAddIn.Properties {
         internal static System.Drawing.Bitmap Task {
             get {
                 object obj = ResourceManager.GetObject("Task", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Tasks {
-            get {
-                object obj = ResourceManager.GetObject("Tasks", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8138,38 +12404,20 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to OneNote Timer.
+        /// </summary>
+        internal static string TimerWindow_Text {
+            get {
+                return ResourceManager.GetString("TimerWindow.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hide date and time.
         /// </summary>
         internal static string ToggleDttmDialog_hideRadio_Text {
             get {
                 return ResourceManager.GetString("ToggleDttmDialog_hideRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This page.
-        /// </summary>
-        internal static string ToggleDttmDialog_pageRadio_Text {
-            get {
-                return ResourceManager.GetString("ToggleDttmDialog_pageRadio.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Scope.
-        /// </summary>
-        internal static string ToggleDttmDialog_scopeGroup_Text {
-            get {
-                return ResourceManager.GetString("ToggleDttmDialog_scopeGroup.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to All pages in this section.
-        /// </summary>
-        internal static string ToggleDttmDialog_sectionRadio_Text {
-            get {
-                return ResourceManager.GetString("ToggleDttmDialog_sectionRadio.Text", resourceCulture);
             }
         }
         
@@ -8203,19 +12451,9 @@ namespace River.OneMoreAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Travel {
+        internal static System.Drawing.Bitmap Unlocked {
             get {
-                object obj = ResourceManager.GetObject("Travel", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Underline {
-            get {
-                object obj = ResourceManager.GetObject("Underline", resourceCulture);
+                object obj = ResourceManager.GetObject("Unlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -8303,29 +12541,11 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Last updated:.
-        /// </summary>
-        internal static string UpdateDialog_upLastUpdatedLabel_Text {
-            get {
-                return ResourceManager.GetString("UpdateDialog_upLastUpdatedLabel.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Update.
         /// </summary>
         internal static string UpdateDialog_upOKButton_Text {
             get {
                 return ResourceManager.GetString("UpdateDialog_upOKButton.Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Release notes.
-        /// </summary>
-        internal static string UpdateDialog_upReleaseNotesLink_Text {
-            get {
-                return ResourceManager.GetString("UpdateDialog_upReleaseNotesLink.Text", resourceCulture);
             }
         }
         
@@ -8348,21 +12568,65 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Watch {
-            get {
-                object obj = ResourceManager.GetObject("Watch", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Actual.
         /// </summary>
         internal static string word_Actual {
             get {
                 return ResourceManager.GetString("word_Actual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        internal static string word_Add {
+            get {
+                return ResourceManager.GetString("word_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alias.
+        /// </summary>
+        internal static string word_Alias {
+            get {
+                return ResourceManager.GetString("word_Alias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All.
+        /// </summary>
+        internal static string word_All {
+            get {
+                return ResourceManager.GetString("word_All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alpha-numeric.
+        /// </summary>
+        internal static string word_Alphanumeric {
+            get {
+                return ResourceManager.GetString("word_Alphanumeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply.
+        /// </summary>
+        internal static string word_Apply {
+            get {
+                return ResourceManager.GetString("word_Apply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brightness.
+        /// </summary>
+        internal static string word_Brightness {
+            get {
+                return ResourceManager.GetString("word_Brightness", resourceCulture);
             }
         }
         
@@ -8376,11 +12640,119 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Caption.
+        /// </summary>
+        internal static string word_Caption {
+            get {
+                return ResourceManager.GetString("word_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear.
+        /// </summary>
+        internal static string word_Clear {
+            get {
+                return ResourceManager.GetString("word_Clear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        internal static string word_Close {
+            get {
+                return ResourceManager.GetString("word_Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Code.
+        /// </summary>
+        internal static string word_Code {
+            get {
+                return ResourceManager.GetString("word_Code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Color.
+        /// </summary>
+        internal static string word_Color {
+            get {
+                return ResourceManager.GetString("word_Color", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Command.
+        /// </summary>
+        internal static string word_Command {
+            get {
+                return ResourceManager.GetString("word_Command", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Completed.
         /// </summary>
         internal static string word_Completed {
             get {
                 return ResourceManager.GetString("word_Completed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Constraint.
+        /// </summary>
+        internal static string word_Constraint {
+            get {
+                return ResourceManager.GetString("word_Constraint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contrast.
+        /// </summary>
+        internal static string word_Contrast {
+            get {
+                return ResourceManager.GetString("word_Contrast", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        internal static string word_Copy {
+            get {
+                return ResourceManager.GetString("word_Copy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Default.
+        /// </summary>
+        internal static string word_Default {
+            get {
+                return ResourceManager.GetString("word_Default", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string word_Delete {
+            get {
+                return ResourceManager.GetString("word_Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        internal static string word_Distance {
+            get {
+                return ResourceManager.GetString("word_Distance", resourceCulture);
             }
         }
         
@@ -8394,11 +12766,344 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        internal static string word_Edit {
+            get {
+                return ResourceManager.GetString("word_Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Element.
+        /// </summary>
+        internal static string word_Element {
+            get {
+                return ResourceManager.GetString("word_Element", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Empty.
+        /// </summary>
+        internal static string word_Empty {
+            get {
+                return ResourceManager.GetString("word_Empty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extract.
+        /// </summary>
+        internal static string word_Extract {
+            get {
+                return ResourceManager.GetString("word_Extract", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Favorites.
+        /// </summary>
+        internal static string word_Favorites {
+            get {
+                return ResourceManager.GetString("word_Favorites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Folder.
+        /// </summary>
+        internal static string word_Folder {
+            get {
+                return ResourceManager.GetString("word_Folder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Font.
+        /// </summary>
+        internal static string word_Font {
+            get {
+                return ResourceManager.GetString("word_Font", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Format.
+        /// </summary>
+        internal static string word_Format {
+            get {
+                return ResourceManager.GetString("word_Format", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Function.
+        /// </summary>
+        internal static string word_Function {
+            get {
+                return ResourceManager.GetString("word_Function", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General.
+        /// </summary>
+        internal static string word_General {
+            get {
+                return ResourceManager.GetString("word_General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Go.
+        /// </summary>
+        internal static string word_Go {
+            get {
+                return ResourceManager.GetString("word_Go", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grayscale.
+        /// </summary>
+        internal static string word_Grayscale {
+            get {
+                return ResourceManager.GetString("word_Grayscale", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hashtags.
+        /// </summary>
+        internal static string word_Hashtags {
+            get {
+                return ResourceManager.GetString("word_Hashtags", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to History.
+        /// </summary>
+        internal static string word_History {
+            get {
+                return ResourceManager.GetString("word_History", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Images.
+        /// </summary>
+        internal static string word_Images {
+            get {
+                return ResourceManager.GetString("word_Images", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indent.
+        /// </summary>
+        internal static string word_Indent {
+            get {
+                return ResourceManager.GetString("word_Indent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to word_Index.
+        /// </summary>
+        internal static string word_Index {
+            get {
+                return ResourceManager.GetString("word_Index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information.
+        /// </summary>
+        internal static string word_Information {
+            get {
+                return ResourceManager.GetString("word_Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keyboard.
+        /// </summary>
+        internal static string word_Keyboard {
+            get {
+                return ResourceManager.GetString("word_Keyboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string word_Language {
+            get {
+                return ResourceManager.GetString("word_Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Length.
+        /// </summary>
+        internal static string word_Length {
+            get {
+                return ResourceManager.GetString("word_Length", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        internal static string word_Limit {
+            get {
+                return ResourceManager.GetString("word_Limit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minutes.
+        /// </summary>
+        internal static string word_Minutes {
+            get {
+                return ResourceManager.GetString("word_Minutes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move.
+        /// </summary>
+        internal static string word_Move {
+            get {
+                return ResourceManager.GetString("word_Move", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string word_Name {
+            get {
+                return ResourceManager.GetString("word_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Navigator.
+        /// </summary>
+        internal static string word_Navigator {
+            get {
+                return ResourceManager.GetString("word_Navigator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string word_No {
+            get {
+                return ResourceManager.GetString("word_No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to None.
+        /// </summary>
+        internal static string word_None {
+            get {
+                return ResourceManager.GetString("word_None", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notebook.
+        /// </summary>
+        internal static string word_Notebook {
+            get {
+                return ResourceManager.GetString("word_Notebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notebooks.
+        /// </summary>
+        internal static string word_Notebooks {
+            get {
+                return ResourceManager.GetString("word_Notebooks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notes.
+        /// </summary>
+        internal static string word_Notes {
+            get {
+                return ResourceManager.GetString("word_Notes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Numbering.
+        /// </summary>
+        internal static string word_Numbering {
+            get {
+                return ResourceManager.GetString("word_Numbering", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Numeric.
+        /// </summary>
+        internal static string word_Numeric {
+            get {
+                return ResourceManager.GetString("word_Numeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
         internal static string word_OK {
             get {
                 return ResourceManager.GetString("word_OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opacity.
+        /// </summary>
+        internal static string word_Opacity {
+            get {
+                return ResourceManager.GetString("word_Opacity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options.
+        /// </summary>
+        internal static string word_Options {
+            get {
+                return ResourceManager.GetString("word_Options", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        internal static string word_Page {
+            get {
+                return ResourceManager.GetString("word_Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to %.
+        /// </summary>
+        internal static string word_PercentSymbol {
+            get {
+                return ResourceManager.GetString("word_PercentSymbol", resourceCulture);
             }
         }
         
@@ -8412,6 +13117,33 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Plugins.
+        /// </summary>
+        internal static string word_Plugins {
+            get {
+                return ResourceManager.GetString("word_Plugins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preview.
+        /// </summary>
+        internal static string word_Preview {
+            get {
+                return ResourceManager.GetString("word_Preview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quality.
+        /// </summary>
+        internal static string word_Quality {
+            get {
+                return ResourceManager.GetString("word_Quality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Refresh.
         /// </summary>
         internal static string word_Refresh {
@@ -8421,11 +13153,110 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reminder.
+        /// </summary>
+        internal static string word_Reminder {
+            get {
+                return ResourceManager.GetString("word_Reminder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rename.
+        /// </summary>
+        internal static string word_Rename {
+            get {
+                return ResourceManager.GetString("word_Rename", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset.
+        /// </summary>
+        internal static string word_Reset {
+            get {
+                return ResourceManager.GetString("word_Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saturation.
+        /// </summary>
+        internal static string word_Saturation {
+            get {
+                return ResourceManager.GetString("word_Saturation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string word_Save {
+            get {
+                return ResourceManager.GetString("word_Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule.
+        /// </summary>
+        internal static string word_Schedule {
+            get {
+                return ResourceManager.GetString("word_Schedule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scope.
+        /// </summary>
+        internal static string word_Scope {
+            get {
+                return ResourceManager.GetString("word_Scope", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        internal static string word_Search {
+            get {
+                return ResourceManager.GetString("word_Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seconds.
+        /// </summary>
+        internal static string word_Seconds {
+            get {
+                return ResourceManager.GetString("word_Seconds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Section.
+        /// </summary>
+        internal static string word_Section {
+            get {
+                return ResourceManager.GetString("word_Section", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Silenced.
         /// </summary>
         internal static string word_Silenced {
             get {
                 return ResourceManager.GetString("word_Silenced", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snippets.
+        /// </summary>
+        internal static string word_Snippets {
+            get {
+                return ResourceManager.GetString("word_Snippets", resourceCulture);
             }
         }
         
@@ -8448,6 +13279,132 @@ namespace River.OneMoreAddIn.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        internal static string word_Status {
+            get {
+                return ResourceManager.GetString("word_Status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Storage.
+        /// </summary>
+        internal static string word_Storage {
+            get {
+                return ResourceManager.GetString("word_Storage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Style.
+        /// </summary>
+        internal static string word_Style {
+            get {
+                return ResourceManager.GetString("word_Style", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stylize.
+        /// </summary>
+        internal static string word_Stylize {
+            get {
+                return ResourceManager.GetString("word_Stylize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suggestions.
+        /// </summary>
+        internal static string word_Suggestions {
+            get {
+                return ResourceManager.GetString("word_Suggestions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Target.
+        /// </summary>
+        internal static string word_Target {
+            get {
+                return ResourceManager.GetString("word_Target", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text.
+        /// </summary>
+        internal static string word_Text {
+            get {
+                return ResourceManager.GetString("word_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total.
+        /// </summary>
+        internal static string word_Total {
+            get {
+                return ResourceManager.GetString("word_Total", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        internal static string word_Warning {
+            get {
+                return ResourceManager.GetString("word_Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Width.
+        /// </summary>
+        internal static string word_Width {
+            get {
+                return ResourceManager.GetString("word_Width", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Word.
+        /// </summary>
+        internal static string word_Word {
+            get {
+                return ResourceManager.GetString("word_Word", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Words.
+        /// </summary>
+        internal static string word_Words {
+            get {
+                return ResourceManager.GetString("word_Words", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XML.
+        /// </summary>
+        internal static string word_XML {
+            get {
+                return ResourceManager.GetString("word_XML", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string word_Yes {
+            get {
+                return ResourceManager.GetString("word_Yes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total words on page: {0}.
         /// </summary>
         internal static string WordCountCommand_Count {
@@ -8462,6 +13419,51 @@ namespace River.OneMoreAddIn.Properties {
         internal static string WordCountCommand_Selected {
             get {
                 return ResourceManager.GetString("WordCountCommand_Selected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Notebook.
+        /// </summary>
+        internal static string WordCounts_Notebook {
+            get {
+                return ResourceManager.GetString("WordCounts_Notebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total words in notebook across {0} pages.
+        /// </summary>
+        internal static string WordCounts_NotebookTotal {
+            get {
+                return ResourceManager.GetString("WordCounts_NotebookTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Section.
+        /// </summary>
+        internal static string WordCounts_Section {
+            get {
+                return ResourceManager.GetString("WordCounts_Section", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total words in section across {0} pages.
+        /// </summary>
+        internal static string WordCounts_SectionTotal {
+            get {
+                return ResourceManager.GetString("WordCounts_SectionTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Word Counts.
+        /// </summary>
+        internal static string WordCountsCommand_Title {
+            get {
+                return ResourceManager.GetString("WordCountsCommand_Title", resourceCulture);
             }
         }
     }

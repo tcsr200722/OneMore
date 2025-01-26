@@ -4,138 +4,112 @@
 
 namespace River.OneMoreAddIn
 {
-	using River.OneMoreAddIn.Commands;
+	using River.OneMoreAddIn.Settings;
+	using System;
+	using System.Linq;
+	using System.Threading.Tasks;
 	using System.Windows.Forms;
+	using System.Xml.Linq;
 
 
 	public partial class AddIn
 	{
-		private void RegisterHotkeys()
+		private const int en_US_Locale = 1033;
+
+
+		/// <summary>
+		/// Dynamically discover and register hotkey sequences for commands decorated with
+		/// the CommandAttribute attribute
+		/// </summary>
+		/// <returns></returns>
+		private async Task RegisterHotkeys()
 		{
+			// discover all command methods with CommandAttribute...
+
+			var methods = typeof(AddIn).GetMethods()
+				.Select(m => new
+				{
+					Method = m,
+					Attributes = m.GetCustomAttributes(typeof(CommandAttribute), false)
+				})
+				.Where(m => m.Attributes.Any())
+				.Select(m => new
+				{
+					m.Method,
+					Command = (CommandAttribute)m.Attributes[0]
+				});
+
+			// an awful hack to avoid a conflict with Italian keyboard (FIGS and likely UK) that
+			// use AltGr as Ctrl+Alt. This means users pressing AltGr+OemPlus to get a square
+			// bracket would instead end up increasing the font size of the page when they didn't
+			// mean to! So here we only register these hot keys for the US keyboard input layout.
 			var locale = System.Threading.Thread.CurrentThread.CurrentCulture.KeyboardLayoutId;
-			logger.WriteLine($"defining hotkeys for input locale {locale}");
-
-			HotkeyManager.Initialize();
-
-			HotkeyManager.RegisterHotKey(async () => await AddFootnoteCmd(null),
-				Keys.F, Hotmods.ControlAlt);
-
-			HotkeyManager.RegisterHotKey(async () => await AddFormulaCmd(null),
-				Keys.F5);
-
-			HotkeyManager.RegisterHotKey(async () => await DecreaseFontSizeCmd(null),
-				Keys.OemMinus, Hotmods.ControlAlt);
-
-			HotkeyManager.RegisterHotKey(async () => await FillDownCmd(null),
-				Keys.D, Hotmods.Control);
-
-			HotkeyManager.RegisterHotKey(async () => await HighlightCmd(null),
-				Keys.H, Hotmods.ControlShift);
-
-			// this is an awful hack to avoid a conflict with Italian keyboards that use AltGr
-			// as Ctrl+Alt. This means users pressing AltGr+OemPlus to get a square bracket would
-			// instead end up increasing the font size of the page when they didn't mean to!
-			// So here we only register these hot keys for the US keyboard input layout.
-			// This seem to apply to FIGS languages and probably UK.
-			if (locale == 1033)
+			if (locale != en_US_Locale)
 			{
-				HotkeyManager.RegisterHotKey(async () => await IncreaseFontSizeCmd(null),
-					Keys.Oemplus, Hotmods.ControlAlt);
+				methods = methods.Where(m => m.Method.Name != nameof(IncreaseFontSizeCmd));
 			}
 
-			HotkeyManager.RegisterHotKey(async () => await InsertCodeBlockCmd(null),
-				Keys.F6);
+			if (!methods.Any())
+			{
+				logger.WriteLine("no hotkey definitions found");
+				await Task.Yield();
+				return;
+			}
 
-			HotkeyManager.RegisterHotKey(async () => await InsertDateCmd(null),
-				Keys.D, Hotmods.ControlShift);
+			var settings = new SettingsProvider()
+				.GetCollection(nameof(KeyboardSheet))?.Get<XElement>("commands");
 
-			HotkeyManager.RegisterHotKey(async () => await InsertDoubleHorizontalLineCmd(null),
-				Keys.F12, Hotmods.AltShift);
+			// register hotkey for each discovered command...
 
-			HotkeyManager.RegisterHotKey(async () => await InsertHorizontalLineCmd(null),
-				Keys.F11, Hotmods.AltShift);
+			await HotkeyManager.Initialize();
+			var count = 0;
 
-			HotkeyManager.RegisterHotKey(async () => await InsertTimerCmd(null),
-				Keys.F2);
+			methods.ForEach((m) =>
+			{
+				var hotkey = new Hotkey(m.Command.DefaultKeys);
 
-			HotkeyManager.RegisterHotKey(async () => await DisableSpellCheckCmd(null),
-				Keys.F4);
+				// look for user override for the command
+				var setting = settings?.Elements("command")
+					.FirstOrDefault(e => e.Attribute("command")?.Value == m.Method.Name);
 
-			HotkeyManager.RegisterHotKey(async () => await PasteRtfCmd(null),
-				Keys.V, Hotmods.ControlAlt);
+				if (setting != null)
+				{
+					if (Enum.TryParse<Keys>(setting.Attribute("keys")?.Value, true, out var keys))
+					{
+						// has user deliberately cleared command binding (?HasFlag doesn't work?)
+						if ((keys & Keys.KeyCode) == Keys.Back)
+						{
+							hotkey = null;
+						}
+						// has user overridden default binding
+						else if ((hotkey.Keys & hotkey.Modifiers) != keys)
+						{
+							hotkey = new Hotkey(keys);
+						}
+					}
+				}
 
-			HotkeyManager.RegisterHotKey(async () => await RecalculateFormulaCmd(null),
-				Keys.F5, Hotmods.Shift);
+				if (hotkey != null && hotkey.Keys != Keys.None)
+				{
+					// all commands should be of the form:
+					// public async Task NAME(IRibbonControl control)
 
-			HotkeyManager.RegisterHotKey(async () => await RemoveFootnoteCmd(null),
-				Keys.F, Hotmods.ControlShift);
+					var parameterType = m.Method.GetParameters().FirstOrDefault()?.GetType();
+					if (parameterType != null)
+					{
+						HotkeyManager.RegisterHotKey(async () =>
+						{
+							await (Task)m.Method.Invoke(this, new object[] { null });
 
-			HotkeyManager.RegisterHotKey(async () => await ReplayCmd(null),
-				Keys.R, Hotmods.AltShift);
+						},
+						hotkey);
 
-			HotkeyManager.RegisterHotKey(async () => await RemindCmd(null),
-				Keys.F8);
+						count++;
+					}
+				}
+			});
 
-			HotkeyManager.RegisterHotKey(async () => await SearchCmd(null),
-				Keys.F, Hotmods.Alt);
-
-			HotkeyManager.RegisterHotKey(async () => await SearchAndReplaceCmd(null),
-				Keys.H, Hotmods.Control);
-
-			HotkeyManager.RegisterHotKey(async () => await StartTimerCmd(null),
-				Keys.F2, Hotmods.Alt);
-
-			HotkeyManager.RegisterHotKey(async () => await TaggedCmd(null),
-				Keys.T, Hotmods.ControlAlt);
-
-			HotkeyManager.RegisterHotKey(async () => await TaggingCmd(null),
-				Keys.T, Hotmods.Alt);
-
-			HotkeyManager.RegisterHotKey(async () => await ToLowercaseCmd(null),
-				Keys.U, Hotmods.ControlShift);
-
-			HotkeyManager.RegisterHotKey(async () => await ToUppercaseCmd(null),
-				Keys.U, Hotmods.ControlAltShift);
-
-			// tools
-
-			HotkeyManager.RegisterHotKey(async () => await ShowXmlCmd(null),
-				Keys.X, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<DiagnosticsCommand>(),
-				Keys.F8, Hotmods.Shift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ClearLogCommand>(),
-				Keys.F8, Hotmods.Control);
-
-			// custom styles, CtrlAltShift+1..9
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(0),
-				Keys.D1, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(1),
-				Keys.D2, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(2),
-				Keys.D3, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(3),
-				Keys.D4, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(4),
-				Keys.D5, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(5),
-				Keys.D6, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(6),
-				Keys.D7, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(7),
-				Keys.D8, Hotmods.ControlAltShift);
-
-			HotkeyManager.RegisterHotKey(async () => await factory.Run<ApplyStyleCommand>(9),
-				Keys.D9, Hotmods.ControlAltShift);
+			logger.WriteLine($"defined {count} hotkeys for input locale {locale}");
 		}
 	}
 }

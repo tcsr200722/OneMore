@@ -1,5 +1,5 @@
 ﻿//************************************************************************************************
-// Copyright © 2019 Steven M Cohn.  All rights reserved.
+// Copyright © 2019 Steven M Cohn. All rights reserved.
 //************************************************************************************************
 
 #pragma warning disable CS3003 // Type is not CLS-compliant
@@ -8,19 +8,11 @@ namespace River.OneMoreAddIn.Commands
 {
 	using System;
 	using System.Windows.Forms;
-	using Resx = River.OneMoreAddIn.Properties.Resources;
+	using Resx = Properties.Resources;
 
 
-	internal partial class SortDialog : UI.LocalizableForm
+	internal partial class SortDialog : UI.MoreForm
 	{
-
-		public enum Sortings
-		{
-			ByName,
-			ByCreated,
-			ByModified
-		}
-
 
 		public enum Directions
 		{
@@ -44,7 +36,7 @@ namespace River.OneMoreAddIn.Commands
 				{
 					"scopeLabel",
 					"sortLabel",
-					"nameButton",
+					"nameButton=word_Name",
 					"createdButton",
 					"modifiedButton",
 					"directionLabel",
@@ -56,7 +48,7 @@ namespace River.OneMoreAddIn.Commands
 				});
 			}
 
-			scopeBox.SelectedIndex = 0;
+			scopeBox.SelectedIndex = 1;
 		}
 
 
@@ -64,17 +56,14 @@ namespace River.OneMoreAddIn.Commands
 		{
 			get
 			{
-				switch (scopeBox.SelectedIndex)
+				return scopeBox.SelectedIndex switch
 				{
-					case 0:
-						return OneNote.Scope.Pages;
-
-					case 1:
-						return OneNote.Scope.Sections;
-
-					default:
-						return OneNote.Scope.Notebooks;
-				}
+					0 => OneNote.Scope.Children,
+					1 => OneNote.Scope.Pages,
+					2 => OneNote.Scope.Sections,
+					3 => OneNote.Scope.SectionGroups,
+					_ => OneNote.Scope.Notebooks,
+				};
 			}
 		}
 
@@ -86,9 +75,28 @@ namespace River.OneMoreAddIn.Commands
 		public bool PinNotes => pinNotesBox.Checked;
 
 
-		public Sortings Soring =>
-			nameButton.Checked ? Sortings.ByName
-			: (createdButton.Checked ? Sortings.ByCreated : Sortings.ByModified);
+		public SortCommand.SortBy Sorting =>
+			nameButton.Checked
+				? SortCommand.SortBy.Name
+				: (createdButton.Checked
+					? SortCommand.SortBy.Created
+					: SortCommand.SortBy.Modified);
+
+
+		public void SetScope(OneNote.Scope scope)
+		{
+			switch (scope)
+			{
+				case OneNote.Scope.Children: scopeBox.SelectedIndex = 0; break;
+				case OneNote.Scope.Pages: scopeBox.SelectedIndex = 1; break;
+				case OneNote.Scope.Sections: scopeBox.SelectedIndex = 2; break;
+				case OneNote.Scope.SectionGroups: scopeBox.SelectedIndex = 3; break;
+				case OneNote.Scope.Notebooks: scopeBox.SelectedIndex = 4; break;
+				default: return;
+			}
+
+			scopeBox.Enabled = false;
+		}
 
 
 		private void OK(object sender, EventArgs e)
@@ -103,9 +111,10 @@ namespace River.OneMoreAddIn.Commands
 			Close();
 		}
 
+
 		private void ChangeSelection(object sender, EventArgs e)
 		{
-			createdButton.Enabled = scopeBox.SelectedIndex == 0;
+			createdButton.Enabled = scopeBox.SelectedIndex <= 1;
 			if (!createdButton.Enabled)
 			{
 				if (createdButton.Checked)
@@ -114,7 +123,7 @@ namespace River.OneMoreAddIn.Commands
 				}
 			}
 
-			pinNotesBox.Enabled = (scopeBox.SelectedIndex == 1);
+			pinNotesBox.Enabled = (scopeBox.SelectedIndex == 2);
 		}
 	}
 }

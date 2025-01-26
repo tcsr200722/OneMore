@@ -3,13 +3,16 @@
 //************************************************************************************************
 
 #pragma warning disable S1118 // Utility classes should not have public constructors
+#pragma warning disable S6605 // "Exists" method should be used instead of the "Any" extension
 
 namespace OneMoreSetupActions
 {
 	using System;
 	using System.Diagnostics;
+	using System.Linq;
 	using System.Runtime.InteropServices;
 	using System.Security.Principal;
+	using System.Windows.Forms;
 
 
 	class Program
@@ -39,9 +42,31 @@ namespace OneMoreSetupActions
 			logger = new Logger("OneMoreSetup");
 			stepper = new Stepper();
 
-			ReportContext();
+			logger.WriteLine();
+			if (args[0] == "--install" || args[0] == "--uninstall")
+			{
+				logger.WriteLine(new string('=', 70));
+				logger.WriteLine($"starting action: {args[0]} .. {DateTime.Now}");
+			}
+			else
+			{
+				logger.WriteLine(new string('-', 50));
+				logger.WriteLine($"direct action: {args[0]} .. {DateTime.Now}");
+			}
+
+			ReportContext(args.Any(a => a == "--install" || a == "--uninstall"));
 
 			int status;
+
+			if (args.Any(a => a == "--x64" || a == "--x86"))
+			{
+				var x64 = args.Any(a => a == "--x64");
+				status = new CheckBitnessAction(logger, stepper, x64).Install();
+				if (status != CustomAction.SUCCESS)
+				{
+					Environment.Exit(status);
+				}
+			}
 
 			switch (args[0])
 			{
@@ -55,41 +80,53 @@ namespace OneMoreSetupActions
 
 				// direct calls for testing...
 
-				case "--install-handler":
-					status = new ProtocolHandlerDeployment(logger, stepper).Install();
+				case "--install-activesetup":
+					status = new ActiveSetupAction(logger, stepper).Install();
+					break;
+
+				case "--install-checkbitness":
+					status = new CheckBitnessAction(logger, stepper, true).Install();
+					break;
+
+				case "--install-checkonenote":
+					status = new CheckOneNoteAction(logger, stepper).Install();
 					break;
 
 				case "--install-edge":
-					status = new EdgeWebViewDeployment(logger, stepper).Install();
+					status = new EdgeWebViewAction(logger, stepper).Install();
 					break;
 
-				case "--install-registry":
-					status = new RegistryDeployment(logger, stepper).Install();
+				case "--install-handler":
+					status = new ProtocolHandlerAction(logger, stepper).Install();
+					break;
+
+				case "--install-registrywow":
+					status = new RegistryWowAction(logger, stepper).Install();
 					break;
 
 				case "--install-shutdown":
-					status = new ShutdownOneNoteDeployment(logger, stepper).Install();
+					status = new ShutdownOneNoteAction(logger, stepper).Install();
 					break;
 
 				case "--install-trusted":
-					status = new TrustedProtocolDeployment(logger, stepper).Install();
+					status = new TrustedProtocolAction(logger, stepper).Install();
 					break;
 
 				case "--uninstall-edge":
-					status = new EdgeWebViewDeployment(logger, stepper).Uninstall();
+					status = new EdgeWebViewAction(logger, stepper).Uninstall();
 					break;
 
-				case "--uninstall-registry":
-					status = new RegistryDeployment(logger, stepper).Uninstall();
+				case "--uninstall-registrywow":
+					status = new RegistryWowAction(logger, stepper).Uninstall();
 					break;
 
 				case "--uninstall-shutdown":
-					status = new ShutdownOneNoteDeployment(logger, stepper).Uninstall();
+					status = new ShutdownOneNoteAction(logger, stepper).Uninstall();
 					break;
 
 				default:
 					logger.WriteLine($"unrecognized command: {args[0]}");
-					status = Deployment.FAILURE;
+					status = CustomAction.FAILURE;
 					break;
 			}
 
@@ -97,8 +134,10 @@ namespace OneMoreSetupActions
 		}
 
 
-		static void ReportContext()
+		static void ReportContext(bool requireElevated)
 		{
+			// current user...
+
 			var sid = WindowsIdentity.GetCurrent().User.Value;
 			var username = new SecurityIdentifier(sid).Translate(typeof(NTAccount)).ToString();
 
@@ -107,6 +146,29 @@ namespace OneMoreSetupActions
 
 			var elve = elevated ? "elevated" : string.Empty;
 			logger.WriteLine($"OneMore installer running as user {username} ({sid}) {elve}");
+
+			// invoking user...
+
+			var domain = Environment.UserDomainName;
+			username = Environment.UserName;
+
+			var userdom = domain != null
+				? $@"{domain.ToUpper()}\{username.ToLower()}"
+				: username.ToLower();
+
+			logger.WriteLine($"on behalf of {userdom}");
+
+			if (!elevated && requireElevated)
+			{
+				logger.WriteLine($"aborting without elevated privileges");
+
+				MessageBox.Show(
+					"This installer must be run as an administrator using elevated privileges",
+					"Not Elevated",
+					MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+				Environment.Exit(CustomAction.FAILURE);
+			}
 		}
 
 
@@ -118,26 +180,43 @@ namespace OneMoreSetupActions
 			logger.WriteLine();
 			logger.WriteLine($"Register... version {AssemblyInfo.Version}");
 
+			var status = new CheckOneNoteAction(logger, stepper).Install();
+			if (status != CustomAction.SUCCESS)
+			{
+				MessageBox.Show(
+					"The OneNote installation looks to be invalid. OneMore may not appear in the" +
+					"OneNote ribbon until OneNote is repaired. For more information, check the logs at\n" +
+					logger.LogPath,
+					"OneNote Configuration Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+				// treat as warning for now...
+				//return CustomAction.FAILURE;
+			}
+
 			try
 			{
-				if (new ShutdownOneNoteDeployment(logger, stepper).Install() == Deployment.SUCCESS &&
-					new ProtocolHandlerDeployment(logger, stepper).Install() == Deployment.SUCCESS &&
-					new TrustedProtocolDeployment(logger, stepper).Install() == Deployment.SUCCESS &&
-					new EdgeWebViewDeployment(logger, stepper).Install() == Deployment.SUCCESS)
+				if (new ShutdownOneNoteAction(logger, stepper).Install() == CustomAction.SUCCESS &&
+					new ProtocolHandlerAction(logger, stepper).Install() == CustomAction.SUCCESS &&
+					new TrustedProtocolAction(logger, stepper).Install() == CustomAction.SUCCESS &&
+					new EdgeWebViewAction(logger, stepper).Install() == CustomAction.SUCCESS)
 				{
-					logger.WriteLine("completed successfully");
-					return Deployment.SUCCESS;
+					logger.WriteLine("install completed successfully");
+					return CustomAction.SUCCESS;
 				}
 
-				logger.WriteLine("completed suspiciously");
-				return Deployment.SUCCESS;
+				logger.WriteLine("install completed suspiciously");
+				return CustomAction.SUCCESS;
 				//return FAILURE;
 			}
 			catch (Exception exc)
 			{
-				logger.WriteLine("error registering");
+				logger.WriteLine("install failed; error registering");
 				logger.WriteLine(exc);
-				return Deployment.FAILURE;
+
+				MessageBox.Show($"Error installing. Check the logs {logger.LogPath}",
+					"Action Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+				return CustomAction.FAILURE;
 			}
 		}
 
@@ -152,27 +231,31 @@ namespace OneMoreSetupActions
 				// unregister is more lenient than register... if any of these
 				// actions don't succeed, we can still complete with SUCCESS
 
-				var ok0 = new ShutdownOneNoteDeployment(logger, stepper).Uninstall() == Deployment.SUCCESS;
-				var ok1 = new ProtocolHandlerDeployment(logger, stepper).Uninstall() == Deployment.SUCCESS;
-				var ok2 = new TrustedProtocolDeployment(logger, stepper).Uninstall() == Deployment.SUCCESS;
-				var ok3 = new RegistryDeployment(logger, stepper).Uninstall() == Deployment.SUCCESS;
+				var ok0 = new ShutdownOneNoteAction(logger, stepper).Uninstall() == CustomAction.SUCCESS;
+				var ok1 = new ProtocolHandlerAction(logger, stepper).Uninstall() == CustomAction.SUCCESS;
+				var ok2 = new TrustedProtocolAction(logger, stepper).Uninstall() == CustomAction.SUCCESS;
+				var ok3 = new RegistryWowAction(logger, stepper).Uninstall() == CustomAction.SUCCESS;
 
 				if (ok0 && ok1 && ok2 && ok3)
 				{
-					logger.WriteLine("completed successfully");
+					logger.WriteLine("uninstall completed successfully");
 				}
 				else
 				{
-					logger.WriteLine("completed with warnings");
+					logger.WriteLine("uninstall completed with warnings");
 				}
 
-				return Deployment.SUCCESS;
+				return CustomAction.SUCCESS;
 			}
 			catch (Exception exc)
 			{
-				logger.WriteLine("error unregistering");
+				logger.WriteLine("uninstall failed; error unregistering");
 				logger.WriteLine(exc);
-				return Deployment.FAILURE;
+
+				MessageBox.Show($"Error uninstalling. Check the logs {logger.LogPath}",
+					"Action Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+				return CustomAction.FAILURE;
 			}
 		}
 	}

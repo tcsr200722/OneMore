@@ -22,6 +22,8 @@ namespace River.OneMoreAddIn.Commands
 
 		public void Startup()
 		{
+			logger.WriteLine("starting reminder service");
+
 			var thread = new Thread(async () =>
 			{
 				// 'errors' allows repeated consecutive exceptions but limits that to 5 so we
@@ -46,7 +48,10 @@ namespace River.OneMoreAddIn.Commands
 				}
 
 				logger.WriteLine("reminder service has stopped; check for exceptions above");
-			});
+			})
+			{
+				Name = $"{nameof(ReminderService)}Thread"
+			};
 
 			thread.SetApartmentState(ApartmentState.STA);
 			thread.IsBackground = true;
@@ -57,51 +62,49 @@ namespace River.OneMoreAddIn.Commands
 
 		private async Task Scan()
 		{
-			using (var one = new OneNote())
+			await using var one = new OneNote();
+			var hierarchy = await one.SearchMeta(string.Empty, MetaNames.Reminder);
+			if (hierarchy == null)
 			{
-				var hierarchy = await one.SearchMeta(string.Empty, MetaNames.Reminder);
-				if (hierarchy == null)
+				// may need to restart OneNote
+				return;
+			}
+
+			var ns = hierarchy.GetNamespaceOfPrefix(OneNote.Prefix);
+
+			var metas = hierarchy.Descendants(ns + "Meta").Where(e =>
+				e.Attribute("name").Value == MetaNames.Reminder &&
+				e.Attribute("content").Value.Length > 0);
+
+			if (!metas.Any())
+			{
+				return;
+			}
+
+			var serializer = new ReminderSerializer();
+			foreach (var meta in metas)
+			{
+				var reminders = serializer.DecodeContent(meta.Attribute("content").Value);
+				var pageID = meta.Parent.Attribute("ID").Value;
+				foreach (var reminder in reminders)
 				{
-					// may need to restart OneNote
-					return;
-				}
-
-				var ns = hierarchy.GetNamespaceOfPrefix(OneNote.Prefix);
-
-				var metas = hierarchy.Descendants(ns + "Meta").Where(e =>
-					e.Attribute("name").Value == MetaNames.Reminder &&
-					e.Attribute("content").Value.Length > 0);
-
-				if (!metas.Any())
-				{
-					return;
-				}
-
-				var serializer = new ReminderSerializer();
-				foreach (var meta in metas)
-				{
-					var reminders = serializer.DecodeContent(meta.Attribute("content").Value);
-					var pageID = meta.Parent.Attribute("ID").Value;
-					foreach (var reminder in reminders)
+					if (reminder.Silent)
 					{
-						if (reminder.Silent)
-						{
-							continue;
-						}
-
-						if (reminder.Snooze != SnoozeRange.None &&
-							DateTime.UtcNow.CompareTo(reminder.SnoozeTime) < 0)
-						{
-							continue;
-						}
-
-						if (RemindScheduler.WaitingOn(reminder))
-						{
-							continue;
-						}
-
-						await Test(reminder, pageID, one);
+						continue;
 					}
+
+					if (reminder.Snooze != SnoozeRange.None &&
+						DateTime.UtcNow.CompareTo(reminder.SnoozeTime) < 0)
+					{
+						continue;
+					}
+
+					if (RemindScheduler.WaitingOn(reminder))
+					{
+						continue;
+					}
+
+					await Test(reminder, pageID, one);
 				}
 			}
 		}
@@ -119,6 +122,7 @@ namespace River.OneMoreAddIn.Commands
 					Send(
 						string.Format(
 							Resx.Reminder_PastStart,
+							reminder.Start.ToShortFriendlyString(),
 							reminder.Due.ToShortFriendlyString(),
 							reminder.Subject
 							),
@@ -153,7 +157,7 @@ namespace River.OneMoreAddIn.Commands
 		// so this verifies that the paragraph still exists and clears the Meta if it does not
 		private async Task<bool> ReminderIsValid(Reminder reminder, string pageID, OneNote one)
 		{
-			var page = one.GetPage(pageID, OneNote.PageDetail.Basic);
+			var page = await one.GetPage(pageID, OneNote.PageDetail.Basic);
 			if (page == null)
 			{
 				// must be an error?
@@ -179,7 +183,7 @@ namespace River.OneMoreAddIn.Commands
 				return false;
 			}
 
-			var orphan = reminders.FirstOrDefault(r => r.ObjectId == reminder.ObjectId);
+			var orphan = reminders.Find(r => r.ObjectId == reminder.ObjectId);
 			if (orphan == null)
 			{
 				// must be an error?
@@ -187,26 +191,39 @@ namespace River.OneMoreAddIn.Commands
 				return false;
 			}
 
-			reminders.Remove(orphan);
-			page.SetMeta(MetaNames.Reminder, serializer.EncodeContent(reminders));
-			await one.Update(page);
+			// TODO - reminder might be lost if a page is moved to another section, changing
+			// its pageID and the IDs of its objects, thereby breaking the reminder hyperlink.
+			// But we don't want to just delete the reminder, instead highlight it to the
+			// user as broken. Do we need to capture more path info in the reminder so the
+			// user has a chance of rewiring it???
+
+			logger.WriteLine($"reminder hyperlink broken \"{reminder.Subject}\" ({reminder.ObjectUri})");
+
+			//reminders.Remove(orphan);
+			//page.SetMeta(MetaNames.Reminder, serializer.EncodeContent(reminders));
+			//await one.Update(page);
 
 			return false;
 		}
 
 
+		private bool warned;
 		private void Send(string message, string args)
 		{
 			// this is for debugging; if SilentReminders value exists then only log
-			using (var key = Registry.ClassesRoot.OpenSubKey(@"River.OneMoreAddIn", false))
+			using var key = Registry.ClassesRoot.OpenSubKey(@"River.OneMoreAddIn", false);
+			if (key != null)
 			{
-				if (key != null)
+				if (!warned)
 				{
-					if ((string)key.GetValue("SilentReminders") == "true")
-					{
-						logger.WriteLine($"Toast: {message}");
-						return;
-					}
+					logger.WriteLine("HKCR::River.OneMoreAddin SilientReminders is set to true");
+					warned = true;
+				}
+
+				if ((string)key.GetValue("SilentReminders") == "true")
+				{
+					logger.WriteLine($"Toast: {message}");
+					return;
 				}
 			}
 
