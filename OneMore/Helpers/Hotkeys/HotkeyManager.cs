@@ -12,6 +12,7 @@ namespace River.OneMoreAddIn
 	using System.Linq;
 	using System.Runtime.InteropServices;
 	using System.Threading;
+	using System.Threading.Tasks;
 	using System.Windows.Forms;
 
 
@@ -37,14 +38,16 @@ namespace River.OneMoreAddIn
 		private delegate void RegisterHotkeyDelegate(IntPtr hwnd, int id, uint modifiers, uint key);
 		private delegate void UnRegisterHotkeyDelegate(IntPtr hwnd, int id);
 
-		private static readonly List<Hotkey> registeredKeys = new List<Hotkey>();
-		private static readonly ManualResetEvent resetEvent = new ManualResetEvent(false);
-		private static volatile MessageWindow window;
-		private static volatile IntPtr handle;
-		private static uint threadId;
+		private static readonly List<Hotkey> registeredKeys = new();
+		private static readonly ManualResetEvent resetEvent = new(false);
+
+		private static volatile MessageWindow mwindow;  // message window
+		private static volatile IntPtr mhandle;         // message window handle
+		private static GCHandle mroot;                  // rooted handle to message window
+
+		private static uint oneNotePID;                 // onenote process ID
+
 		private static bool registered = false;
-		private static int counter = 0xE000;
-		private static GCHandle gch;
 
 
 		/// <summary>
@@ -56,12 +59,10 @@ namespace River.OneMoreAddIn
 		/// <summary>
 		/// Initializes the background message pump used to filter our own registered key sequences
 		/// </summary>
-		public static void Initialize()
+		public static async Task Initialize()
 		{
-			using (var one = new OneNote())
-			{
-				threadId = Native.GetWindowThreadProcessId(one.WindowHandle, out _);
-			}
+			await using var one = new OneNote();
+			Native.GetWindowThreadProcessId(one.WindowHandle, out oneNotePID);
 
 			var mthread = new Thread(delegate () { Application.Run(new MessageWindow()); })
 			{
@@ -74,56 +75,24 @@ namespace River.OneMoreAddIn
 
 
 		/// <summary>
-		/// Registers a new global hotkey
-		/// </summary>
-		/// <param name="key">The primary key code</param>
-		/// <param name="modifiers">The key modifiers such as Ctrl, Shift, and Alt</param>
-		public static void RegisterHotKey(Keys key, Hotmods modifiers = 0)
-		{
-			resetEvent.WaitOne();
-
-			int keyId = Interlocked.Increment(ref counter);
-			modifiers |= Hotmods.NoRepeat;
-
-			window.Invoke(
-				new RegisterHotkeyDelegate(Register),
-				handle, keyId, (uint)modifiers, (uint)key);
-
-			registeredKeys.Add(new Hotkey
-			{
-				Id = keyId,
-				Key = (uint)key,
-				Modifiers = (uint)modifiers
-			});
-
-			registered = true;
-		}
-
-
-		/// <summary>
 		/// Registers a new global hotkey bound to the given action.
 		/// </summary>
 		/// <param name="action">The action to invoke when the hotkey is pressed</param>
-		/// <param name="key">They key identifier</param>
-		/// <param name="modifiers">The key modifiers, if any</param>
-		public static void RegisterHotKey(Action action, Keys key, Hotmods modifiers = 0)
+		/// <param name="hotkey">The Hotkey specifying the Key and Modifiers</param>
+		public static void RegisterHotKey(Action action, Hotkey hotkey)
 		{
 			resetEvent.WaitOne();
 
-			int keyId = Interlocked.Increment(ref counter);
-			modifiers |= Hotmods.NoRepeat;
+			var modifiers = hotkey.HotModifiers | (uint)HotModifier.NoRepeat;
 
-			window.Invoke(
+			mwindow.Invoke(
 				new RegisterHotkeyDelegate(Register),
-				handle, keyId, (uint)modifiers, (uint)key);
+				mhandle, hotkey.Id, modifiers, hotkey.Key);
 
-			registeredKeys.Add(new Hotkey
-			{
-				Id = keyId,
-				Key = (uint)key,
-				Modifiers = (uint)modifiers,
-				Action = action
-			});
+			hotkey.Action = action;
+			hotkey.HotModifiers = modifiers;
+
+			registeredKeys.Add(hotkey);
 
 			registered = true;
 		}
@@ -142,12 +111,12 @@ namespace River.OneMoreAddIn
 		public static void Unregister()
 		{
 			registeredKeys.ForEach(k =>
-				window.Invoke(new UnRegisterHotkeyDelegate(Unregister), handle, k.Id));
+				mwindow.Invoke(new UnRegisterHotkeyDelegate(Unregister), mhandle, k.Id));
 
 			// may not be allocated if the add-in startup has failed
-			if (gch.IsAllocated)
+			if (mroot.IsAllocated)
 			{
-				gch.Free();
+				mroot.Free();
 			}
 		}
 
@@ -155,7 +124,7 @@ namespace River.OneMoreAddIn
 		// runs as a delegated routine within the context of MessageWindow
 		private static void Unregister(IntPtr hwnd, int id)
 		{
-			Native.UnregisterHotKey(handle, id);
+			Native.UnregisterHotKey(mhandle, id);
 		}
 
 
@@ -165,9 +134,9 @@ namespace River.OneMoreAddIn
 			//Logger.Current.WriteLine($"keypress key:{e.Key} mods:{e.Modifiers}");
 
 			var key = registeredKeys
-				.FirstOrDefault(k => 
-					k.Key == (uint)e.Key && 
-					k.Modifiers == (uint)(e.Modifiers|Hotmods.NoRepeat));
+				.FirstOrDefault(k =>
+					k.Key == (uint)e.Key &&
+					k.HotModifiers == (uint)(e.HotModifiers | HotModifier.NoRepeat));
 
 			if (key != null)
 			{
@@ -188,20 +157,14 @@ namespace River.OneMoreAddIn
 
 		private sealed class MessageWindow : Form
 		{
-			private readonly uint msgThreadId;
-
 			public MessageWindow()
 			{
-				window = this;
-				handle = Handle;
-
-				// thread of MessageWindow would be a separate dllhost.exe
-				// process started by the OneNote process (with SysWOW64 in its command line)
-				msgThreadId = Native.GetWindowThreadProcessId(handle, out _);
+				mwindow = this;
+				mhandle = Handle;
 
 				// maintain a ref so GC doesn't remove it and cause exceptions
 				var evDelegate = new Native.WinEventDelegate(WinEventProc);
-				gch = GCHandle.Alloc(evDelegate);
+				mroot = GCHandle.Alloc(evDelegate);
 
 				// set up event hook to monitor switching application
 				Native.SetWinEventHook(
@@ -219,7 +182,8 @@ namespace River.OneMoreAddIn
 				IntPtr hWinEventHook, uint eventType, IntPtr hwnd,
 				int idObject, int idChild, uint dwEventThread, uint dwmsEventTime)
 			{
-				//Logger.Current.WriteLine($"hotkey event:{eventType} thread:{dwEventThread}");
+				Native.GetWindowThreadProcessId(Native.GetForegroundWindow(), out var pid);
+				//Logger.Current.WriteLine($"hotkey event:{eventType} pid:{pid} thread:{dwEventThread}");
 
 				if (eventType == Native.EVENT_SYSTEM_FOREGROUND ||
 					eventType == Native.EVENT_SYSTEM_MINIMIZESTART ||
@@ -231,13 +195,13 @@ namespace River.OneMoreAddIn
 					// OneNote.exe from another app; while msgThreadId will be current when
 					// opening a OneMore dialog such as "Search and Replace"
 
-					if ((dwEventThread == threadId) || (dwEventThread == msgThreadId))
+					if (pid == oneNotePID)
 					{
 						if (!registered && registeredKeys.Count > 0)
 						{
 							//Logger.Current.WriteLine("hotkey re-registering");
 							registeredKeys.ForEach(k =>
-								Native.RegisterHotKey(handle, k.Id, k.Modifiers, k.Key));
+								Native.RegisterHotKey(mhandle, k.Id, k.HotModifiers, k.Key));
 
 							registered = true;
 						}
@@ -248,7 +212,7 @@ namespace River.OneMoreAddIn
 						{
 							//Logger.Current.WriteLine("hotkey uregistering");
 							registeredKeys.ForEach(k =>
-								Native.UnregisterHotKey(handle, k.Id));
+								Native.UnregisterHotKey(mhandle, k.Id));
 
 							registered = false;
 						}
@@ -262,8 +226,8 @@ namespace River.OneMoreAddIn
 				if (m.Msg == Native.WM_HOTKEY)
 				{
 					// check if this is the main OneNote.exe thread and not a dllhost.exe thread
-					var tid = Native.GetWindowThreadProcessId(Native.GetForegroundWindow(), out _);
-					if (tid == threadId)
+					Native.GetWindowThreadProcessId(Native.GetForegroundWindow(), out var pid);
+					if (pid == oneNotePID)
 					{
 						OnHotKeyPressed(new HotkeyEventArgs(m.LParam));
 					}

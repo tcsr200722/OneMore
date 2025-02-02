@@ -11,7 +11,7 @@ namespace River.OneMoreAddIn.Commands
 	using Resx = River.OneMoreAddIn.Properties.Resources;
 
 
-	internal partial class UpdateDialog : UI.LocalizableForm
+	internal partial class UpdateDialog : UI.MoreForm
 	{
 		private readonly string url;
 
@@ -37,7 +37,7 @@ namespace River.OneMoreAddIn.Commands
 					{
 						"currentLabel",
 						"versionLabel",
-						"lastpdatedLabel",
+						"lastUpdatedLabel",
 						"releaseNotesLink",
 						"okButton=word_OK"
 					});
@@ -63,9 +63,9 @@ namespace River.OneMoreAddIn.Commands
 						"upVersionLabel",
 						"upDescriptionLabel",
 						"upReleaseDateLabel",
-						"upReleaseNotesLink",
+						"upReleaseNotesLink=UpdateDialog_releaseNotesLink",
 						"upCurrentVersionLabel",
-						"upLastUpdatedLabel",
+						"upLastUpdatedLabel=UpdateDialog_lastUpdatedLabel",
 						"upOKButton",
 						"cancelButton=word_Cancel"
 					});
@@ -89,26 +89,34 @@ namespace River.OneMoreAddIn.Commands
 
 		private string FormatDate(string value)
 		{
-			if (value == null)
+			try
 			{
-				logger.WriteLine("InstallDate is null");
-				return "unknown";
-			}
+				if (string.IsNullOrEmpty(value))
+				{
+					return "unknown";
+				}
 
-			if (value.Length == 8)
-			{
-				if (DateTime.TryParseExact(value, new string[] { "yyyyMMdd" },
-					CultureInfo.InvariantCulture, DateTimeStyles.None, out var date))
+				if (value.Length == 8)
 				{
-					return date.ToShortDateString();
+					if (DateTime.TryParseExact(value, new string[] { "yyyyMMdd" },
+						CultureInfo.InvariantCulture, DateTimeStyles.None, out var date))
+					{
+						return date.ToShortDateString();
+					}
+				}
+				else
+				{
+					if (DateTime.TryParse(value,
+						DateTimeFormatInfo.CurrentInfo, DateTimeStyles.None, out var date))
+					{
+						return date.ToShortDateString();
+					}
 				}
 			}
-			else
+			catch (Exception exc)
 			{
-				if (DateTime.TryParse(value, out var date))
-				{
-					return date.ToShortDateString();
-				}
+				logger.WriteLine($"error formatting date {value}", exc);
+				value = "unknown";
 			}
 
 			return value;

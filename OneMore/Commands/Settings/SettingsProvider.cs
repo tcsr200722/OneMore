@@ -25,7 +25,7 @@ namespace River.OneMoreAddIn.Settings
 		public SettingsProvider()
 		{
 			path = Path.Combine(
-				PathFactory.GetAppDataPath(), Properties.Resources.SettingsFilename);
+				PathHelper.GetAppDataPath(), Properties.Resources.SettingsFilename);
 
 			if (File.Exists(path))
 			{
@@ -48,23 +48,23 @@ namespace River.OneMoreAddIn.Settings
 					)
 				);
 			}
+			else
+			{
+				ContextMenuSheet.UpgradeSettings(this);
+			}
 		}
 
 
 		/// <summary>
-		/// Gets the preset image width for resizing images
+		/// Convenience property to get theme name
 		/// </summary>
-		/// <returns></returns>
-		public int GetImageWidth()
+		public UI.ThemeMode Theme
 		{
-			var width = root.Element("images")?.Attribute("width").Value;
-			return width == null ? 500 : int.Parse(width);
-		}
-
-
-		public void SetImageWidth(int width)
-		{
-			root.Element("images").Attribute("width").Value = width.ToString();
+			get
+			{
+				var theme = GetCollection(nameof(GeneralSheet)).Get("theme", 0);
+				return (UI.ThemeMode)theme;
+			}
 		}
 
 
@@ -83,7 +83,7 @@ namespace River.OneMoreAddIn.Settings
 			{
 				foreach (var element in elements)
 				{
-					if (element.HasElements)
+					if (element.HasElements || string.IsNullOrEmpty(element.Value))
 					{
 						// has child elements so this must be an XElement
 						settings.Add(element.Name.LocalName, element);
@@ -143,7 +143,7 @@ namespace River.OneMoreAddIn.Settings
 
 		public void Save()
 		{
-			PathFactory.EnsurePathExists(Path.GetDirectoryName(path));
+			PathHelper.EnsurePathExists(Path.GetDirectoryName(path));
 			root.Save(path, SaveOptions.None);
 		}
 	}

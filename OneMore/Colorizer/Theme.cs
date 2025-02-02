@@ -6,7 +6,6 @@ namespace River.OneMoreAddIn.Colorizer
 {
 	using System.Collections.Generic;
 	using System.Drawing;
-	using System.Linq;
 	using System.Text;
 
 
@@ -96,12 +95,27 @@ namespace River.OneMoreAddIn.Colorizer
 
 		public Style GetStyle(string name)
 		{
-			return Styles.FirstOrDefault(s => s.Name == name);
+			return Styles.Find(s => s.Name == name);
 		}
 
 
-		public void TranslateColorNames()
+		public void TranslateColorNames(bool autoOverride)
 		{
+			if (autoOverride)
+			{
+				// normally, PlainText=Auto. But in native dark mode (Switch Background) then we
+				// want PlainText to be AutoNative to compensate for OneNote's color witchcraft
+
+				if (Colors.ContainsKey("AutoNative"))
+				{
+					var plain = GetStyle("PlainText");
+					if (plain != null)
+					{
+						plain.Foreground = Colors["AutoNative"];
+					}
+				}
+			}
+
 			foreach (var style in Styles)
 			{
 				// standardize on lowercase names because users are stupid
